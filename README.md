@@ -1,0 +1,1 @@
+# SwitchArray_info
