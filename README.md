@@ -1,4 +1,4 @@
-![image](https://github.com/cgrgncu/SwitchArray_info/assets/59222358/45f7d057-d8c4-4c71-9f31-da7a862b9fd6)# SwitchArray_info
+# SwitchArray_info
 + SwitchArray 資訊
 
 ### 基本資料
