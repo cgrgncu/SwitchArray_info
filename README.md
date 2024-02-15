@@ -18,7 +18,8 @@
   + 來自大陸，關稅另計。視情況免運。
   + 一組含稅價約CYN19，折合台幣約NTD95。
   + 每一台設備只需要一組(電源接頭+插孔)。
-  + 圖片: [image](https://github.com/cgrgncu/SwitchArray_info/blob/main/K16%E9%98%B2%E6%B0%B4%E8%88%AA%E7%A9%BA%E6%8F%92%E9%A0%AD%E6%8F%92%E5%BA%A7.png)
+  + 圖片:  
+    <image src="https://github.com/cgrgncu/SwitchArray_info/blob/main/K16%E9%98%B2%E6%B0%B4%E8%88%AA%E7%A9%BA%E6%8F%92%E9%A0%AD%E6%8F%92%E5%BA%A7.png" width="200">
 + #3 USB插孔
   + 下單連結: https://item.taobao.com/item.htm?spm=a1z09.2.0.0.12aa2e8dmm8tFh&id=662371485402&_u=f207c1240h22c0
   + 來自大陸，關稅另計。視情況免運。
