@@ -50,7 +50,8 @@
   + 下單連結: https://jlcpcb.com/
   + 來自大陸。要運費。
   + 一組含稅價約US11，大約NTD330。
-  + 要提供設計圖。檔案=???
+  + 要提供設計圖。檔案=BOM_ERT3-rev2_2024-02-26.csv,Gerber_ERT3-rev2_PCB_ERT3_9_2024-02-26.zip,PickAndPlace_PCB_ERT3_9_2024-02-26.csv
+    + 其他: 4-PCB_PCB_ERT3_9.json
   + 每一台設備只需要8組(客製電路-切換版)。
 + #9 客製電路-控制版
   + 下單連結: https://jlcpcb.com/
