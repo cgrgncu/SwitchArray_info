@@ -3,7 +3,16 @@
 
 ### 基本資料
 + 作者: TingoYeh
-+ 最終版本: ???
++ 最終版本: v20240416a
+  + 電腦軟體:
+    + 作業系統: Windows10
+    + 軟體: ERT_ver2_9_9_Client.exe
+  + 主控板PCBA(含ESP32):
+    + Gerber: 檔案=BOM_ERT3-rev2_2024-02-26.csv,Gerber_ERT3-rev2_PCB_ERT3_9_2024-02-26.zip,PickAndPlace_PCB_ERT3_9_2024-02-26.csv
+    + 韌體:SwitchArray_ver2_9.ino
+  + 繼電器板PBCA:
+    + Gerber: ??
+    + 韌體:無
 
 ### 材料
 + #1 機殼:
@@ -92,8 +101,6 @@
   + me860-508
   + MPC301-50808P
   + WJ2EDGRM-5.08-8P
-+ #17 主控板PCB生產
-+ #18 繼電器板PCB生產
 
 
 ```
