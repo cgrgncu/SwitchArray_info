@@ -157,3 +157,11 @@
     + 先規劃W0~W8(最多9隻)，就是放電電極的行為，每次行為例如48秒
     + 再規劃各次行為W要放在哪個電擊棒，例如每個48秒依序換到哪個電極棒上。
     + 以上操作用來輔助產生csv檔案(CurrentSet Mode.csv)
++ 決議:
+  + 禁止使用:
+    + Insert Break=FALSE
+    + 使用了資料會異常，原作者保留特殊測試用途。
+  + 先設定啟用:
+    + Only Use Last Value? = TRUE
+    + Inverse Polarity = TRUE
+    + 只有Gradient + Dipole dipole模式下有用。吧?
