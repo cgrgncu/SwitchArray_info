@@ -4,6 +4,8 @@
 + 準備 WIN7_64_R2MS_ServerNAT.ova
 + 從野外設置幾何製作*.geo檔案。
 + 取出*.v299.csv檔案
++ 取得相關檔案:
+  + https://github.com/cgrgncu/R2MS_Tools
 
 # 單筆CSV2URF
 + 受限「R2MS_CsvtoUrf_MultipleTx_Chu2019_Release_v20211125a」程式限制，僅支援R2MS版本的CSV檔案，為了相容，所以須動一點手腳:
