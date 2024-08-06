@@ -10,3 +10,9 @@
 + R2MS_Lite若是v297版本，檔案內容格式較不完整，請使用「R2MS_Lite_v297rawcsv_to_v297csv.exe」轉檔。依賴MATLAB 2014a Runtimes。
   + 建議依照範例程式調整輸出檔名。
   + XP1使用S001，XP2使用S002。
+  + 這裡選用XP1的原始CSV檔案為範例「2024_04_15_20_01.csv」。
+  + 編寫BATCH為
+  ```
+  R2MS_Lite_v297rawcsv_to_v297csv.exe "Input\2024_04_15_20_01.csv" "Output" "S001202404152001"
+  PAUSE
+  ```
