@@ -53,5 +53,10 @@
   ...\Recorder\XP1\Part01\3\empty_C.v297E.csv
   ...\Recorder\XP1\Part01\3\S001202404152001.v297E.csv
   ```
-+ 依照指示操作，有用的檔案會在:「...\Urf\Level0\XP1\Part01\1\XP1_part01_1_Level0.urf」。
-  + 這筆Urf檔案會有187767筆資料。
++ 依照指示操作，有用的檔案:
+  + 「...\Urf\Level0\XP1\Part01\1\XP1_part01_1_Level0.urf」。
+    + 這筆Urf檔案會有187767筆資料。
+    + 對應轉檔紀錄為「...\Urf\Level0\XP1\Part01\1\XP1_part01_1_Level0.urflog」。
+  + 注意，千萬不要去用「...\Urf\Level1\XP1\XP1_S3_R4_B50000_Level1.urf」。
+    + 這筆Urf只有50000筆資料，其實只是取187767筆資料的前50000筆，基本上只有編號較靠前的電極資料。
+    + 請回去用187767筆的，在後續分析亂數取樣再降數量。
