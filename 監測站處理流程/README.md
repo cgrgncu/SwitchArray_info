@@ -61,17 +61,18 @@
   + 「...\Urf\Level0\XP1\Part01\1\XP1_part01_1_Level0.urf」。
     + 這筆Urf檔案會有187767筆資料。
     + 對應轉檔紀錄為「...\Urf\Level0\XP1\Part01\1\XP1_part01_1_Level0.urflog」。
-  + 注意，千萬不要去用「...\Urf\Level1\XP1\XP1_S3_R4_B50000_Level1.urf」。
+  + 注意，千萬不要去用任何「*.Level1.urf」，因為qui是沒有意義的。
     + 這筆Urf只有50000筆資料，其實只是取187767筆資料的前50000筆，基本上只有編號較靠前的電極資料。
     + 請回去用187767筆的，在後續分析亂數取樣再降數量。
+  + 當資料數量真的不夠3筆才需要使用這個方法。
 
-
-### N筆CSV2URF取qui
+### N筆CSV2URF
 + 「R2MS ERT 分析精靈(伺服器版)」操作說明:
   + 請使用「*.v297E.csv」作為輸入檔案。每個檔案代表一次智能施測(通常耗時約18分鐘)
   + 軟體規畫至少要有3次智能施測，也就是3次不同的「*.v297E.csv」檔案。每次要4個檔案。
     + R2MS Lite開始，不依照時間長度切割檔案，因此要另外手動製作3個空白csv檔案，來滿足資料夾結構。
     + 例如建立empty_A.v297E.csv、empty_B.v297E.csv、empty_C.v297E.csv檔案，檔名可任意調整，但仍建議照此命名。
+  + 以本案來說，專案資料夾命名為:「[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)-CSV2URF」
   + 本案選擇N=3。3筆的情況下選擇指定的3個「*.v297E.csv」，並調整成以下資料夾結構:
   ```
   ...\Recorder\XP1\Part01\1\empty_A.v297E.csv
@@ -89,4 +90,66 @@
   ...\Recorder\XP1\Part01\3\empty_C.v297E.csv
   ...\Recorder\XP1\Part01\3\S001202404172001.v297E.csv
   ...\Recorder\XP1\Part01\3\XP1.geo
+  ```
++ 依照指示操作，有用的檔案:
+  + 「...\Urf\Level0\XP1\Part01\1\XP1_part01_1_Level0.urf」、「...\Urf\Level0\XP1\Part01\2\XP1_part01_2_Level0.urf」、「...\Urf\Level0\XP1\Part01\3\XP1_part01_3_Level0.urf」。
+    + 這些Urf檔案各自會有187767筆資料。
+    + 對應轉檔紀錄為「*.urflog」。
+  + 可使用「*.Level1.urf」。
+    + 這種Urf只有50000筆資料，可以選各自的，也可以選最外層平均的來進行逆推。
+
+### N筆CSV2URF鎖定qui
++ 「R2MS ERT 分析精靈(伺服器版)」操作說明:
+  + 請使用「*.v297E.csv」作為輸入檔案。每個檔案代表一次智能施測(通常耗時約18分鐘)
+  + 軟體規畫至少要有3次智能施測，也就是3次不同的「*.v297E.csv」檔案。每次要4個檔案。
+    + R2MS Lite開始，不依照時間長度切割檔案，因此要另外手動製作3個空白csv檔案，來滿足資料夾結構。
+    + 例如建立empty_A.v297E.csv、empty_B.v297E.csv、empty_C.v297E.csv檔案，檔名可任意調整，但仍建議照此命名。
+  + 以本案來說，專案資料夾命名為:「[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)-CSV2URF-fixqui-3」
+  + 本案選擇N=3。3筆的情況下選擇指定的3個「*.v297E.csv」，並調整成以下資料夾結構:
+  ```
+  ...\Recorder\XP1\Part01\1\empty_A.v297E.csv
+  ...\Recorder\XP1\Part01\1\empty_B.v297E.csv
+  ...\Recorder\XP1\Part01\1\empty_C.v297E.csv
+  ...\Recorder\XP1\Part01\1\S001202404152001.v297E.csv
+  ...\Recorder\XP1\Part01\1\XP1.geo
+  ...\Recorder\XP1\Part01\2\empty_A.v297E.csv
+  ...\Recorder\XP1\Part01\2\empty_B.v297E.csv
+  ...\Recorder\XP1\Part01\2\empty_C.v297E.csv
+  ...\Recorder\XP1\Part01\2\S001202404162001.v297E.csv
+  ...\Recorder\XP1\Part01\2\XP1.geo
+  ...\Recorder\XP1\Part01\3\empty_A.v297E.csv
+  ...\Recorder\XP1\Part01\3\empty_B.v297E.csv
+  ...\Recorder\XP1\Part01\3\empty_C.v297E.csv
+  ...\Recorder\XP1\Part01\3\S001202404172001.v297E.csv
+  ...\Recorder\XP1\Part01\3\XP1.geo
+  ```
++ 依照指示操作，至此會得到許多可用於逆推的檔案。
+  + 「...\Urf\Level0\XP1\Part01\1\XP1_part01_1_Level0.urf」、「...\Urf\Level0\XP1\Part01\2\XP1_part01_2_Level0.urf」、「...\Urf\Level0\XP1\Part01\3\XP1_part01_3_Level0.urf」。
+    + 這些Urf檔案各自會有187767筆資料。
+    + 對應轉檔紀錄為「*.urflog」。
+  + 可使用「*.Level1.urf」。
+    + 這種Urf只有50000筆資料，可以選各自的，也可以選最外層平均的來進行逆推。
++ 但應用於監測時，將以此N筆作為基礎，計算qui，並鎖定使用此qui。這樣可以固定後續監測索取用的資料範圍，排除量測結果較不穩定的資料。
+  + 接著放入下一筆監測資料「S001202404182001.v297E.csv」，也就是調整資料夾結構:
+  ```
+  ...\Recorder\XP1\Part01\1\empty_A.v297E.csv
+  ...\Recorder\XP1\Part01\1\empty_B.v297E.csv
+  ...\Recorder\XP1\Part01\1\empty_C.v297E.csv
+  ...\Recorder\XP1\Part01\1\S001202404152001.v297E.csv
+  ...\Recorder\XP1\Part01\1\XP1.geo
+  ...\Recorder\XP1\Part01\2\empty_A.v297E.csv
+  ...\Recorder\XP1\Part01\2\empty_B.v297E.csv
+  ...\Recorder\XP1\Part01\2\empty_C.v297E.csv
+  ...\Recorder\XP1\Part01\2\S001202404162001.v297E.csv
+  ...\Recorder\XP1\Part01\2\XP1.geo
+  ...\Recorder\XP1\Part01\3\empty_A.v297E.csv
+  ...\Recorder\XP1\Part01\3\empty_B.v297E.csv
+  ...\Recorder\XP1\Part01\3\empty_C.v297E.csv
+  ...\Recorder\XP1\Part01\3\S001202404172001.v297E.csv
+  ...\Recorder\XP1\Part01\3\XP1.geo
+  ...\Recorder\XP1\Part01\4\empty_A.v297E.csv
+  ...\Recorder\XP1\Part01\4\empty_B.v297E.csv
+  ...\Recorder\XP1\Part01\4\empty_C.v297E.csv
+  ...\Recorder\XP1\Part01\4\S001202404182001.v297E.csv
+  ...\Recorder\XP1\Part01\4\XP1.geo
   ```
