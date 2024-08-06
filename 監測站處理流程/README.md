@@ -38,20 +38,24 @@
   + 軟體規畫至少要有3次智能施測，也就是3次不同的「*.v297E.csv」檔案。每次要4個檔案。
     + R2MS Lite開始，不依照時間長度切割檔案，因此要另外手動製作3個空白csv檔案，來滿足資料夾結構。
     + 例如建立empty_A.v297E.csv、empty_B.v297E.csv、empty_C.v297E.csv檔案，檔名可任意調整，但仍建議照此命名。
+  + 以本案來說，專案資料夾命名為:「[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)-CSV2URF-solo」
   + 單筆的情況下只好複製3份一樣的資料，並調整成以下資料夾結構:
   ```
   ...\Recorder\XP1\Part01\1\empty_A.v297E.csv
   ...\Recorder\XP1\Part01\1\empty_B.v297E.csv
   ...\Recorder\XP1\Part01\1\empty_C.v297E.csv
   ...\Recorder\XP1\Part01\1\S001202404152001.v297E.csv
+  ...\Recorder\XP1\Part01\1\XP1.geo
   ...\Recorder\XP1\Part01\2\empty_A.v297E.csv
   ...\Recorder\XP1\Part01\2\empty_B.v297E.csv
   ...\Recorder\XP1\Part01\2\empty_C.v297E.csv
   ...\Recorder\XP1\Part01\2\S001202404152001.v297E.csv
+  ...\Recorder\XP1\Part01\2\XP1.geo
   ...\Recorder\XP1\Part01\3\empty_A.v297E.csv
   ...\Recorder\XP1\Part01\3\empty_B.v297E.csv
   ...\Recorder\XP1\Part01\3\empty_C.v297E.csv
   ...\Recorder\XP1\Part01\3\S001202404152001.v297E.csv
+  ...\Recorder\XP1\Part01\3\XP1.geo
   ```
 + 依照指示操作，有用的檔案:
   + 「...\Urf\Level0\XP1\Part01\1\XP1_part01_1_Level0.urf」。
@@ -74,12 +78,15 @@
   ...\Recorder\XP1\Part01\1\empty_B.v297E.csv
   ...\Recorder\XP1\Part01\1\empty_C.v297E.csv
   ...\Recorder\XP1\Part01\1\S001202404152001.v297E.csv
+  ...\Recorder\XP1\Part01\1\XP1.geo
   ...\Recorder\XP1\Part01\2\empty_A.v297E.csv
   ...\Recorder\XP1\Part01\2\empty_B.v297E.csv
   ...\Recorder\XP1\Part01\2\empty_C.v297E.csv
   ...\Recorder\XP1\Part01\2\S001202404162001.v297E.csv
+  ...\Recorder\XP1\Part01\2\XP1.geo
   ...\Recorder\XP1\Part01\3\empty_A.v297E.csv
   ...\Recorder\XP1\Part01\3\empty_B.v297E.csv
   ...\Recorder\XP1\Part01\3\empty_C.v297E.csv
   ...\Recorder\XP1\Part01\3\S001202404172001.v297E.csv
+  ...\Recorder\XP1\Part01\3\XP1.geo
   ```
