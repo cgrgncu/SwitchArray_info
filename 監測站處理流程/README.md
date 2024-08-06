@@ -8,17 +8,20 @@
   + https://github.com/cgrgncu/R2MS_Tools
 
 # 單筆CSV2URF
-+ 受限「R2MS_CsvtoUrf_MultipleTx_Chu2019_Release_v20211125a」程式限制，僅支援R2MS版本的CSV檔案，為了相容，所以須動一點手腳:
-  + R2MS_Lite若是v297版本，檔案內容格式較不完整，請使用「R2MS_Lite_v297rawcsv_to_v297csv.exe」轉檔。依賴MATLAB 2014a Runtimes。
-    + 建議依照範例程式調整輸出檔名。
-    + XP1使用S001，XP2使用S002。
-    + 這裡選用XP1的原始CSV檔案為範例「2024_04_15_20_01.csv」，放到Input資料夾中。
-    + 編寫BATCH為
++ 儀器「R2MS_Lite」在連續發送訊號(同時多組發射訊號)時，依照控制軟體版本不同，會紀錄原生CSV資料，ERT_ver2_9_7軟體所儲存的原生資料稱為「v297rawcsv」。
++ 使用「R2MS_Lite_v297rawcsv_to_v297csv.exe」轉檔。將進一步轉檔為「v297csv」，是有檔頭的CSV格式(命名為:「*.v297.csv」)。
++ 為了相容過去的「R2MS_CsvtoUrf_MultipleTx_Chu2019_v20211125a.exe」，需要使用「R2MS_Lite_v297csv_to_v297Ecsv_v20240408a.exe」把「v297csv」轉檔為「v297Ecsv」(命名為:「*.v297E.csv」)。
++ 「R2MS_Lite_v297rawcsv_to_v297csv.exe」轉檔說明:
+  + 建議依照範例程式調整輸出檔名。
+  + XP1使用S001，XP2使用S002。
+  + 這裡選用XP1的原始CSV檔案為範例「2024_04_15_20_01.csv」，放到Input資料夾中。
+  + 編寫BATCH為
+  ```
+  R2MS_Lite_v297rawcsv_to_v297csv.exe "Input\2024_04_15_20_01.csv" "Output" "S001202404152001"
+  PAUSE
     ```
-    R2MS_Lite_v297rawcsv_to_v297csv.exe "Input\2024_04_15_20_01.csv" "Output" "S001202404152001"
-    PAUSE
-    ```
-    + 會取得「S001202404152001.v297.csv」檔案。
+  + 會取得「S001202404152001.v297.csv」檔案。
+  + 再使用
   + 將「\Part01\1\」資料夾內放好所需檔案:
     + S001202404152001.v297.csv
     + Empty_A.csv
