@@ -169,3 +169,8 @@ ab30s
     + Only Use Last Value? = TRUE
     + Inverse Polarity = TRUE
     + 只有Gradient + Dipole dipole模式下有用。吧?
+   
+
+
+### 機殼考慮:
++  https://tw.misumi-ec.com/vona2/detail/222000224688/
