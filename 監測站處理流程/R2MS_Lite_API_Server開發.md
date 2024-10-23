@@ -12,7 +12,7 @@
 
 ## 開發紀錄
 1. 建立新專案。  
-  1.1 按下「Project>New Project ...」。  
+  + 1.1 按下「Project>New Project ...」。  
   1.2 選擇「Project>Application 」之後按「OK」。  
 2. 獨立把專案存到指定資料夾中，以利日後管理。大部分自訂程式碼都會是相對路徑，未來只需要帶走這個資料夾即可在其他地方重新使用。  
   2.1 按下「File->Save Project As」。  
@@ -21,7 +21,7 @@
     3.1.1.1 說明: 程式圖示。  
   3.1.2 檢查「Application」頁面下「Execution Level 」為「As Invoker」。  
     3.1.2.1 說明: 「As Invoker、Highest Available」都是普通權限就可以執行，「requireAdministrator」是執行前請求獲得管理者權限才能執行。  
-4. 預設狀況下就有一個Form元件存在，預設名稱叫做「Form1」，先做一些基礎設定以利後續排版。  
+5. 預設狀況下就有一個Form元件存在，預設名稱叫做「Form1」，先做一些基礎設定以利後續排版。  
   4.1 設定「Form1」的「properties」。這裡主要列出常用的一些。  
     4.1.1 檢查「Form1」的「properties」頁面下「BorderIcons」為「[biSystemMenu,biMinimize,biMaximize]」。  
       4.1.1.1 說明:設定窗體右上角的按鈕如果存在的話要不要被啟用。「[biSystemMenu,biMinimize,biMaximize]」表示這三個被打勾。  
@@ -38,7 +38,7 @@
     4.1.6 設定「Form1」的「properties」頁面下「Width」為「800」。  
       4.1.6.1 說明:設定窗體的外框寬度。  
     > 以上預設尺寸確定後就可以開始排版。  
-5. 經典的Windows應用程式會在下方放置一個狀態列。如果不趕時間應該避免當作SimplePanel來使用。建議使用標準的(TStatusPanels)來規劃出多分隔的狀態列。可參考經典軟體「記事本」與「NotePad++」的狀態列規劃。  
+6. 經典的Windows應用程式會在下方放置一個狀態列。如果不趕時間應該避免當作SimplePanel來使用。建議使用標準的(TStatusPanels)來規劃出多分隔的狀態列。可參考經典軟體「記事本」與「NotePad++」的狀態列規劃。  
   5.1 拖拉一個「TStatusBar」到「Form1」中。預設名稱會是「StatusBar1」。  
   5.2 設定「TStatusBar」的「Properties」。這裡主要列出常用的一些。  
     5.2.1 檢查「StatusBar1」的「Properties」頁面下「Align」為「alBottom」。  
