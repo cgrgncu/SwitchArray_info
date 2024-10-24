@@ -178,3 +178,16 @@
 
     >以上是第3頁。單獨修改一個頁面的PageIndex會影響所有的頁面，可能使其他頁面的PageIndex值改變。
     設計時可考慮使用TPanel元件進行響應式設計，不想看到分隔線就把BevelOuter設為bvNone。
+
+### 開發紀錄(排版常用技巧)
++ GroupBox1+Edit1
+  ```
+    procedure TForm1.Edit1Resize(Sender: TObject);
+    var
+      temp_remain_width:Integer;
+    begin
+      temp_remain_width:=GroupBox1.Width;
+      Edit1.Left:=10;
+      Edit1.Width:=temp_remain_width-Edit1.Left-15;
+    end; 
+  ```
