@@ -240,7 +240,26 @@
       + **2.2.2 設定「Name」為「ServerPort_Edit」。**
       + **2.2.3 設定「NumbersOnly」為「True」。**
       + **2.2.4 設定「Text」為「18002」。**
-   
+3. Server Status:
+    + **3.1 拖拉一個「Standard>TGroupBox」到「Web Server」標籤頁(物件名稱為「TabSheet3」)。預設名稱會是「GroupBox1」。**  
+      + **3.1.1 設定「Anchors」。**  
+        + **3.1.1.1 「Top anchoring>Slbling」選為「TabSheet3:TTabSheet」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選上面的。**
+        + **3.1.1.2 「Left anchoring>Slbling」選為「ServerIPAddress_GroupBox:TGroupBox」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選右邊的。**  
+        + **3.1.1.3 「Border space」正中間那格填「10」。**
+        + **3.1.1.4 設定完後關閉Anchors設定視窗。** 
+      + **3.1.2 設定「Caption」為「Server Status:」。**
+      + **3.1.3 設定「Height」為「80」。**
+      + **3.1.4 設定「Name」為「ServerStatus_GroupBox」。**
+      + **3.1.5 設定「Width」為「240」。**
+    + **3.2 拖拉一個「Standard>TLabel」到「ServerStatus_GroupBox」中。預設名稱會是「Label1」。**
+      + **3.2.1 設定「Anchors」。**  
+        + **3.2.1.1 「Top anchoring>Slbling」選為「ServerStatus_GroupBox:TGroupBox」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選中間的。**  
+        + **3.2.1.2 「Left anchoring>Slbling」選為「ServerStatus_GroupBox:TGroupBox」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**  
+        + **3.2.1.3 「Right anchoring>Slbling」選為「ServerStatus_GroupBox:TGroupBox」。勾選「Right anchoring>Enable」為打勾。選擇「Right anchoring」右側三個鈕選右邊的。**  
+        + **3.2.1.4 「Border space」正中間那格填「10」。**
+        + **3.2.1.5 設定完後關閉Anchors設定視窗。**
+      + **3.2.2 設定「Name」為「ServerStatus_Label」。**
+      + **3.2.3 設定「Caption」為「伺服器狀態: 未知」。**
 
 
 
