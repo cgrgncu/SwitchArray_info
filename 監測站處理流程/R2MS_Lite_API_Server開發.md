@@ -456,11 +456,12 @@
       ```
 
 
-
-if RunCommand('cmd.exe', ['/c', 'PowerShell '+paramstr(2)],s) then begin
-        writeln(s);
-        writeln('{"Return_Code":"0"}');
-      end;     
+```
+    if RunCommand('cmd.exe', ['/c', 'PowerShell "Get-CimInstance -Class Win32_OperatingSystem | Select-Object Version | ConvertTo-Json -Compress"'],api_return_json_str,[],swoHIDE) then begin
+      Log_Memo.Lines.Add('api_return_json_str:');
+      Log_Memo.Lines.Add(api_return_json_str);
+    end;
+```
 
 
 
