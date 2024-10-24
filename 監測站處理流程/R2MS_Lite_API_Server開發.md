@@ -206,42 +206,40 @@
         + **1.1.1.3 「Border space」正中間那格填「10」。**
         + **1.1.1.4 設定完後關閉Anchors設定視窗。** 
       + **1.1.2 設定「Caption」為「Server IP Address:」。**
-      + **1.1.3 設定「Name」為「ServerIPAddress_GroupBox」。**
-      + **1.1.4 設定「Height」為「80」。**
+      + **1.1.3 設定「Height」為「80」。**
+      + **1.1.4 設定「Name」為「ServerIPAddress_GroupBox」。**
       + **1.1.5 設定「Width」為「240」。**
     + **1.2 拖拉一個「Standard>TEdit」到「ServerIPAddress_GroupBox」中。預設名稱會是「Edit1」。**
       + **1.2.1 設定「Anchors」。**  
-        + **1.2.1.1 「Top anchoring>Slbling」選為「ServerIPAddress_GroupBox:TGroupBox」。維持「Top anchoring>Enable」為打勾。「Top anchoring」右側三個鈕選中間的。**  
-        + **1.2.1.2 「Left anchoring>Slbling」選為「ServerIPAddress_GroupBox:TGroupBox」。維持「Left anchoring>Enable」為打勾。「Left anchoring」右側三個鈕選左邊的。**  
-        + **1.2.1.3 「Right anchoring>Slbling」選為「ServerIPAddress_GroupBox:TGroupBox」。勾選「Right anchoring>Enable」為打勾。「Right anchoring」右側三個鈕選右邊的。**  
+        + **1.2.1.1 「Top anchoring>Slbling」選為「ServerIPAddress_GroupBox:TGroupBox」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選中間的。**  
+        + **1.2.1.2 「Left anchoring>Slbling」選為「ServerIPAddress_GroupBox:TGroupBox」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**  
+        + **1.2.1.3 「Right anchoring>Slbling」選為「ServerIPAddress_GroupBox:TGroupBox」。勾選「Right anchoring>Enable」為打勾。選擇「Right anchoring」右側三個鈕選右邊的。**  
         + **1.2.1.4 「Border space」正中間那格填「10」。**
         + **1.2.1.5 設定完後關閉Anchors設定視窗。**
       + **1.2.2 設定「Name」為「ServerIPAddress_Edit」。**
       + **1.2.3 設定「ReadOnly」為「True」。**
       + **1.2.4 設定「Text」為「127.0.0.1」。**
-2. Server Port:  
-    + **1.1 拖拉一個「Standard>TGroupBox」到「Web Server」標籤頁(物件名稱為「TabSheet3」)。預設名稱會是「GroupBox1」。**  
-      + **1.1.1 設定「Anchors」。**  
-        + **1.1.1.1 「Top anchoring>Slbling」選為「TabSheet3:TTabSheet」。再勾選「Top anchoring>Enable」為打勾。**
-        + **1.1.1.2 「Left anchoring>Slbling」選為「TabSheet3:TTabSheet」。再勾選「Left anchoring>Enable」為打勾。**
-        + **1.1.1.3 「Border space」正中間那格填「10」。**
-        + **1.1.1.4 設定完後關閉Anchors設定視窗。** 
-      + **1.1.2 設定「Caption」為「Server IP Address:」。**
-      + **1.1.3 設定「Name」為「ServerIPAddress_GroupBox」。**
-      + **1.1.4 設定「Height」為「80」。**
-      + **1.1.5 設定「Width」為「240」。**
-    + **1.2 拖拉一個「Standard>TEdit」到「ServerIPAddress_GroupBox」中。預設名稱會是「Edit1」。**
-      + **1.2.1 設定「Anchors」。**  
-        + **1.2.1.1 「Top anchoring>Slbling」選為「ServerIPAddress_GroupBox:TGroupBox」。維持「Top anchoring>Enable」為打勾。「Top anchoring」右側三個鈕選中間的。**  
-        + **1.2.1.2 「Left anchoring>Slbling」選為「ServerIPAddress_GroupBox:TGroupBox」。維持「Left anchoring>Enable」為打勾。「Left anchoring」右側三個鈕選左邊的。**  
-        + **1.2.1.3 「Right anchoring>Slbling」選為「ServerIPAddress_GroupBox:TGroupBox」。勾選「Right anchoring>Enable」為打勾。「Right anchoring」右側三個鈕選右邊的。**  
-        + **1.2.1.4 「Border space」正中間那格填「10」。**
-        + **1.2.1.5 設定完後關閉Anchors設定視窗。**
-      + **1.2.2 設定「Name」為「ServerIPAddress_Edit」。**
-      + **1.2.3 設定「ReadOnly」為「True」。**
-      + **1.2.4 設定「Text」為「127.0.0.1」。**
- 
-
+2. Server Port:
+    + **2.1 拖拉一個「Standard>TGroupBox」到「Web Server」標籤頁(物件名稱為「TabSheet3」)。預設名稱會是「GroupBox1」。**  
+      + **2.1.1 設定「Anchors」。**  
+        + **2.1.1.1 「Top anchoring>Slbling」選為「ServerIPAddress_GroupBox:TGroupBox」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選下面的。**
+        + **2.1.1.2 「Left anchoring>Slbling」選為「TabSheet3:TTabSheet」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**  
+        + **2.1.1.3 「Border space」正中間那格填「10」。**
+        + **2.1.1.4 設定完後關閉Anchors設定視窗。** 
+      + **2.1.2 設定「Caption」為「Server Port:」。**
+      + **2.1.3 設定「Height」為「80」。**
+      + **2.1.4 設定「Name」為「ServerPort_GroupBox」。**
+      + **2.1.5 設定「Width」為「240」。**
+    + **2.2 拖拉一個「Standard>TEdit」到「ServerPort_GroupBox」中。預設名稱會是「Edit1」。**
+      + **2.2.1 設定「Anchors」。**  
+        + **2.2.1.1 「Top anchoring>Slbling」選為「ServerPort_GroupBox:TGroupBox」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選中間的。**  
+        + **2.2.1.2 「Left anchoring>Slbling」選為「ServerPort_GroupBox:TGroupBox」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**  
+        + **2.2.1.3 「Right anchoring>Slbling」選為「ServerPort_GroupBox:TGroupBox」。勾選「Right anchoring>Enable」為打勾。選擇「Right anchoring」右側三個鈕選右邊的。**  
+        + **2.2.1.4 「Border space」正中間那格填「10」。**
+        + **2.2.1.5 設定完後關閉Anchors設定視窗。**
+      + **1.2.2 設定「Name」為「ServerPort_Edit」。**
+      + **1.2.3 設定「Text」為「18002」。**
+   
 
 
 
