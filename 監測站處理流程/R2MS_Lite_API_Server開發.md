@@ -180,6 +180,12 @@
     設計時可考慮使用TPanel元件進行響應式設計，不想看到分隔線就把BevelOuter設為bvNone。
 
 ### 開發紀錄(排版常用技巧)
++ 不寫程式的做法: 
+  + Align:
+    + 讓元件對齊父層元件的邊界
+  + Anchors:
+    + 強控邊界，被選定的父層元件會配合排版，左右同時被控制時，用起來有點複雜且麻煩。用的好效果應該很不錯。
+    + 但某些設定會影響父層甚至其他元件排版，用起來要很小心。
 + GroupBox1+Edit1
   ```
     procedure TForm1.Edit1Resize(Sender: TObject);
