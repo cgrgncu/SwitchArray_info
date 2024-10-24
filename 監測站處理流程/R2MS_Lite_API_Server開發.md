@@ -67,41 +67,54 @@
       ```pascal
         procedure TForm1.StatusBar1Resize(Sender: TObject);
         var
-          temp_remain_width:Integer;
+        temp_remain_width:Integer;
         begin
-          temp_remain_width:=StatusBar1.Width;
-          //--
-          // 先配置最後一格，希望是200
-          StatusBar1.Panels.Items[4].Width:=200;
-          // 計算剩餘空間
-          temp_remain_width:=temp_remain_width-StatusBar1.Panels.Items[4].Width;
-          //--
-          // 配置隔壁一格，希望是100
-          StatusBar1.Panels.Items[3].Width:=100;
-          if (temp_remain_width < StatusBar1.Panels.Items[3].Width) Then begin
-            StatusBar1.Panels.Items[3].Width:=temp_remain_width;
-          end;
-          // 計算剩餘空間
-          temp_remain_width:=temp_remain_width-StatusBar1.Panels.Items[3].Width;
-          //--
-          // 配置隔壁一格，希望是100
-          StatusBar1.Panels.Items[2].Width:=100;
-          if (temp_remain_width < StatusBar1.Panels.Items[2].Width) Then begin
-            StatusBar1.Panels.Items[2].Width:=temp_remain_width;
-          end;
-          // 計算剩餘空間
-          temp_remain_width:=temp_remain_width-StatusBar1.Panels.Items[2].Width;
-          //--
-          // 配置隔壁一格，希望是100
-          StatusBar1.Panels.Items[1].Width:=100;
-          if (temp_remain_width < StatusBar1.Panels.Items[1].Width) Then begin
-            StatusBar1.Panels.Items[1].Width:=temp_remain_width;
-          end;
-          // 計算剩餘空間
-          temp_remain_width:=temp_remain_width-StatusBar1.Panels.Items[1].Width;
-          //--
-          // 最前方一格享受最大空間
-          StatusBar1.Panels.Items[0].Width:=temp_remain_width;
-          //--
+        temp_remain_width:=StatusBar1.Width;
+        //--
+        // 先配置最後一格，希望是200
+        StatusBar1.Panels.Items[4].Width:=200;
+        // 計算剩餘空間
+        temp_remain_width:=temp_remain_width-StatusBar1.Panels.Items[4].Width;
+        //--
+        // 配置隔壁一格，希望是100
+        StatusBar1.Panels.Items[3].Width:=100;
+        if (temp_remain_width < StatusBar1.Panels.Items[3].Width) Then begin
+        StatusBar1.Panels.Items[3].Width:=temp_remain_width;
+        end;
+        // 計算剩餘空間
+        temp_remain_width:=temp_remain_width-StatusBar1.Panels.Items[3].Width;
+        //--
+        // 配置隔壁一格，希望是100
+        StatusBar1.Panels.Items[2].Width:=100;
+        if (temp_remain_width < StatusBar1.Panels.Items[2].Width) Then begin
+        StatusBar1.Panels.Items[2].Width:=temp_remain_width;
+        end;
+        // 計算剩餘空間
+        temp_remain_width:=temp_remain_width-StatusBar1.Panels.Items[2].Width;
+        //--
+        // 配置隔壁一格，希望是100
+        StatusBar1.Panels.Items[1].Width:=100;
+        if (temp_remain_width < StatusBar1.Panels.Items[1].Width) Then begin
+        StatusBar1.Panels.Items[1].Width:=temp_remain_width;
+        end;
+        // 計算剩餘空間
+        temp_remain_width:=temp_remain_width-StatusBar1.Panels.Items[1].Width;
+        //--
+        // 最前方一格享受最大空間
+        StatusBar1.Panels.Items[0].Width:=temp_remain_width;
+        //--
         end;
       ```
+6. 設定時鐘
+    + **6.1 拖拉一個「TTimer」到「Form1」中。預設名稱會是「Timer1」。**
+    + 6.2 設定「TTimer」的「Event」。
+    + **6.2.1 設定「TTimer」的「Event」頁面下「OnTimer」為如下程式碼。**
+    ```pascal
+        procedure TForm1.Timer1Timer(Sender: TObject);
+        var
+          temp_str: AnsiString;
+        begin
+          temp_str:=FormatDateTime('yyyy-mm-dd HH:MM:SS' ,Now());
+          StatusBar1.Panels.Items[4].Text:=temp_str;
+        end;
+    ```
