@@ -283,26 +283,56 @@
       + **4.2.2 設定「Name」為「StartServer_Button」。**
       + **4.2.3 設定「Caption」為「按我啟動」。**
 5. API List:
-    + **5.1 拖拉一個「Standard>TGroupBox」到「Web Server」標籤頁(物件名稱為「TabSheet3」)。預設名稱會是「GroupBox1」。**  
+    + **5.1 拖拉一個「Common Controls>TPageControl」到「Web Server」標籤頁(物件名稱為「TabSheet3」)。預設名稱會是「PageControl1」。**  
       + **5.1.1 設定「Anchors」。**  
         + **5.1.1.1 「Top anchoring>Slbling」選為「TabSheet3:TTabSheet」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選上面的。**
         + **5.1.1.2 「Left anchoring>Slbling」選為「ServerStatus_GroupBox:TGroupBox」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選右邊的。**
         + **5.1.1.2 「Right anchoring>Slbling」選為「TabSheet3:TTabSheet」。選擇「Right anchoring>Enable」為打勾。選擇「Left anchoring」右側三個鈕選右邊的。**  
         + **5.1.1.3 「Border space」正中間那格填「10」。**
         + **5.1.1.4 設定完後關閉Anchors設定視窗。** 
-      + **5.1.2 設定「Caption」為「API List:」。**
       + **5.1.3 設定「Height」為「160」。**
-      + **5.1.4 設定「Name」為「APIList_GroupBox」。**
-    + **3.2 拖拉一個「Standard>TLabel」到「ServerStatus_GroupBox」中。預設名稱會是「Label1」。**
-      + **3.2.1 設定「Anchors」。**  
-        + **3.2.1.1 「Top anchoring>Slbling」選為「ServerStatus_GroupBox:TGroupBox」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選中間的。**  
-        + **3.2.1.2 「Left anchoring>Slbling」選為「ServerStatus_GroupBox:TGroupBox」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**  
-        + **3.2.1.3 「Right anchoring>Slbling」選為「ServerStatus_GroupBox:TGroupBox」。勾選「Right anchoring>Enable」為打勾。選擇「Right anchoring」右側三個鈕選右邊的。**  
-        + **3.2.1.4 「Border space」正中間那格填「10」。**
-        + **3.2.1.5 設定完後關閉Anchors設定視窗。**
-      + **3.2.2 設定「Name」為「ServerStatus_Label」。**
-      + **3.2.3 設定「Caption」為「伺服器狀態: 未知」。**
-
+      + **5.1.4 設定「Name」為「APIList_PageControl」。**  
+      + **5.1.4 用右鍵新增頁面，新增個4頁。**
+        + **5.1.4.1 第1頁設定「Caption」為「hello」，「Name」為「API_hello_TabSheet」。**
+        + **5.1.4.2 第2頁設定「Caption」為「SwitchArray」，「Name」為「API_SwitchArray_TabSheet」。**
+        + **5.1.4.3 第3頁設定「Caption」為「DMM」，「Name」為「API_DMM_TabSheet」。**
+        + **5.1.4.4 第4頁設定「Caption」為「PSU」，「Name」為「API_PSU_TabSheet」。**  
+    + **5.2 拖拉一個「Standard>TLabel」到「API_hello_TabSheet」中。預設名稱會是「Label1」。**
+      + **5.2.1 設定「Anchors」。**  
+        + **5.2.1.1 「Top anchoring>Slbling」選為「API_hello_TabSheet:TTabSheet」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選上面的。**  
+        + **5.2.1.2 「Left anchoring>Slbling」選為「API_hello_TabSheet:TTabSheet」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**  
+        + **5.2.1.3 「Border space」正中間那格填「10」。上面那格填「17」，左邊那格填「20」**  
+        + **5.2.1.4 設定完後關閉Anchors設定視窗。**
+      + **5.2.2 設定「Name」為「hello_API_Label」。**
+      + **5.2.3 設定「Caption」為「API:」。**
+    + **5.3 拖拉一個「Standard>TEdit」到「API_hello_TabSheet」中。預設名稱會是「Edit1」。**
+      + **5.3.1 設定「Anchors」。**  
+        + **5.3.1.1 「Top anchoring>Slbling」選為「API_hello_TabSheet:TTabSheet」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選上面的。**
+        + **5.3.1.2 「Left anchoring>Slbling」選為「hello_API_Label:TLabel」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選右邊的。**
+        + **5.3.1.2 「Right anchoring>Slbling」選為「API_hello_TabSheet:TTabSheet」。選擇「Right anchoring>Enable」為打勾。選擇「Left anchoring」右側三個鈕選右邊的。**  
+        + **5.3.1.4 「Border space」正中間那格填「10」。上面那格填「15」，右邊那格填「20」**  
+        + **5.3.1.5 設定完後關閉Anchors設定視窗。**
+      + **5.3.2 設定「Name」為「hello_API_Edit」。**
+      + **5.3.3 設定「ReadOnly」為「true」。**
+      + **5.3.4 設定「text」為「api/v1/hello」。**
+    + **5.4 拖拉一個「Standard>TLabel」到「API_hello_TabSheet」中。預設名稱會是「Label1」。**
+      + **5.4.1 設定「Anchors」。**  
+        + **5.4.1.1 「Top anchoring>Slbling」選為「hello_API_Edit:TEdit」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選下面的。**  
+        + **5.4.1.2 「Left anchoring>Slbling」選為「API_hello_TabSheet:TTabSheet」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**  
+        + **5.4.1.3 「Border space」正中間那格填「10」。上面那格填「7」，左邊那格填「20」**  
+        + **5.4.1.4 設定完後關閉Anchors設定視窗。**
+      + **5.4.2 設定「Name」為「hello_API_URL_Label」。**
+      + **5.4.3 設定「Caption」為「API URL:」。**
+    + **5.5 拖拉一個「Standard>TEdit」到「API_hello_TabSheet」中。預設名稱會是「Edit1」。**
+      + **5.5.1 設定「Anchors」。**  
+        + **5.5.1.1 「Top anchoring>Slbling」選為「hello_API_Edit:TEdit」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選下面的。**
+        + **5.5.1.2 「Left anchoring>Slbling」選為「hello_API_URL_Label:TLabel」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選右邊的。**
+        + **5.5.1.2 「Right anchoring>Slbling」選為「API_hello_TabSheet:TTabSheet」。選擇「Right anchoring>Enable」為打勾。選擇「Left anchoring」右側三個鈕選右邊的。**  
+        + **5.5.1.4 「Border space」正中間那格填「10」。上面那格填「5」，右邊那格填「20」**  
+        + **5.5.1.5 設定完後關閉Anchors設定視窗。**
+      + **5.5.2 設定「Name」為「hello_API_URL_Edit」。**
+      + **5.3.3 設定「ReadOnly」為「true」。**
+      + **5.3.4 設定「text」為「http://127.0.0.1:18002/api/v1/hello」。**
 ```
 procedure TForm1.IdHTTPServer1CommandGet(AContext: TIdContext;
   ARequestInfo: TIdHTTPRequestInfo; AResponseInfo: TIdHTTPResponseInfo);
