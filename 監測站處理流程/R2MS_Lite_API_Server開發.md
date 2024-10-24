@@ -303,7 +303,88 @@
       + **3.2.2 設定「Name」為「ServerStatus_Label」。**
       + **3.2.3 設定「Caption」為「伺服器狀態: 未知」。**
 
-
+```
+procedure TForm1.IdHTTPServer1CommandGet(AContext: TIdContext;
+  ARequestInfo: TIdHTTPRequestInfo; AResponseInfo: TIdHTTPResponseInfo);
+var
+  api_return_json_str: AnsiString;
+begin
+  //--------------------------------------------------------------------------
+  Log_Memo.Lines.Add('==============================');
+  Log_Memo.Lines.Add(FormatDateTime('yyyy-mm-dd HH:MM:SS',Now()));
+  Log_Memo.Lines.Add('IdHTTPServer1CommandGet:');
+  Log_Memo.Lines.Add('RawHTTPCommand: '+ARequestInfo.RawHTTPCommand);
+  Log_Memo.Lines.Add('Command: '+ARequestInfo.Command);
+  Log_Memo.Lines.Add('URI: '+ARequestInfo.URI);
+  Log_Memo.Lines.Add('RemoteIP: '+ARequestInfo.RemoteIP);
+  Log_Memo.Lines.Add('--');
+  //--------------------------------------------------------------------------
+  //--------------------------------------------------------------------------
+  // 簡單的API回應設計
+  //--
+  // 只回應以下條件:
+  // 1. GET 方法
+  // 2. API命名
+  //--
+  // 回應方式:
+  //成功時回傳JSON資料:
+  //{
+  //"status": "success",
+  //"data": { ... },
+  //"message": null
+  //}
+  // 錯誤時回傳JSON資料:
+  //{
+  //"status": "error",
+  //"data": null,
+  //"message": "Error xxx has occurred"
+  //}
+  //--
+  // 實際狀況:
+  // 成功時回傳JSON資料:
+  // {"status":"success","data":"Hello!","message":null}
+  // 錯誤時回傳JSON資料:
+  // {"status":"error","data":null,"message":"錯誤!只接受GET方法!"}
+  // {"status":"error","data":null,"message":"錯誤!不合法的API!"}
+  //--------------------------------------------------------------------------
+  // 1. GET 方法
+  if (CompareStr(ARequestInfo.Command,'GET')=0) Then begin//命令是GET方法時
+    //不做任何事
+  end
+  else begin
+    api_return_json_str:='{"status":"error","data":null,"message":"錯誤!只接受GET方法!"}';
+    Log_Memo.Lines.Add('api_return_json_str:');
+    Log_Memo.Lines.Add(api_return_json_str);
+    AResponseInfo.ContentType:='text/plain';
+    AResponseInfo.CharSet:='utf-8';
+    AResponseInfo.ContentStream:=TStringStream.Create(api_return_json_str, TEncoding.UTF8);
+    Log_Memo.Lines.Add('==============================');
+    Exit;
+  end;
+  //--------------------------------------------------------------------------
+  // 2.1. API命名: /api/v1/hello
+  if (CompareStr(ARequestInfo.URI,hello_API_Edit.Text)=0) Then begin//API正確時
+    api_return_json_str:='{"status":"success","data":"Hello!","message":null}';
+    Log_Memo.Lines.Add('api_return_json_str:');
+    Log_Memo.Lines.Add(api_return_json_str);
+    AResponseInfo.ContentType:='text/plain';
+    AResponseInfo.CharSet:='utf-8';
+    AResponseInfo.ContentStream:=TStringStream.Create(api_return_json_str, TEncoding.UTF8);
+    Log_Memo.Lines.Add('==============================');
+    Exit;
+  end
+  else begin
+    api_return_json_str:='{"status":"error","data":null,"message":"錯誤!不合法的API!"} ';
+    Log_Memo.Lines.Add('api_return_json_str:');
+    Log_Memo.Lines.Add(api_return_json_str);
+    AResponseInfo.ContentType:='text/plain';
+    AResponseInfo.CharSet:='utf-8';
+    AResponseInfo.ContentStream:=TStringStream.Create(api_return_json_str, TEncoding.UTF8);
+    Log_Memo.Lines.Add('==============================');
+    Exit;
+  end;
+end; 
+```
 
 
 
