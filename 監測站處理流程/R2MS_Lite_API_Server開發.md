@@ -143,7 +143,7 @@
         end;  
         ```  
 8. 設定分頁  
-    + **8.1 拖拉一個「TPageControl」到「Form1」中。預設名稱會是「PageControl1」。**  
+    + **8.1 拖拉一個「Common Controls>TPageControl」到「Form1」中。預設名稱會是「PageControl1」。**  
     + **8.2 設定「PageControl1」的「Properties」頁面下「Align」選為「alClient」。**  
     + **8.3 用右鍵新增頁面，可以先新增個10頁之後再刪掉不要用的。**  
 
