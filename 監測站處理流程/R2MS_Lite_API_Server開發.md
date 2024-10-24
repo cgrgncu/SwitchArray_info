@@ -63,7 +63,7 @@
       + **5.2.4 檢查「StatusBar1」的「Properties」頁面下「SimplePanel」為「false」。  
         + 5.2.4.1 說明:要使前面設定的TStatusPanels有效，須將「SimplePanel」設為「false」。  
     + 5.3 設定「TStatusBar」的「Event」。  
-      + 5.3.1 設定「StatusBar1」的「Event」頁面下「OnResize」為如下程式碼。
+      + **5.3.1 設定「StatusBar1」的「Event」頁面下「OnResize」為如下程式碼。**  
       ```pascal
         procedure TForm1.StatusBar1Resize(Sender: TObject);
         var
