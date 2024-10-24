@@ -237,8 +237,9 @@
         + **2.2.1.3 「Right anchoring>Slbling」選為「ServerPort_GroupBox:TGroupBox」。勾選「Right anchoring>Enable」為打勾。選擇「Right anchoring」右側三個鈕選右邊的。**  
         + **2.2.1.4 「Border space」正中間那格填「10」。**
         + **2.2.1.5 設定完後關閉Anchors設定視窗。**
-      + **1.2.2 設定「Name」為「ServerPort_Edit」。**
-      + **1.2.3 設定「Text」為「18002」。**
+      + **2.2.2 設定「Name」為「ServerPort_Edit」。**
+      + **2.2.3 設定「NumbersOnly」為「True」。**
+      + **2.2.4 設定「Text」為「18002」。**
    
 
 
