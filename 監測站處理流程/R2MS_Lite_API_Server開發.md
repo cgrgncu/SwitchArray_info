@@ -260,7 +260,28 @@
         + **3.2.1.5 設定完後關閉Anchors設定視窗。**
       + **3.2.2 設定「Name」為「ServerStatus_Label」。**
       + **3.2.3 設定「Caption」為「伺服器狀態: 未知」。**
-
+4. 啟動按鈕:
+    + **4.1 拖拉一個「Standard>TPanel」到「Web Server」標籤頁(物件名稱為「TabSheet3」)。預設名稱會是「Panel1」。**  
+      + **4.1.1 設定「Anchors」。**  
+        + **4.1.1.1 「Top anchoring>Slbling」選為「ServerStatus_GroupBox:TGroupBox」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選下面的。**
+        + **4.1.1.2 「Left anchoring>Slbling」選為「ServerPort_GroupBox:TGroupBox」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選右邊的。**  
+        + **4.1.1.3 「Border space」正中間那格填「10」。**
+        + **4.1.1.4 設定完後關閉Anchors設定視窗。** 
+      + **4.1.2 設定「BevelOuter」為「bvNone」。**
+      + **4.1.2 設定「Caption」為「」。就是空白。**
+      + **4.1.3 設定「Height」為「80」。**
+      + **4.1.4 設定「Name」為「StartServer_Panel」。**
+      + **4.1.5 設定「Width」為「240」。**
+    + **4.2 拖拉一個「Standard>TButton」到「StartServer_Panel」中。預設名稱會是「Button1」。**
+      + **4.2.1 設定「Anchors」。**  
+        + **4.2.1.1 「Top anchoring>Slbling」選為「StartServer_Panel:TPanel」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選上面的。**  
+        + **4.2.1.2 「Left anchoring>Slbling」選為「StartServer_Panel:TPanel」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**  
+        + **4.2.1.3 「Right anchoring>Slbling」選為「StartServer_Panel:TPanel」。勾選「Right anchoring>Enable」為打勾。選擇「Right anchoring」右側三個鈕選右邊的。**
+        + **4.2.1.3 「Right anchoring>Slbling」選為「StartServer_Panel:TPanel」。勾選「Bottom anchoring>Enable」為打勾。選擇「Right anchoring」右側三個鈕選下面的。**  
+        + **4.2.1.4 「Border space」正中間那格填「10」。**
+        + **4.2.1.5 設定完後關閉Anchors設定視窗。**
+      + **4.2.2 設定「Name」為「StartServer_Button」。**
+      + **4.2.3 設定「Caption」為「按我啟動」。**
 
 
 
