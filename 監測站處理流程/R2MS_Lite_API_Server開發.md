@@ -197,3 +197,38 @@
       Edit1.Width:=temp_remain_width-Edit1.Left-15;
     end; 
   ```
+### 開發紀錄(Web Server頁面)
++ 放一個「Standard>GroupBox1」，設定「Anchors」。
+  + 「Top anchoring>Slbling」選為「TabSheet3:TTabSheet」。再勾選「Top anchoring>Enable」為打勾。
+  + 「Left anchoring>Slbling」選為「TabSheet3:TTabSheet」。再勾選「Left anchoring>Enable」為打勾。
+  + 「Border space」正中間那格填「10」。
+  + 設定完後關閉Anchors設定視窗。
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
