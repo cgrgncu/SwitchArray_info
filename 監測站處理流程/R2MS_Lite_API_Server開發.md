@@ -14,7 +14,7 @@
 ### 備忘
 + 預設運作平台: Default，應該就是win10 64bit。
 
-## 開發紀錄
+## 開發紀錄(基礎框架部分)
 1. 建立新專案。  
     + **1.1 按下「Project>New Project ...」。**  
     + **1.2 選擇「Project>Application 」之後按「OK」。**  
