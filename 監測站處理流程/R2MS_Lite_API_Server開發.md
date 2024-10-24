@@ -64,7 +64,7 @@
         + 5.2.4.1 說明:要使前面設定的TStatusPanels有效，須將「SimplePanel」設為「false」。  
     + 5.3 設定「TStatusBar」的「Event」。  
       + **5.3.1 設定「StatusBar1」的「Event」頁面下「OnResize」為如下程式碼。**  
-      ```pascal
+      ```pascal  
         procedure TForm1.StatusBar1Resize(Sender: TObject);
         var
         temp_remain_width:Integer;
@@ -104,12 +104,12 @@
         StatusBar1.Panels.Items[0].Width:=temp_remain_width;
         //--
         end;
-      ```
+      ```  
 6. 設定時鐘
-    + **6.1 拖拉一個「TTimer」到「Form1」中。預設名稱會是「Timer1」。**
-    + 6.2 設定「TTimer」的「Event」。
-    + **6.2.1 設定「TTimer」的「Event」頁面下「OnTimer」為如下程式碼。**
-    ```pascal
+    + **6.1 拖拉一個「System>TTimer」到「Form1」中。預設名稱會是「Timer1」。**  
+    + 6.2 設定「TTimer」的「Event」。  
+    + **6.2.1 設定「TTimer」的「Event」頁面下「OnTimer」為如下程式碼。**  
+    ```pascal  
         procedure TForm1.Timer1Timer(Sender: TObject);
         var
           temp_str: AnsiString;
@@ -117,23 +117,23 @@
           temp_str:=FormatDateTime('yyyy-mm-dd HH:MM:SS' ,Now());
           StatusBar1.Panels.Items[4].Text:=temp_str;
         end;
-    ```
-7. 設計主選單
-    + **7.1 拖拉一個「TMainMenu」到「Form1」中。預設名稱會是「MainMenu1」。**
-    + **7.2 點兩下元件，進入編輯模式，建立第一層第一個選單「說明(&H)」，「Caption」設為「說明(&H)」，「Name」設為「MainMenu1_1」。**
-    + **7.3 繼續建立子選單「說明(&H)->關於我(&A)」，「Caption」設為「關於我(&A)」，「Name」設為「MainMenu1_1_1」。**
-      + 7.3.1 設定「MainMenu1_1_1」的「Event」。
-        + **8.3.1.1 原始碼最前面部分先宣告為如下程式碼。**
-        ```pascal
+    ```  
+7. 設計主選單  
+    + **7.1 拖拉一個「Standard>TMainMenu」到「Form1」中。預設名稱會是「MainMenu1」。**  
+    + **7.2 點兩下元件，進入編輯模式，建立第一層第一個選單「說明(&H)」，「Caption」設為「說明(&H)」，「Name」設為「MainMenu1_1」。**  
+    + **7.3 繼續建立子選單「說明(&H)->關於我(&A)」，「Caption」設為「關於我(&A)」，「Name」設為「MainMenu1_1_1」。**  
+      + 7.3.1 設定「MainMenu1_1_1」的「Event」。  
+        + **7.3.1.1 原始碼最前面部分先宣告為如下程式碼。**  
+        ```pascal  
         var
           Form1: TForm1;
           //--
           //Global Variable add by HsiupoYeh
           version_str: AnsiString = 'v20241024a';
           //--  
-```    
-        + **8.3.1.2 設定「MainMenu1_1_1」的「Event」頁面下「OnClick」為如下程式碼。**
-        ```pascal
+        ```  
+        + **7.3.1.2 設定「MainMenu1_1_1」的「Event」頁面下「OnClick」為如下程式碼。**  
+        ```pascal  
         procedure TForm1.MainMenu1_1_1Click(Sender: TObject);
         var
           temp_str: AnsiString;
@@ -141,4 +141,40 @@
           temp_str:='作者: HsiuPoYeh.'+#13#10+'程式版本: '+version_str;
           Application.MessageBox(PChar(temp_str),'關於我',64);
         end;  
-        ```
+        ```  
+8. 設定分頁  
+    + **8.1 拖拉一個「TPageControl」到「Form1」中。預設名稱會是「PageControl1」。**  
+    + **8.2 設定「PageControl1」的「Properties」頁面下「Align」選為「alClient」。**  
+    + **8.3 用右鍵新增頁面，可以先新增個10頁之後再刪掉不要用的。**  
+
+    >以上頁面未來都可以調整順序。  
+
+    + **8.4.把新增的第1頁「TabPage1」的「Properties」頁面下「Caption」設定為「運行紀錄」。**  
+    + **8.4.1 放上一個TMemo。設定「Properties」頁面下「Name」設定為「Log_Memo」。**  
+    + **8.4.1.1 設定「Log_Memo」的「Properties」頁面下「Align」設定為「AlClient」。**  
+    + **8.4.1.2 設定「Log_Memo」的「Properties」頁面下「Lines」的內容清空。**  
+    + **8.4.1.3 設定「Log_Memo」的「Properties」頁面下「ReadOnly」設定為「true」。**  
+    + **8.4.1.3 設定「Log_Memo」的「Properties」頁面下「ScrollBars」設定為「ssBoth」。**  
+    + **8.4.2 放上一個TMemo。設定「Properties」頁面下「Name」設定為「CammaText_Memo」。**  
+    + **8.4.2.1 設定「CammaText_Memo」的「Properties」頁面下「Visible」設定為「false」。**  
+    + **8.4.2.2 「CammaText_Memo」位置和尺寸隨意放，開發時期看得清楚就好。**  
+    
+     >以上是第1頁。  
+    
+    + **8.5.把新增的第2頁「TabPage2」的「Properties」頁面下「Caption」設定為「更新紀錄」。**  
+    + **8.5.1 放上一個TMemo。設定「Properties」頁面下「Name」設定為「Update_Memo」。**  
+    + **8.5.1.1 設定「Log_Memo」的「Properties」頁面下「Align」設定為「AlClient」。**  
+    + **8.5.1.2 設定「Log_Memo」的「Properties」頁面下「Lines」的內容。清空後填入版本紀錄。**  
+    ```pascal  
+    v20241024a:
+    初版。
+    ```  
+    
+    >以上是第2頁。  
+
+    + **8.6.把新增的第3頁「TabPage3」的「Properties」頁面下「Caption」設定為「Web Server」。**  
+    + **8.6.1 設定「TabPage3」的「Properties」頁面下「PageIndex」設定為「0」。**  
+    + **8.6.2 開始進行設計...**  
+
+    >以上是第3頁。單獨修改一個頁面的PageIndex會影響所有的頁面，可能使其他頁面的PageIndex值改變。
+    設計時可考慮使用TPanel元件進行響應式設計，不想看到分隔線就把BevelOuter設為bvNone。
