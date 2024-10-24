@@ -457,7 +457,10 @@
 
 
 
-
+if RunCommand('cmd.exe', ['/c', 'PowerShell '+paramstr(2)],s) then begin
+        writeln(s);
+        writeln('{"Return_Code":"0"}');
+      end;     
 
 
 
