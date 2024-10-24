@@ -201,138 +201,176 @@
 1. Server IP Address:  
     + **1.1 拖拉一個「Standard>TGroupBox」到「Web Server」標籤頁(物件名稱為「TabSheet3」)。預設名稱會是「GroupBox1」。**  
       + **1.1.1 設定「Anchors」。**  
-        + **1.1.1.1 「Top anchoring>Slbling」選為「TabSheet3:TTabSheet」。維持「Top anchoring>Enable」為打勾。維持「Top anchoring」右側三個鈕選上面的。**
+        + **1.1.1.1 「Top anchoring>Slbling」選為「TabSheet3:TTabSheet」。維持「Top anchoring>Enable」為打勾。維持「Top anchoring」右側三個鈕選上面的。**  
         + **1.1.1.2 「Left anchoring>Slbling」選為「TabSheet3:TTabSheet」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**  
-        + **1.1.1.3 「Border space」正中間那格填「10」。**
-        + **1.1.1.4 設定完後關閉Anchors設定視窗。** 
-      + **1.1.2 設定「Caption」為「Server IP Address:」。**
-      + **1.1.3 設定「Height」為「80」。**
-      + **1.1.4 設定「Name」為「ServerIPAddress_GroupBox」。**
-      + **1.1.5 設定「Width」為「240」。**
-    + **1.2 拖拉一個「Standard>TEdit」到「ServerIPAddress_GroupBox」中。預設名稱會是「Edit1」。**
+        + **1.1.1.3 「Border space」正中間那格填「10」。**  
+        + **1.1.1.4 設定完後關閉Anchors設定視窗。**  
+      + **1.1.2 設定「Caption」為「Server IP Address:」。**  
+      + **1.1.3 設定「Height」為「80」。**  
+      + **1.1.4 設定「Name」為「ServerIPAddress_GroupBox」。**  
+      + **1.1.5 設定「Width」為「240」。**  
+    + **1.2 拖拉一個「Standard>TEdit」到「ServerIPAddress_GroupBox」中。預設名稱會是「Edit1」。**  
       + **1.2.1 設定「Anchors」。**  
         + **1.2.1.1 「Top anchoring>Slbling」選為「ServerIPAddress_GroupBox:TGroupBox」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選中間的。**  
         + **1.2.1.2 「Left anchoring>Slbling」選為「ServerIPAddress_GroupBox:TGroupBox」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**  
         + **1.2.1.3 「Right anchoring>Slbling」選為「ServerIPAddress_GroupBox:TGroupBox」。勾選「Right anchoring>Enable」為打勾。選擇「Right anchoring」右側三個鈕選右邊的。**  
-        + **1.2.1.4 「Border space」正中間那格填「10」。**
-        + **1.2.1.5 設定完後關閉Anchors設定視窗。**
-      + **1.2.2 設定「Name」為「ServerIPAddress_Edit」。**
-      + **1.2.3 設定「ReadOnly」為「True」。**
-      + **1.2.4 設定「Text」為「127.0.0.1」。**
+        + **1.2.1.4 「Border space」正中間那格填「10」。**  
+        + **1.2.1.5 設定完後關閉Anchors設定視窗。**  
+      + **1.2.2 設定「Name」為「ServerIPAddress_Edit」。**  
+      + **1.2.3 設定「ReadOnly」為「True」。**  
+      + **1.2.4 設定「Text」為「127.0.0.1」。**  
 2. Server Port:
     + **2.1 拖拉一個「Standard>TGroupBox」到「Web Server」標籤頁(物件名稱為「TabSheet3」)。預設名稱會是「GroupBox1」。**  
       + **2.1.1 設定「Anchors」。**  
-        + **2.1.1.1 「Top anchoring>Slbling」選為「ServerIPAddress_GroupBox:TGroupBox」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選下面的。**
+        + **2.1.1.1 「Top anchoring>Slbling」選為「ServerIPAddress_GroupBox:TGroupBox」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選下面的。**  
         + **2.1.1.2 「Left anchoring>Slbling」選為「TabSheet3:TTabSheet」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**  
-        + **2.1.1.3 「Border space」正中間那格填「10」。**
-        + **2.1.1.4 設定完後關閉Anchors設定視窗。** 
-      + **2.1.2 設定「Caption」為「Server Port:」。**
-      + **2.1.3 設定「Height」為「80」。**
-      + **2.1.4 設定「Name」為「ServerPort_GroupBox」。**
-      + **2.1.5 設定「Width」為「240」。**
-    + **2.2 拖拉一個「Standard>TEdit」到「ServerPort_GroupBox」中。預設名稱會是「Edit1」。**
+        + **2.1.1.3 「Border space」正中間那格填「10」。**  
+        + **2.1.1.4 設定完後關閉Anchors設定視窗。**  
+      + **2.1.2 設定「Caption」為「Server Port:」。**  
+      + **2.1.3 設定「Height」為「80」。**  
+      + **2.1.4 設定「Name」為「ServerPort_GroupBox」。**  
+      + **2.1.5 設定「Width」為「240」。**  
+    + **2.2 拖拉一個「Standard>TEdit」到「ServerPort_GroupBox」中。預設名稱會是「Edit1」。**  
       + **2.2.1 設定「Anchors」。**  
         + **2.2.1.1 「Top anchoring>Slbling」選為「ServerPort_GroupBox:TGroupBox」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選中間的。**  
         + **2.2.1.2 「Left anchoring>Slbling」選為「ServerPort_GroupBox:TGroupBox」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**  
         + **2.2.1.3 「Right anchoring>Slbling」選為「ServerPort_GroupBox:TGroupBox」。勾選「Right anchoring>Enable」為打勾。選擇「Right anchoring」右側三個鈕選右邊的。**  
-        + **2.2.1.4 「Border space」正中間那格填「10」。**
-        + **2.2.1.5 設定完後關閉Anchors設定視窗。**
-      + **2.2.2 設定「Name」為「ServerPort_Edit」。**
-      + **2.2.3 設定「NumbersOnly」為「True」。**
-      + **2.2.4 設定「Text」為「18002」。**
+        + **2.2.1.4 「Border space」正中間那格填「10」。**  
+        + **2.2.1.5 設定完後關閉Anchors設定視窗。**  
+      + **2.2.2 設定「Name」為「ServerPort_Edit」。**  
+      + **2.2.3 設定「NumbersOnly」為「True」。**  
+      + **2.2.4 設定「Text」為「18002」。**  
 3. Server Status:
     + **3.1 拖拉一個「Standard>TGroupBox」到「Web Server」標籤頁(物件名稱為「TabSheet3」)。預設名稱會是「GroupBox1」。**  
       + **3.1.1 設定「Anchors」。**  
-        + **3.1.1.1 「Top anchoring>Slbling」選為「TabSheet3:TTabSheet」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選上面的。**
+        + **3.1.1.1 「Top anchoring>Slbling」選為「TabSheet3:TTabSheet」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選上面的。**  
         + **3.1.1.2 「Left anchoring>Slbling」選為「ServerIPAddress_GroupBox:TGroupBox」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選右邊的。**  
-        + **3.1.1.3 「Border space」正中間那格填「10」。**
-        + **3.1.1.4 設定完後關閉Anchors設定視窗。** 
-      + **3.1.2 設定「Caption」為「Server Status:」。**
-      + **3.1.3 設定「Height」為「80」。**
-      + **3.1.4 設定「Name」為「ServerStatus_GroupBox」。**
-      + **3.1.5 設定「Width」為「240」。**
-    + **3.2 拖拉一個「Standard>TLabel」到「ServerStatus_GroupBox」中。預設名稱會是「Label1」。**
+        + **3.1.1.3 「Border space」正中間那格填「10」。**  
+        + **3.1.1.4 設定完後關閉Anchors設定視窗。**  
+      + **3.1.2 設定「Caption」為「Server Status:」。**  
+      + **3.1.3 設定「Height」為「80」。**  
+      + **3.1.4 設定「Name」為「ServerStatus_GroupBox」。**  
+      + **3.1.5 設定「Width」為「240」。**  
+    + **3.2 拖拉一個「Standard>TLabel」到「ServerStatus_GroupBox」中。預設名稱會是「Label1」。**  
       + **3.2.1 設定「Anchors」。**  
         + **3.2.1.1 「Top anchoring>Slbling」選為「ServerStatus_GroupBox:TGroupBox」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選中間的。**  
         + **3.2.1.2 「Left anchoring>Slbling」選為「ServerStatus_GroupBox:TGroupBox」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**  
         + **3.2.1.3 「Right anchoring>Slbling」選為「ServerStatus_GroupBox:TGroupBox」。勾選「Right anchoring>Enable」為打勾。選擇「Right anchoring」右側三個鈕選右邊的。**  
-        + **3.2.1.4 「Border space」正中間那格填「10」。**
-        + **3.2.1.5 設定完後關閉Anchors設定視窗。**
-      + **3.2.2 設定「Name」為「ServerStatus_Label」。**
-      + **3.2.3 設定「Caption」為「伺服器狀態: 未知」。**
+        + **3.2.1.4 「Border space」正中間那格填「10」。**  
+        + **3.2.1.5 設定完後關閉Anchors設定視窗。**  
+      + **3.2.2 設定「Name」為「ServerStatus_Label」。**  
+      + **3.2.3 設定「Caption」為「伺服器狀態: 未知」。**  
 4. 啟動按鈕:
     + **4.1 拖拉一個「Standard>TPanel」到「Web Server」標籤頁(物件名稱為「TabSheet3」)。預設名稱會是「Panel1」。**  
       + **4.1.1 設定「Anchors」。**  
-        + **4.1.1.1 「Top anchoring>Slbling」選為「ServerStatus_GroupBox:TGroupBox」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選下面的。**
+        + **4.1.1.1 「Top anchoring>Slbling」選為「ServerStatus_GroupBox:TGroupBox」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選下面的。**  
         + **4.1.1.2 「Left anchoring>Slbling」選為「ServerPort_GroupBox:TGroupBox」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選右邊的。**  
-        + **4.1.1.3 「Border space」正中間那格填「10」。**
-        + **4.1.1.4 設定完後關閉Anchors設定視窗。** 
-      + **4.1.2 設定「BevelOuter」為「bvNone」。**
-      + **4.1.2 設定「Caption」為「」。就是空白。**
-      + **4.1.3 設定「Height」為「80」。**
-      + **4.1.4 設定「Name」為「StartServer_Panel」。**
-      + **4.1.5 設定「Width」為「240」。**
-    + **4.2 拖拉一個「Standard>TButton」到「StartServer_Panel」中。預設名稱會是「Button1」。**
+        + **4.1.1.3 「Border space」正中間那格填「10」。**  
+        + **4.1.1.4 設定完後關閉Anchors設定視窗。**  
+      + **4.1.2 設定「BevelOuter」為「bvNone」。**  
+      + **4.1.2 設定「Caption」為「」。就是空白。**  
+      + **4.1.3 設定「Height」為「80」。**  
+      + **4.1.4 設定「Name」為「StartServer_Panel」。**  
+      + **4.1.5 設定「Width」為「240」。**  
+    + **4.2 拖拉一個「Standard>TButton」到「StartServer_Panel」中。預設名稱會是「Button1」。**  
       + **4.2.1 設定「Anchors」。**  
         + **4.2.1.1 「Top anchoring>Slbling」選為「StartServer_Panel:TPanel」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選上面的。**  
         + **4.2.1.2 「Left anchoring>Slbling」選為「StartServer_Panel:TPanel」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**  
-        + **4.2.1.3 「Right anchoring>Slbling」選為「StartServer_Panel:TPanel」。勾選「Right anchoring>Enable」為打勾。選擇「Right anchoring」右側三個鈕選右邊的。**
+        + **4.2.1.3 「Right anchoring>Slbling」選為「StartServer_Panel:TPanel」。勾選「Right anchoring>Enable」為打勾。選擇「Right anchoring」右側三個鈕選右邊的。**  
         + **4.2.1.3 「Right anchoring>Slbling」選為「StartServer_Panel:TPanel」。勾選「Bottom anchoring>Enable」為打勾。選擇「Right anchoring」右側三個鈕選下面的。**  
-        + **4.2.1.4 「Border space」正中間那格填「10」。**
-        + **4.2.1.5 設定完後關閉Anchors設定視窗。**
-      + **4.2.2 設定「Name」為「StartServer_Button」。**
-      + **4.2.3 設定「Caption」為「按我啟動」。**
+        + **4.2.1.4 「Border space」正中間那格填「10」。**  
+        + **4.2.1.5 設定完後關閉Anchors設定視窗。**  
+      + **4.2.2 設定「Name」為「ServerRunStop_Button」。**  
+      + **4.2.3 設定「Caption」為「按我啟動」。**  
 5. API List:
     + **5.1 拖拉一個「Common Controls>TPageControl」到「Web Server」標籤頁(物件名稱為「TabSheet3」)。預設名稱會是「PageControl1」。**  
       + **5.1.1 設定「Anchors」。**  
-        + **5.1.1.1 「Top anchoring>Slbling」選為「TabSheet3:TTabSheet」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選上面的。**
-        + **5.1.1.2 「Left anchoring>Slbling」選為「ServerStatus_GroupBox:TGroupBox」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選右邊的。**
+        + **5.1.1.1 「Top anchoring>Slbling」選為「TabSheet3:TTabSheet」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選上面的。**  
+        + **5.1.1.2 「Left anchoring>Slbling」選為「ServerStatus_GroupBox:TGroupBox」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選右邊的。**  
         + **5.1.1.2 「Right anchoring>Slbling」選為「TabSheet3:TTabSheet」。選擇「Right anchoring>Enable」為打勾。選擇「Left anchoring」右側三個鈕選右邊的。**  
-        + **5.1.1.3 「Border space」正中間那格填「10」。**
-        + **5.1.1.4 設定完後關閉Anchors設定視窗。** 
-      + **5.1.3 設定「Height」為「160」。**
+        + **5.1.1.3 「Border space」正中間那格填「10」。**  
+        + **5.1.1.4 設定完後關閉Anchors設定視窗。**   
+      + **5.1.3 設定「Height」為「160」。**  
       + **5.1.4 設定「Name」為「APIList_PageControl」。**  
-      + **5.1.4 用右鍵新增頁面，新增個4頁。**
-        + **5.1.4.1 第1頁設定「Caption」為「hello」，「Name」為「API_hello_TabSheet」。**
-        + **5.1.4.2 第2頁設定「Caption」為「SwitchArray」，「Name」為「API_SwitchArray_TabSheet」。**
-        + **5.1.4.3 第3頁設定「Caption」為「DMM」，「Name」為「API_DMM_TabSheet」。**
+      + **5.1.4 用右鍵新增頁面，新增個4頁。**  
+        + **5.1.4.1 第1頁設定「Caption」為「hello」，「Name」為「API_hello_TabSheet」。**  
+        + **5.1.4.2 第2頁設定「Caption」為「SwitchArray」，「Name」為「API_SwitchArray_TabSheet」。**  
+        + **5.1.4.3 第3頁設定「Caption」為「DMM」，「Name」為「API_DMM_TabSheet」。**  
         + **5.1.4.4 第4頁設定「Caption」為「PSU」，「Name」為「API_PSU_TabSheet」。**  
-    + **5.2 拖拉一個「Standard>TLabel」到「API_hello_TabSheet」中。預設名稱會是「Label1」。**
+    + **5.2 拖拉一個「Standard>TLabel」到「API_hello_TabSheet」中。預設名稱會是「Label1」。**  
       + **5.2.1 設定「Anchors」。**  
         + **5.2.1.1 「Top anchoring>Slbling」選為「API_hello_TabSheet:TTabSheet」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選上面的。**  
         + **5.2.1.2 「Left anchoring>Slbling」選為「API_hello_TabSheet:TTabSheet」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**  
         + **5.2.1.3 「Border space」正中間那格填「10」。上面那格填「17」，左邊那格填「20」**  
-        + **5.2.1.4 設定完後關閉Anchors設定視窗。**
-      + **5.2.2 設定「Name」為「hello_API_Label」。**
-      + **5.2.3 設定「Caption」為「API:」。**
-    + **5.3 拖拉一個「Standard>TEdit」到「API_hello_TabSheet」中。預設名稱會是「Edit1」。**
+        + **5.2.1.4 設定完後關閉Anchors設定視窗。**  
+      + **5.2.2 設定「Name」為「hello_API_Label」。**  
+      + **5.2.3 設定「Caption」為「API:」。**  
+    + **5.3 拖拉一個「Standard>TEdit」到「API_hello_TabSheet」中。預設名稱會是「Edit1」。**  
       + **5.3.1 設定「Anchors」。**  
-        + **5.3.1.1 「Top anchoring>Slbling」選為「API_hello_TabSheet:TTabSheet」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選上面的。**
-        + **5.3.1.2 「Left anchoring>Slbling」選為「hello_API_Label:TLabel」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選右邊的。**
+        + **5.3.1.1 「Top anchoring>Slbling」選為「API_hello_TabSheet:TTabSheet」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選上面的。**  
+        + **5.3.1.2 「Left anchoring>Slbling」選為「hello_API_Label:TLabel」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選右邊的。**  
         + **5.3.1.2 「Right anchoring>Slbling」選為「API_hello_TabSheet:TTabSheet」。選擇「Right anchoring>Enable」為打勾。選擇「Left anchoring」右側三個鈕選右邊的。**  
         + **5.3.1.4 「Border space」正中間那格填「10」。上面那格填「15」，右邊那格填「20」**  
-        + **5.3.1.5 設定完後關閉Anchors設定視窗。**
-      + **5.3.2 設定「Name」為「hello_API_Edit」。**
-      + **5.3.3 設定「ReadOnly」為「true」。**
-      + **5.3.4 設定「text」為「api/v1/hello」。**
-    + **5.4 拖拉一個「Standard>TLabel」到「API_hello_TabSheet」中。預設名稱會是「Label1」。**
+        + **5.3.1.5 設定完後關閉Anchors設定視窗。**  
+      + **5.3.2 設定「Name」為「hello_API_Edit」。**  
+      + **5.3.3 設定「ReadOnly」為「true」。**  
+      + **5.3.4 設定「text」為「api/v1/hello」。**  
+    + **5.4 拖拉一個「Standard>TLabel」到「API_hello_TabSheet」中。預設名稱會是「Label1」。**  
       + **5.4.1 設定「Anchors」。**  
         + **5.4.1.1 「Top anchoring>Slbling」選為「hello_API_Edit:TEdit」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選下面的。**  
         + **5.4.1.2 「Left anchoring>Slbling」選為「API_hello_TabSheet:TTabSheet」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**  
         + **5.4.1.3 「Border space」正中間那格填「10」。上面那格填「7」，左邊那格填「20」**  
-        + **5.4.1.4 設定完後關閉Anchors設定視窗。**
-      + **5.4.2 設定「Name」為「hello_API_URL_Label」。**
-      + **5.4.3 設定「Caption」為「API URL:」。**
-    + **5.5 拖拉一個「Standard>TEdit」到「API_hello_TabSheet」中。預設名稱會是「Edit1」。**
+        + **5.4.1.4 設定完後關閉Anchors設定視窗。**  
+      + **5.4.2 設定「Name」為「hello_API_URL_Label」。**  
+      + **5.4.3 設定「Caption」為「API URL:」。**  
+    + **5.5 拖拉一個「Standard>TEdit」到「API_hello_TabSheet」中。預設名稱會是「Edit1」。**  
       + **5.5.1 設定「Anchors」。**  
-        + **5.5.1.1 「Top anchoring>Slbling」選為「hello_API_Edit:TEdit」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選下面的。**
-        + **5.5.1.2 「Left anchoring>Slbling」選為「hello_API_URL_Label:TLabel」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選右邊的。**
+        + **5.5.1.1 「Top anchoring>Slbling」選為「hello_API_Edit:TEdit」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選下面的。**  
+        + **5.5.1.2 「Left anchoring>Slbling」選為「hello_API_URL_Label:TLabel」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選右邊的。**  
         + **5.5.1.2 「Right anchoring>Slbling」選為「API_hello_TabSheet:TTabSheet」。選擇「Right anchoring>Enable」為打勾。選擇「Left anchoring」右側三個鈕選右邊的。**  
         + **5.5.1.4 「Border space」正中間那格填「10」。上面那格填「5」，右邊那格填「20」**  
-        + **5.5.1.5 設定完後關閉Anchors設定視窗。**
-      + **5.5.2 設定「Name」為「hello_API_URL_Edit」。**
-      + **5.3.3 設定「ReadOnly」為「true」。**
-      + **5.3.4 設定「text」為「http://127.0.0.1:18002/api/v1/hello」。**
+        + **5.5.1.5 設定完後關閉Anchors設定視窗。**  
+      + **5.5.2 設定「Name」為「hello_API_URL_Edit」。**  
+      + **5.3.3 設定「ReadOnly」為「true」。**  
+      + **5.3.4 設定「text」為「http://127.0.0.1:18002/api/v1/hello」。**  
+6. IdHTTPServer1:  
+    + **6.1 拖拉一個「Indy Servers Protocols (am)>IdHTTPServer1」到「Web Server」標籤頁(物件名稱為「TabSheet3」)。預設名稱會是「IdHTTPServer1」。**  
+    + **設定「ServerRunStop_Button」的「Event」頁面下「OnClick」為如下程式碼。**
+      ```pascal
+        procedure TForm1.ServerRunStop_ButtonClick(Sender: TObject);
+        begin
+          if (IdHTTPServer1.Active=false) Then begin
+            // 調整UI
+            ServerPort_Edit.Enabled:=false;
+            // 設定Server Port
+            IdHTTPServer1.DefaultPort:=StrToInt(ServerPort_Edit.Text);
+            // 提示訊息
+            Log_Memo.Lines.Add('啟動Server...');
+            // 啟動Server
+            IdHTTPServer1.Active:=true;
+            // 調整按鈕文字
+            ServerRunStop_Button.Caption:='按我停止';
+            // 調整狀態文字
+            ServerStatus_Label.Caption:='伺服器狀態: 運行中';
+            // 調整狀態列資訊
+            StatusBar1.Panels.Items[1].Text:='Server運行中...';
+          end
+          else begin
+            // 停止Server
+            IdHTTPServer1.Active:=false;
+            // 提示訊息
+            Log_Memo.Lines.Add('關閉Server...');
+            // 調整按鈕文字
+            ServerRunStop_Button.Caption:='按我啟動';
+            // 調整狀態文字
+            ServerStatus_Label.Caption:='伺服器狀態: 停止';
+            // 調整狀態列資訊
+            StatusBar1.Panels.Items[1].Text:='Server停止...';
+            // 調整UI
+            ServerPort_Edit.Enabled:=true;
+          end;
+        end;    
+      ```
 ```
 procedure TForm1.IdHTTPServer1CommandGet(AContext: TIdContext;
   ARequestInfo: TIdHTTPRequestInfo; AResponseInfo: TIdHTTPResponseInfo);
