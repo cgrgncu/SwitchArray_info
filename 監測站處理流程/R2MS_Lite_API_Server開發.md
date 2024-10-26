@@ -16,12 +16,13 @@
 + 預設運作平台: Default，應該就是win10 64bit。
 
 ### 開發紀錄(製作APP Icon)
-+ 使用工具: https://icon.kitchen/
-+ IOS Icon
-+ Text: 「API」
-+ BackGround>Type=「Gradient」
-+ More>Badge = 「R2MS LITE」
-
++ 使用工具1: https://icon.kitchen/
+  + IOS Icon
+  + Text: 「API」
+  + BackGround>Type=「Gradient」
+  + More>Badge = 「R2MS LITE」
++ 再使用工具2: https://tfin.ch/iosicon.html
+  + 輸出有圓角的圖片
 ## 開發紀錄(基礎框架部分)
 1. 建立新專案。  
     + **1.1 按下「Project>New Project ...」。**  
