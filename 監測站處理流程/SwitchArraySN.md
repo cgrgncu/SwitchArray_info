@@ -47,7 +47,7 @@
       ```json
       {"SwitchArray_SN":"S003","SwitchArray_SerialPort":"COM3"}
       ```
-    + 軟體則是由使用者指定序號，例如:「S003」，進行下列驗證:
+    + 軟體工作(使用者指定序號)，例如:指定序號「S003」，進行下列驗證:
       + 1.是否存在符合的磁碟機標籤。例如:「R2MS_S003」。若是，則進行2.；若否，則驗證失敗。
       + 2.查詢該磁碟機標籤的磁碟機代號，例如「D」。這表示掛接為「D槽」，路徑為「D:\」。若查找成功，則進行3.；若查找失敗，則驗證失敗。
       + 3.讀取「R2MS_Lite_SwitchArray_SerialPort.json」。例如:「D:\R2MS_Lite_SwitchArray_SerialPort.json」。若讀取內容可解析則進行4.；若解析失敗則驗證失敗。
