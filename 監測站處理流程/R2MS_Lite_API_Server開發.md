@@ -23,6 +23,10 @@
   + More>Badge = 「R2MS LITE」
 + 再使用工具2: https://tfin.ch/iosicon.html
   + 輸出有圓角的圖片
++ 再使用工具3: PNG轉ICO線上工具 例如:https://www.aconvert.com/tw/icon/png-to-ico/
+  + 需要的多解析度包含:
+    + 全部清單
+    + 
 ## 開發紀錄(基礎框架部分)
 1. 建立新專案。  
     + **1.1 按下「Project>New Project ...」。**  
