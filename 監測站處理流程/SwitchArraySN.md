@@ -31,9 +31,11 @@
     + 目前規劃不由軟體去檢測隨身碟檔案系統格式，也不會檢查容量，故只要能讀寫檔案就沒問題。
     + 選擇32[GB]是考量現在隨身碟價格，目前低於32[GB]的隨身碟並不會比較便宜，大量採購下32[GB]常常有更好的性價比。
     + 此隨身碟根目錄下的指定檔案名稱必須被保留，供分析軟體使用，檔案容量小於10[MB]。其餘容量規劃存存放軟體、技術文件、野外備忘錄。也可供使用者暫時儲存檔案使用。
-     + 「R2MS_Lite_SwitchArray_Info.txt」，用途請參閱後文。
      + 「R2MS_Lite_SwitchArray_SerialPort.json」，用途請參閱後文。
+     + 「R2MS_Lite_SwitchArray_Info.json」，用途請參閱後文。
+       
 ### R2MS_Lite_SwitchArray_SerialPort.json
++ 此檔案必須存在才能在軟體中選擇「指定序號」的功能。
 + SerialPort在Windows上會被註記為COM裝置，命名通常為「COM」+數字，總字元數不是固定值會變化，例如「COM3｣、「COM16」。
   + 目前會被識別為COM裝置的包含SwitchArray用的CH340、PSU用的CP2106。
 + 在特殊情況下，當主機連接的ESP32設備數量大於1時，以目前架構可找出CH340對應的COM裝置，但無法分辨哪個CH340才是要用的。
@@ -54,3 +56,5 @@
       + 4.檢查Json內容中「SwitchArray_SN」的值。例如:「{"SwitchArray_SN":"S003","SwitchArray_SerialPort":"COM3"}」要與「S003」一致。若是，則進行5.；若否，則驗證失敗。
       + 5.檢查Json內容中「SwitchArray_SerialPort」的值。例如:「{"SwitchArray_SN":"S003","SwitchArray_SerialPort":"COM3"}」要去檢查「COM3」裝置是否為「USB-SERIAL CH340」。若是，則驗證成功；若否，則驗證失敗。
 
+### R2MS_Lite_SwitchArray_Info.json
++ 此檔案必須存在才能在軟體中選擇「自動偵測序號」的功能。
