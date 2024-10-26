@@ -17,6 +17,7 @@
 
 ### 開發紀錄(製作APP Icon)
 + 使用工具: https://icon.kitchen/
++ IOS Icon
 + Text: 「API」
 + BackGround>Type=「Gradient」
 + More>Badge = 「R2MS LITE」
