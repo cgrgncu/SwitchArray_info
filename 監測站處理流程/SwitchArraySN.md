@@ -42,7 +42,7 @@
   + 此時，若「R2MS_Lite_SwitchArray_SerialPort.json」檔案存在，則內容須描述SwitchArray的簡易序號、偵測的COM裝置為何。
   + 範例:
     + 建立「R2MS_Lite_SwitchArray_SerialPort.json」檔案，內容全部限制使用英文，以避免編碼問題(ANSI/UTF-8在軟體讀取時中文可能亂碼)。
-    + 檔案內容限制為最小壓縮情況的J單層SON檔案。
+    + 檔案內容限制為最小壓縮情況的單層SON檔案。
       + 磁碟區標籤為「R2MS_S003」，則「SwitchArray_SN」為「S003」。
       + 從檔案管理員找到識別的COM裝置為「COM3」，則「SwitchArray_SerialPort」為「COM3」。
       + 內容如下:
@@ -57,7 +57,7 @@
       + 5.檢查Json內容中「SwitchArray_SerialPort」的值。例如:「{"SwitchArray_SN":"S003","SwitchArray_SerialPort":"COM3"}」要去檢查「COM3」裝置是否為「USB-SERIAL CH340」。若是，則驗證成功；若否，則驗證失敗。
 
 ### R2MS_Lite_SwitchArray_Info.json
-+ 此檔案必須存在，才能在軟體中選擇「自動偵測序號」的功能。
++ 此檔案必須存在，才能在軟體中選擇「自動偵測序號」的功能。且只能有一個符合條件的磁碟機標籤。例如:只有一個USB隨身碟的磁碟機標籤為「R2MS_SXXX」。
 + SerialPort在Windows上會被註記為COM裝置，命名通常為「COM」+數字，總字元數不是固定值會變化，例如「COM3｣、「COM16」。
   + 目前會被識別為COM裝置的包含SwitchArray用的CH340、PSU用的CP2106。
 + 在一般情況下，當主機連接的ESP32設備數量等於1時，以目前架構可找出CH340對應的COM裝置，並且驗證各項所需資訊。
@@ -67,7 +67,7 @@
         ```
         USBSTOR\DISK&VEN_KINGSTON&PROD_DATATRAVELER_3.0&REV_0000\E0D55EA574A615A0F941EC34&0
         ```
-      + 其中序號就是「E0D55EA574A615A0F941EC34&0」。
+      + 其中裝置序號就是「E0D55EA574A615A0F941EC34&0」。
       + 從PowerShell可以查:
         ```
         PowerShell "Get-Partition -DriveLetter D | Select-Object UniqueId"
@@ -77,21 +77,20 @@
         UniqueId
         --------
         {00000000-0000-0000-0000-100000000000}USBSTOR\DISK&VEN_KINGSTON&PROD_DATATRAVELER_3.0&REV_0000\E0D55EA574A615A0F941EC34&0:LAPTOP-UP512OPA
-        ```
-
-  
+        ```  
   + 範例:
-    + 建立「R2MS_Lite_SwitchArray_SerialPort.json」檔案，內容全部限制使用英文，以避免編碼問題(ANSI/UTF-8在軟體讀取時中文可能亂碼)。
-    + 檔案內容限制為最小壓縮情況的J單層SON檔案。
+    + 建立「R2MS_Lite_SwitchArray_Info.json」檔案，內容全部限制使用英文，以避免編碼問題(ANSI/UTF-8在軟體讀取時中文可能亂碼)。
+    + 檔案內容限制為最小壓縮情況的單層SON檔案。
       + 磁碟區標籤為「R2MS_S003」，則「SwitchArray_SN」為「S003」。
-      + 從檔案管理員找到識別的COM裝置為「COM3」，則「SwitchArray_USB_SerialNumber」為「COM3」。
+      + 裝置例項路徑中找到的裝置序號為「E0D55EA574A615A0F941EC34&0」，則「SwitchArray_USB_SerialNumber」為「E0D55EA574A615A0F941EC34&0」。
       + 內容如下:
       ```json
-      {"SwitchArray_SN":"S003","SwitchArray_USB_SerialNumber":"COM3"}
+      {"SwitchArray_SN":"S003","SwitchArray_USB_SerialNumber":"E0D55EA574A615A0F941EC34&0"}
       ```
-    + 軟體工作(使用者指定序號)，例如:指定序號「S003」，進行下列驗證:
-      + 1.是否存在符合的磁碟機標籤。例如:「R2MS_S003」。若是，則進行2.；若否，則驗證失敗。
+    + 軟體工作(自動偵測序號)，進行下列驗證:
+      + 1.只能有一個存在符合條件的磁碟機標籤。例如:只有一個「R2MS_SXXX」的磁碟機標籤。若是，則進行2.；若否，則驗證失敗。
       + 2.查詢該磁碟機標籤的磁碟機代號，例如「D」。這表示掛接為「D槽」，路徑為「D:\」。若查找成功，則進行3.；若查找失敗，則驗證失敗。
-      + 3.讀取「R2MS_Lite_SwitchArray_SerialPort.json」。例如:「D:\R2MS_Lite_SwitchArray_SerialPort.json」。若讀取內容可解析則進行4.；若解析失敗則驗證失敗。
-      + 4.檢查Json內容中「SwitchArray_SN」的值。例如:「{"SwitchArray_SN":"S003","SwitchArray_SerialPort":"COM3"}」要與「S003」一致。若是，則進行5.；若否，則驗證失敗。
-      + 5.檢查Json內容中「SwitchArray_SerialPort」的值。例如:「{"SwitchArray_SN":"S003","SwitchArray_SerialPort":"COM3"}」要去檢查「COM3」裝置是否為「USB-SERIAL CH340」。若是，則驗證成功；若否，則驗證失敗。
+      + 3.讀取「R2MS_Lite_SwitchArray_Info.json」。例如:「D:\R2MS_Lite_SwitchArray_Info.json」。若讀取內容可解析則進行4.；若解析失敗則驗證失敗。
+      + 4.檢查Json內容中「SwitchArray_SN」的值。例如:「{"SwitchArray_SN":"S003","SwitchArray_USB_SerialNumber":"E0D55EA574A615A0F941EC34&0"}」要與「S003」一致。若是，則進行5.；若否，則驗證失敗。
+      + 5.檢查Json內容中「SwitchArray_USB_SerialNumber」的值。例如:「{"SwitchArray_SN":"S003","SwitchArray_USB_SerialNumber":"E0D55EA574A615A0F941EC34&0"}」要去檢查裝置序號裝置是否正確。若是，則進行6.；若否，則驗證失敗。
+      + 6.檢查是否只有一個CH340裝置存在，並取出其COM資訊。若是，則驗證成功；若否，則驗證失敗。
