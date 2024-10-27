@@ -336,9 +336,9 @@
       + **5.4.1 設定「Anchors」。**  
         + **5.4.1.1 「Top anchoring>Slbling」選為「hello_API_Edit:TEdit」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選下面的。**  
         + **5.4.1.2 「Left anchoring>Slbling」選為「API_hello_TabSheet:TTabSheet」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**  
-        + **5.4.1.3 「Border space」正中間那格填「10」。上面那格填「7」，左邊那格填「20」**  
+        + **5.4.1.3 「Border space」正中間那格填「10」。上面那格填「10」，左邊那格填「10」**  
         + **5.4.1.4 設定完後關閉Anchors設定視窗。**  
-      + **5.4.2 設定「Name」為「hello_API_URL_Label」。**  
+      + **5.4.2 設定「Name」為「API_hello_URL_Label」。**  
       + **5.4.3 設定「Caption」為「API URL:」。**  
     + **5.5 拖拉一個「Standard>TEdit」到「API_hello_TabSheet」中。預設名稱會是「Edit1」。**  
       + **5.5.1 設定「Anchors」。**  
