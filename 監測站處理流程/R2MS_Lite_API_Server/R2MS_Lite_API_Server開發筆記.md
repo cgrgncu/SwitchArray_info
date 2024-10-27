@@ -182,7 +182,7 @@
     + **8.5.1.2 設定「Update_Memo」的「Properties」頁面下「ReadOnly」設定為「true」。**
     + **8.5.1.3 設定「Update_Memo」的「Properties」頁面下「Lines」的內容。清空後填入版本紀錄。**
     ```pascal  
-    v20241024a:
+    v20241027a:
     初版。
     ```  
     
