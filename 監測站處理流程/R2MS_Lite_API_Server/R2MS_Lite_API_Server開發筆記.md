@@ -331,7 +331,7 @@
         + **5.3.1.5 設定完後關閉Anchors設定視窗。**  
       + **5.3.2 設定「Name」為「API_hello_Edit」。**  
       + **5.3.3 設定「ReadOnly」為「true」。**  
-      + **5.3.4 設定「text」為「api/v1/hello」。**  
+      + **5.3.4 設定「text」為「/api/v1/hello」。**  
     + **5.4 拖拉一個「Standard>TLabel」到「API_hello_TabSheet」中。預設名稱會是「Label1」。**  
       + **5.4.1 設定「Anchors」。**  
         + **5.4.1.1 「Top anchoring>Slbling」選為「hello_API_Edit:TEdit」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選下面的。**  
