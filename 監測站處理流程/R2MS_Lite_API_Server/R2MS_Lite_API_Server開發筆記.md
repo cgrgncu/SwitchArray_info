@@ -349,7 +349,7 @@
         + **5.5.1.5 設定完後關閉Anchors設定視窗。**  
       + **5.5.2 設定「Name」為「API_hello_URL_Edit」。**  
       + **5.3.3 設定「ReadOnly」為「true」。**  
-      + **5.3.4 設定「text」為「http://127.0.0.1:18002/api/v1/hello」。**  
+      + **5.3.4 設定「text」為「 http://127.0.0.1:18002/api/v1/hello 」。**  
 6. IdHTTPServer1:  
     + **6.1 拖拉一個「Indy Servers Protocols (am)>IdHTTPServer1」到「Web Server」標籤頁(物件名稱為「TabSheet3」)。預設名稱會是「IdHTTPServer1」。**
     + **設定「IdHTTPServer1」的「Event」頁面下「OnCommandGet」為如下程式碼。**
