@@ -327,9 +327,9 @@
         + **5.3.1.1 「Top anchoring>Slbling」選為「API_hello_TabSheet:TTabSheet」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選上面的。**  
         + **5.3.1.2 「Left anchoring>Slbling」選為「hello_API_Label:TLabel」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選右邊的。**  
         + **5.3.1.2 「Right anchoring>Slbling」選為「API_hello_TabSheet:TTabSheet」。選擇「Right anchoring>Enable」為打勾。選擇「Left anchoring」右側三個鈕選右邊的。**  
-        + **5.3.1.4 「Border space」正中間那格填「10」。上面那格填「15」，右邊那格填「20」**  
+        + **5.3.1.4 「Border space」正中間那格填「10」。上面那格填「10」，右邊那格填「10」**  
         + **5.3.1.5 設定完後關閉Anchors設定視窗。**  
-      + **5.3.2 設定「Name」為「hello_API_Edit」。**  
+      + **5.3.2 設定「Name」為「API_hello_Edit」。**  
       + **5.3.3 設定「ReadOnly」為「true」。**  
       + **5.3.4 設定「text」為「api/v1/hello」。**  
     + **5.4 拖拉一個「Standard>TLabel」到「API_hello_TabSheet」中。預設名稱會是「Label1」。**  
