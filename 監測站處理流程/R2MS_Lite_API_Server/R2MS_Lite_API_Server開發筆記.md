@@ -287,9 +287,9 @@
       + **4.1.2 設定「BevelOuter」為「bvNone」。**  
       + **4.1.2 設定「Caption」為「」。就是空白。**  
       + **4.1.3 設定「Height」為「60」。**  
-      + **4.1.4 設定「Name」為「StartServer_Panel」。**  
+      + **4.1.4 設定「Name」為「ServerRunStop_Panel」。**  
       + **4.1.5 設定「Width」為「160」。**  
-    + **4.2 拖拉一個「Standard>TButton」到「StartServer_Panel」中。預設名稱會是「Button1」。**  
+    + **4.2 拖拉一個「Standard>TButton」到「ServerRunStop_Panel」中。預設名稱會是「Button1」。**  
       + **4.2.1 設定「Anchors」。**  
         + **4.2.1.1 「Top anchoring>Slbling」選為「StartServer_Panel:TPanel」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選上面的。**  
         + **4.2.1.2 「Left anchoring>Slbling」選為「StartServer_Panel:TPanel」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**  
