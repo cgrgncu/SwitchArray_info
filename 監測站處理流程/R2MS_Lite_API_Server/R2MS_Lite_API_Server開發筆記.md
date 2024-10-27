@@ -334,7 +334,7 @@
       + **5.3.4 設定「text」為「/api/v1/hello」。**  
     + **5.4 拖拉一個「Standard>TLabel」到「API_hello_TabSheet」中。預設名稱會是「Label1」。**  
       + **5.4.1 設定「Anchors」。**  
-        + **5.4.1.1 「Top anchoring>Slbling」選為「hello_API_Edit:TEdit」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選下面的。**  
+        + **5.4.1.1 「Top anchoring>Slbling」選為「API_hello_Edit:TEdit」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選下面的。**  
         + **5.4.1.2 「Left anchoring>Slbling」選為「API_hello_TabSheet:TTabSheet」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**  
         + **5.4.1.3 「Border space」正中間那格填「10」。上面那格填「10」，左邊那格填「10」**  
         + **5.4.1.4 設定完後關閉Anchors設定視窗。**  
@@ -342,12 +342,12 @@
       + **5.4.3 設定「Caption」為「API URL:」。**  
     + **5.5 拖拉一個「Standard>TEdit」到「API_hello_TabSheet」中。預設名稱會是「Edit1」。**  
       + **5.5.1 設定「Anchors」。**  
-        + **5.5.1.1 「Top anchoring>Slbling」選為「hello_API_Edit:TEdit」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選下面的。**  
-        + **5.5.1.2 「Left anchoring>Slbling」選為「hello_API_URL_Label:TLabel」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選右邊的。**  
+        + **5.5.1.1 「Top anchoring>Slbling」選為「API_hello_Edit:TEdit」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選下面的。**  
+        + **5.5.1.2 「Left anchoring>Slbling」選為「API_hello_URL_Label:TLabel」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選右邊的。**  
         + **5.5.1.2 「Right anchoring>Slbling」選為「API_hello_TabSheet:TTabSheet」。選擇「Right anchoring>Enable」為打勾。選擇「Left anchoring」右側三個鈕選右邊的。**  
         + **5.5.1.4 「Border space」正中間那格填「10」。上面那格填「5」，右邊那格填「20」**  
         + **5.5.1.5 設定完後關閉Anchors設定視窗。**  
-      + **5.5.2 設定「Name」為「hello_API_URL_Edit」。**  
+      + **5.5.2 設定「Name」為「API_hello_URL_Edit」。**  
       + **5.3.3 設定「ReadOnly」為「true」。**  
       + **5.3.4 設定「text」為「http://127.0.0.1:18002/api/v1/hello」。**  
 6. IdHTTPServer1:  
