@@ -302,9 +302,9 @@
 5. API List:
     + **5.1 拖拉一個「Common Controls>TPageControl」到「Web Server」標籤頁(物件名稱為「Main_TabSheet」)。預設名稱會是「PageControl2」。**  
       + **5.1.1 設定「Anchors」。**  
-        + **5.1.1.1 「Top anchoring>Slbling」選為「TabSheet3:TTabSheet」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選上面的。**  
+        + **5.1.1.1 「Top anchoring>Slbling」選為「Main_TabSheet:TTabSheet」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選上面的。**  
         + **5.1.1.2 「Left anchoring>Slbling」選為「ServerStatus_GroupBox:TGroupBox」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選右邊的。**  
-        + **5.1.1.2 「Right anchoring>Slbling」選為「TabSheet3:TTabSheet」。選擇「Right anchoring>Enable」為打勾。選擇「Left anchoring」右側三個鈕選右邊的。**  
+        + **5.1.1.2 「Right anchoring>Slbling」選為「Main_TabSheet:TTabSheet」。選擇「Right anchoring>Enable」為打勾。選擇「Left anchoring」右側三個鈕選右邊的。**  
         + **5.1.1.3 「Border space」正中間那格填「10」。**  
         + **5.1.1.4 設定完後關閉Anchors設定視窗。**   
       + **5.1.3 設定「Height」為「160」。**  
