@@ -166,15 +166,12 @@
 
     >以上頁面未來都可以調整順序。  
 
-    + **8.4.把新增的第1頁「TabPage1」的「Properties」頁面下「Caption」設定為「運行紀錄」。**  
+    + **8.4.把新增的第1頁「TabSheet1」的「Properties」頁面下「Caption」設定為「運行紀錄」。「Name」設定為「Log_TabSheet」。**  
     + **8.4.1 拖拉一個「Standard>TMemo」放到該頁中。設定「Properties」頁面下「Name」設定為「Log_Memo」。**  
     + **8.4.1.1 設定「Log_Memo」的「Properties」頁面下「Align」設定為「AlClient」。**  
     + **8.4.1.2 設定「Log_Memo」的「Properties」頁面下「Lines」的內容清空。**  
     + **8.4.1.3 設定「Log_Memo」的「Properties」頁面下「ReadOnly」設定為「true」。**  
     + **8.4.1.3 設定「Log_Memo」的「Properties」頁面下「ScrollBars」設定為「ssBoth」。**  
-    + **8.4.2 放上一個TMemo。設定「Properties」頁面下「Name」設定為「CammaText_Memo」。**  
-    + **8.4.2.1 設定「CammaText_Memo」的「Properties」頁面下「Visible」設定為「false」。**  
-    + **8.4.2.2 「CammaText_Memo」位置和尺寸隨意放，開發時期看得清楚就好。**  
     
      >以上是第1頁。  
     
