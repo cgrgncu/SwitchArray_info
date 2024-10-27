@@ -265,9 +265,9 @@
         + **3.1.1.3 「Border space」正中間那格填「10」。**  
         + **3.1.1.4 設定完後關閉Anchors設定視窗。**  
       + **3.1.2 設定「Caption」為「Server Status:」。**  
-      + **3.1.3 設定「Height」為「80」。**  
+      + **3.1.3 設定「Height」為「60」。**  
       + **3.1.4 設定「Name」為「ServerStatus_GroupBox」。**  
-      + **3.1.5 設定「Width」為「240」。**  
+      + **3.1.5 設定「Width」為「160」。**  
     + **3.2 拖拉一個「Standard>TLabel」到「ServerStatus_GroupBox」中。預設名稱會是「Label1」。**  
       + **3.2.1 設定「Anchors」。**  
         + **3.2.1.1 「Top anchoring>Slbling」選為「ServerStatus_GroupBox:TGroupBox」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選中間的。**  
@@ -286,9 +286,9 @@
         + **4.1.1.4 設定完後關閉Anchors設定視窗。**  
       + **4.1.2 設定「BevelOuter」為「bvNone」。**  
       + **4.1.2 設定「Caption」為「」。就是空白。**  
-      + **4.1.3 設定「Height」為「80」。**  
+      + **4.1.3 設定「Height」為「60」。**  
       + **4.1.4 設定「Name」為「StartServer_Panel」。**  
-      + **4.1.5 設定「Width」為「240」。**  
+      + **4.1.5 設定「Width」為「160」。**  
     + **4.2 拖拉一個「Standard>TButton」到「StartServer_Panel」中。預設名稱會是「Button1」。**  
       + **4.2.1 設定「Anchors」。**  
         + **4.2.1.1 「Top anchoring>Slbling」選為「StartServer_Panel:TPanel」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選上面的。**  
