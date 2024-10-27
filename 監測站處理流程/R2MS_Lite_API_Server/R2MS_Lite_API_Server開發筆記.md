@@ -1,6 +1,6 @@
 # R2MS_Lite_API_Server 開發筆記
 + 作者: HsiupoYeh
-+ 更新日期: 2024-10-24
++ 更新日期: 2024-10-27
 
 ## 開發環境
 - Windows 10 22H2 64bit 企業版 繁體中文(SW_DVD9_Win_Pro_10_22H2.19_64BIT_ChnTrad_Pro_Ent_EDU_N_MLF_X23-74684.ISO)
