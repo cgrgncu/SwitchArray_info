@@ -294,9 +294,9 @@
         + **4.2.1.1 「Top anchoring>Slbling」選為「StartServer_Panel:TPanel」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選上面的。**  
         + **4.2.1.2 「Left anchoring>Slbling」選為「StartServer_Panel:TPanel」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**  
         + **4.2.1.3 「Right anchoring>Slbling」選為「StartServer_Panel:TPanel」。勾選「Right anchoring>Enable」為打勾。選擇「Right anchoring」右側三個鈕選右邊的。**  
-        + **4.2.1.3 「Bottom anchoring>Slbling」選為「StartServer_Panel:TPanel」。勾選「Bottom anchoring>Enable」為打勾。選擇「Bottom anchoring」右側三個鈕選下面的。**  
-        + **4.2.1.4 「Border space」正中間那格填「10」。**  
-        + **4.2.1.5 設定完後關閉Anchors設定視窗。**  
+        + **4.2.1.4 「Bottom anchoring>Slbling」選為「StartServer_Panel:TPanel」。勾選「Bottom anchoring>Enable」為打勾。選擇「Bottom anchoring」右側三個鈕選下面的。**  
+        + **4.2.1.5 「Border space」正中間那格填「10」。**  
+        + **4.2.1.6 設定完後關閉Anchors設定視窗。**  
       + **4.2.2 設定「Name」為「ServerRunStop_Button」。**  
       + **4.2.3 設定「Caption」為「按我啟動」。**  
 5. API List:
