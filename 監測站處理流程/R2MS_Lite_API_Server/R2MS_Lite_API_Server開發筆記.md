@@ -178,9 +178,9 @@
     
     + **8.5.把新增的第2頁「TabPage2」的「Properties」頁面下「Caption」設定為「更新紀錄」。「Name」設定為「Update_TabSheet」。**  
     + **8.5.1 拖拉一個「Standard>TMemo」放到該頁中。設定「Properties」頁面下「Name」設定為「Update_Memo」。**  
-    + **8.5.1.1 設定「Update_Memo」的「Properties」頁面下「Align」設定為「AlClient」。**  
-    + **8.5.1.2 設定「Update_Memo」的「Properties」頁面下「Lines」的內容。清空後填入版本紀錄。**
-    + **8.5.1.3 設定「Update_Memo」的「Properties」頁面下「ReadOnly」設定為「true」。** 
+    + **8.5.1.1 設定「Update_Memo」的「Properties」頁面下「Align」設定為「AlClient」。**     
+    + **8.5.1.2 設定「Update_Memo」的「Properties」頁面下「ReadOnly」設定為「true」。**
+    + **8.5.1.3 設定「Update_Memo」的「Properties」頁面下「Lines」的內容。清空後填入版本紀錄。**
     ```pascal  
     v20241024a:
     初版。
