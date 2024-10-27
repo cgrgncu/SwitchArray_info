@@ -215,10 +215,10 @@
   ```
 ### 開發紀錄(Web Server頁面)  
 1. Server IP Address:  
-    + **1.1 拖拉一個「Standard>TGroupBox」到「Web Server」標籤頁(物件名稱為「TabSheet3」)。預設名稱會是「GroupBox1」。**  
+    + **1.1 拖拉一個「Standard>TGroupBox」到「Web Server」標籤頁(物件名稱為「Main_TabSheet」)。預設名稱會是「GroupBox1」。**  
       + **1.1.1 設定「Anchors」。**  
-        + **1.1.1.1 「Top anchoring>Slbling」選為「TabSheet3:TTabSheet」。維持「Top anchoring>Enable」為打勾。維持「Top anchoring」右側三個鈕選上面的。**  
-        + **1.1.1.2 「Left anchoring>Slbling」選為「TabSheet3:TTabSheet」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**  
+        + **1.1.1.1 「Top anchoring>Slbling」選為「Main_TabSheet:TTabSheet」。維持「Top anchoring>Enable」為打勾。維持「Top anchoring」右側三個鈕選上面的。**  
+        + **1.1.1.2 「Left anchoring>Slbling」選為「Main_TabSheet:TTabSheet」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**  
         + **1.1.1.3 「Border space」正中間那格填「10」。**  
         + **1.1.1.4 設定完後關閉Anchors設定視窗。**  
       + **1.1.2 設定「Caption」為「Server IP Address:」。**  
@@ -236,10 +236,10 @@
       + **1.2.3 設定「ReadOnly」為「True」。**  
       + **1.2.4 設定「Text」為「127.0.0.1」。**  
 2. Server Port:
-    + **2.1 拖拉一個「Standard>TGroupBox」到「Web Server」標籤頁(物件名稱為「TabSheet3」)。預設名稱會是「GroupBox1」。**  
+    + **2.1 拖拉一個「Standard>TGroupBox」到「Web Server」標籤頁(物件名稱為「Main_TabSheet」)。預設名稱會是「GroupBox1」。**  
       + **2.1.1 設定「Anchors」。**  
         + **2.1.1.1 「Top anchoring>Slbling」選為「ServerIPAddress_GroupBox:TGroupBox」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選下面的。**  
-        + **2.1.1.2 「Left anchoring>Slbling」選為「TabSheet3:TTabSheet」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**  
+        + **2.1.1.2 「Left anchoring>Slbling」選為「Main_TabSheet:TTabSheet」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**  
         + **2.1.1.3 「Border space」正中間那格填「10」。**  
         + **2.1.1.4 設定完後關閉Anchors設定視窗。**  
       + **2.1.2 設定「Caption」為「Server Port:」。**  
@@ -257,9 +257,9 @@
       + **2.2.3 設定「NumbersOnly」為「True」。**  
       + **2.2.4 設定「Text」為「18002」。**  
 3. Server Status:
-    + **3.1 拖拉一個「Standard>TGroupBox」到「Web Server」標籤頁(物件名稱為「TabSheet3」)。預設名稱會是「GroupBox1」。**  
+    + **3.1 拖拉一個「Standard>TGroupBox」到「Web Server」標籤頁(物件名稱為「Main_TabSheet」)。預設名稱會是「GroupBox1」。**  
       + **3.1.1 設定「Anchors」。**  
-        + **3.1.1.1 「Top anchoring>Slbling」選為「TabSheet3:TTabSheet」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選上面的。**  
+        + **3.1.1.1 「Top anchoring>Slbling」選為「Main_TabSheet:TTabSheet」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選上面的。**  
         + **3.1.1.2 「Left anchoring>Slbling」選為「ServerIPAddress_GroupBox:TGroupBox」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選右邊的。**  
         + **3.1.1.3 「Border space」正中間那格填「10」。**  
         + **3.1.1.4 設定完後關閉Anchors設定視窗。**  
@@ -277,7 +277,7 @@
       + **3.2.2 設定「Name」為「ServerStatus_Label」。**  
       + **3.2.3 設定「Caption」為「伺服器狀態: 未知」。**  
 4. 啟動按鈕:
-    + **4.1 拖拉一個「Standard>TPanel」到「Web Server」標籤頁(物件名稱為「TabSheet3」)。預設名稱會是「Panel1」。**  
+    + **4.1 拖拉一個「Standard>TPanel」到「Web Server」標籤頁(物件名稱為「Main_TabSheet」)。預設名稱會是「Panel1」。**  
       + **4.1.1 設定「Anchors」。**  
         + **4.1.1.1 「Top anchoring>Slbling」選為「ServerStatus_GroupBox:TGroupBox」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選下面的。**  
         + **4.1.1.2 「Left anchoring>Slbling」選為「ServerPort_GroupBox:TGroupBox」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選右邊的。**  
