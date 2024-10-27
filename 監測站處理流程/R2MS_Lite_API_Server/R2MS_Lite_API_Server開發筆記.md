@@ -171,7 +171,8 @@
     + **8.4.1.1 設定「Log_Memo」的「Properties」頁面下「Align」設定為「AlClient」。**  
     + **8.4.1.2 設定「Log_Memo」的「Properties」頁面下「Lines」的內容清空。**  
     + **8.4.1.3 設定「Log_Memo」的「Properties」頁面下「ReadOnly」設定為「true」。**  
-    + **8.4.1.3 設定「Log_Memo」的「Properties」頁面下「ScrollBars」設定為「ssBoth」。**  
+    + **8.4.1.4 設定「Log_Memo」的「Properties」頁面下「ScrollBars」設定為「ssBoth」。**
+    + **8.4.1.5 設定「Log_Memo」的「Properties」頁面下「WordWrap」設定為「false」。**  
     
      >以上是第1頁。  
     
