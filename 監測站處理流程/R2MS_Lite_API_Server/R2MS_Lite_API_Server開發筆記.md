@@ -307,7 +307,7 @@
         + **5.1.1.2 「Right anchoring>Slbling」選為「Main_TabSheet:TTabSheet」。選擇「Right anchoring>Enable」為打勾。選擇「Left anchoring」右側三個鈕選右邊的。**  
         + **5.1.1.3 「Border space」正中間那格填「10」。**  
         + **5.1.1.4 設定完後關閉Anchors設定視窗。**   
-      + **5.1.3 設定「Height」為「160」。**  
+      + **5.1.3 設定「Height」為「130」。**  
       + **5.1.4 設定「Name」為「APIList_PageControl」。**  
       + **5.1.4 用右鍵新增頁面，新增個4頁。**  
         + **5.1.4.1 第1頁設定「Caption」為「hello」，「Name」為「API_hello_TabSheet」。**  
