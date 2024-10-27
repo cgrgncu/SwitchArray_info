@@ -1,32 +1,35 @@
-# R2MS_Lite_API_Server 開發筆記
-+ 作者: HsiupoYeh
-+ 更新日期: 2024-10-27
+# R2MS_Lite_API_Server 開發筆記  
++ 作者: HsiupoYeh  
++ 更新日期: 2024-10-27  
 
-## 開發環境
-- Windows 10 22H2 64bit 企業版 繁體中文(SW_DVD9_Win_Pro_10_22H2.19_64BIT_ChnTrad_Pro_Ent_EDU_N_MLF_X23-74684.ISO)
-- Lazarus 3.6 (lazarus-3.6-fpc-3.2.2-win64.exe)
+## 開發環境  
+- Windows 10 22H2 64bit 企業版 繁體中文(SW_DVD9_Win_Pro_10_22H2.19_64BIT_ChnTrad_Pro_Ent_EDU_N_MLF_X23-74684.ISO)  
+- Lazarus 3.6 (lazarus-3.6-fpc-3.2.2-win64.exe)  
 
-## 運行需求
-- Windosw作業系統。
-- 可運行64位元應用程式。
-- 允許程式通過防火牆。
-- 預設使用Port: 18002。
+## 運行需求  
+- Windosw作業系統。  
+- 可運行64位元應用程式。  
+- 允許程式通過防火牆。  
+- 預設使用Port: 18002。  
 
-### 備忘
-+ 預設運作平台: Default，應該就是win10 64bit。
+### 備忘  
++ 預設運作平台: Default，應該就是win10 64bit。  
 
-### 開發紀錄(製作APP Icon)
-+ 使用工具1: https://icon.kitchen/
-  + IOS Icon
-  + Text: 「API」
-  + BackGround>Type=「Gradient」
-  + More>Badge = 「R2MS LITE」
-+ 再使用工具2: https://tfin.ch/iosicon.html
-  + 輸出有圓角的圖片
+### 開發紀錄(製作APP Icon)  
++ 使用工具1: https://icon.kitchen/  
+  + IOS Icon  
+  + Text: 「API」  
+  + BackGround>Type=「Gradient」  
+  + More>Badge = 「R2MS LITE」  
++ 再使用工具2: https://tfin.ch/iosicon.html  
+  + 輸出有圓角的圖片  
 + 再使用工具3: PNG轉ICO線上工具 例如:https://www.aconvert.com/tw/icon/png-to-ico/
-  + 需要的多解析度包含:
-    + 全部清單
-    + 
+  + 需要的多解析度包含:  
+    + 全部清單中有的  
++ 成果:  
+  + ![image](https://github.com/cgrgncu/SwitchArray_info/blob/main/%E7%9B%A3%E6%B8%AC%E7%AB%99%E8%99%95%E7%90%86%E6%B5%81%E7%A8%8B/R2MS_Lite_API_Server/ico/R2MS_Lite_API_Server.ico)
+  + [下載位置](https://github.com/cgrgncu/SwitchArray_info/blob/main/%E7%9B%A3%E6%B8%AC%E7%AB%99%E8%99%95%E7%90%86%E6%B5%81%E7%A8%8B/R2MS_Lite_API_Server/ico/R2MS_Lite_API_Server.ico)
+ 
 ## 開發紀錄(基礎框架部分)
 1. 建立新專案。  
     + **1.1 按下「Project>New Project ...」。**  
