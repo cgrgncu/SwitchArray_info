@@ -188,8 +188,8 @@
     
     >以上是第2頁。  
 
-    + **8.6.把新增的第3頁「TabPage3」的「Properties」頁面下「Caption」設定為「Web Server」。**  
-    + **8.6.1 設定「TabPage3」的「Properties」頁面下「PageIndex」設定為「0」。**  
+    + **8.6.把新增的第3頁「TabPage3」的「Properties」頁面下「Caption」設定為「Web Server」。「Name」設定為「Main_TabSheet」。**  
+    + **8.6.1 設定「Main_TabSheet」的「Properties」頁面下「PageIndex」設定為「0」。**  
     + **8.6.2 開始進行設計...**  
 
     >以上是第3頁。單獨修改一個頁面的PageIndex會影響所有的頁面，可能使其他頁面的PageIndex值改變。
