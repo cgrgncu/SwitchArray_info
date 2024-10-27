@@ -13,7 +13,8 @@
 - 預設使用Port: 18002。  
 
 ### 備忘  
-+ 預設運作平台: Default，應該就是win10 64bit。  
++ 預設運作平台: Default，應該就是win10 64bit。
++ 因為縮放比例會影響開發效果，以下是以100%縮放環境下開發。 
 
 ### 開發紀錄(製作APP Icon)  
 + 使用工具1: https://icon.kitchen/  
@@ -222,9 +223,9 @@
         + **1.1.1.3 「Border space」正中間那格填「10」。**  
         + **1.1.1.4 設定完後關閉Anchors設定視窗。**  
       + **1.1.2 設定「Caption」為「Server IP Address:」。**  
-      + **1.1.3 設定「Height」為「80」。**  
+      + **1.1.3 設定「Height」為「60」。**  
       + **1.1.4 設定「Name」為「ServerIPAddress_GroupBox」。**  
-      + **1.1.5 設定「Width」為「240」。**  
+      + **1.1.5 設定「Width」為「160」。**  
     + **1.2 拖拉一個「Standard>TEdit」到「ServerIPAddress_GroupBox」中。預設名稱會是「Edit1」。**  
       + **1.2.1 設定「Anchors」。**  
         + **1.2.1.1 「Top anchoring>Slbling」選為「ServerIPAddress_GroupBox:TGroupBox」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選中間的。**  
@@ -243,9 +244,9 @@
         + **2.1.1.3 「Border space」正中間那格填「10」。**  
         + **2.1.1.4 設定完後關閉Anchors設定視窗。**  
       + **2.1.2 設定「Caption」為「Server Port:」。**  
-      + **2.1.3 設定「Height」為「80」。**  
+      + **2.1.3 設定「Height」為「60」。**  
       + **2.1.4 設定「Name」為「ServerPort_GroupBox」。**  
-      + **2.1.5 設定「Width」為「240」。**  
+      + **2.1.5 設定「Width」為「160」。**  
     + **2.2 拖拉一個「Standard>TEdit」到「ServerPort_GroupBox」中。預設名稱會是「Edit1」。**  
       + **2.2.1 設定「Anchors」。**  
         + **2.2.1.1 「Top anchoring>Slbling」選為「ServerPort_GroupBox:TGroupBox」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選中間的。**  
