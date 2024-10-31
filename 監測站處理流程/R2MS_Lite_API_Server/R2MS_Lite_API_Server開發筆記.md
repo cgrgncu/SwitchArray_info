@@ -369,6 +369,18 @@
       + **5.4.14 選到「API_PSU_TabSheet」元件下的子元件「API_hello_Edit3」，設定「Name」為「API_PSU_Edit」，設定「Text」為「/api/v1/PSU」。**
       + **5.4.15 選到「API_PSU_TabSheet」元件下的子元件「API_hello_URL_Label3」，設定「Name」為「API_PSU_URL_Label」。**
       + **5.4.16 選到「API_PSU_TabSheet」元件下的子元件「API_hello_URL_Edit3」，設定「Name」為「API_PSU_URL_Edit」，設定「Text」為「 http://127.0.0.1:18002/api/v1/PSU 」。**
+6. API_Notes:  
+    + **1.1 拖拉一個「Standard>TGroupBox」到「Web Server」標籤頁(物件名稱為「Main_TabSheet」)。預設名稱會是「GroupBox1」。**  
+      + **1.1.1 設定「Anchors」。**  
+        + **1.1.1.1 「Top anchoring>Slbling」選為「APIList_PageControl:TPageControl」。維持「Top anchoring>Enable」為打勾。維持「Top anchoring」右側三個鈕選子下面的。**  
+        + **1.1.1.2 「Left anchoring>Slbling」選為「Main_TabSheet:TTabSheet」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**
+        + **1.1.1.3 「Right anchoring>Slbling」選為「Main_TabSheet:TTabSheet」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選右邊的。**
+        + **1.1.1.4 「Bottom anchoring>Slbling」選為「Main_TabSheet:TTabSheet」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選下邊的。**  
+        + **1.1.1.5 「Border space」正中間那格填「10」。**  
+        + **1.1.1.6 設定完後關閉Anchors設定視窗。**  
+      + **1.1.2 設定「Caption」為「API命令說明:」。**  
+      + **1.1.4 設定「Name」為「API_Notes_GroupBox」。**  
+
 6. IdHTTPServer1:  
     + **6.1 拖拉一個「Indy Servers Protocols (am)>IdHTTPServer1」到「Web Server」標籤頁(物件名稱為「TabSheet3」)。預設名稱會是「IdHTTPServer1」。**
     + **設定「IdHTTPServer1」的「Event」頁面下「OnCommandGet」為如下程式碼。**
