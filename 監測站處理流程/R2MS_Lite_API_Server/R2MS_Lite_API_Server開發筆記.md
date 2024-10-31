@@ -393,91 +393,270 @@
       + **6.2.4 設定「ReadOnly」為「true」。**
       + **6.2.5 設定「ScrollBars」為「ssBoth」。**
       + **6.2.6 設定「WordWrap」為「false」。**
-6. IdHTTPServer1:  
-    + **6.1 拖拉一個「Indy Servers Protocols (am)>IdHTTPServer1」到「Web Server」標籤頁(物件名稱為「TabSheet3」)。預設名稱會是「IdHTTPServer1」。**
+7. IdHTTPServer1:  
+    + **7.1 拖拉一個「Indy Servers Protocols (am)>IdHTTPServer1」到「Web Server」標籤頁(物件名稱為「Main_TabSheet」)。預設名稱會是「IdHTTPServer1」。**
     + **設定「IdHTTPServer1」的「Event」頁面下「OnCommandGet」為如下程式碼。**
-      ```pascal
-        procedure TForm1.IdHTTPServer1CommandGet(AContext: TIdContext;
-          ARequestInfo: TIdHTTPRequestInfo; AResponseInfo: TIdHTTPResponseInfo);
-        var
-          api_return_json_str: AnsiString;
-        begin
-          //--------------------------------------------------------------------------
-          Log_Memo.Lines.Add('==============================');
-          Log_Memo.Lines.Add(FormatDateTime('yyyy-mm-dd HH:MM:SS',Now()));
-          Log_Memo.Lines.Add('IdHTTPServer1CommandGet:');
-          Log_Memo.Lines.Add('RawHTTPCommand: '+ARequestInfo.RawHTTPCommand);
-          Log_Memo.Lines.Add('Command: '+ARequestInfo.Command);
-          Log_Memo.Lines.Add('URI: '+ARequestInfo.URI);
-          Log_Memo.Lines.Add('RemoteIP: '+ARequestInfo.RemoteIP);
-          Log_Memo.Lines.Add('--');
-          //--------------------------------------------------------------------------
-          //--------------------------------------------------------------------------
-          // 簡單的API回應設計
-          //--
-          // 只回應以下條件:
-          // 1. GET 方法
-          // 2. API命名
-          //--
-          // 回應方式:
-          //成功時回傳JSON資料:
-          //{
-          //"status": "success",
-          //"data": { ... },
-          //"message": null
-          //}
-          // 錯誤時回傳JSON資料:
-          //{
-          //"status": "error",
-          //"data": null,
-          //"message": "Error xxx has occurred"
-          //}
-          //--
-          // 實際狀況:
-          // 成功時回傳JSON資料:
-          // {"status":"success","data":"Hello!","message":null}
-          // 錯誤時回傳JSON資料:
-          // {"status":"error","data":null,"message":"錯誤!只接受GET方法!"}
-          // {"status":"error","data":null,"message":"錯誤!不合法的API!"}
-          //--------------------------------------------------------------------------
-          // 1. GET 方法
-          if (CompareStr(ARequestInfo.Command,'GET')=0) Then begin//命令是GET方法時
-            //不做任何事
-          end
-          else begin
-            api_return_json_str:='{"status":"error","data":null,"message":"錯誤!只接受GET方法!"}';
-            Log_Memo.Lines.Add('api_return_json_str:');
-            Log_Memo.Lines.Add(api_return_json_str);
-            AResponseInfo.ContentType:='text/plain';
-            AResponseInfo.CharSet:='utf-8';
-            AResponseInfo.ContentStream:=TStringStream.Create(api_return_json_str, TEncoding.UTF8);
-            Log_Memo.Lines.Add('==============================');
-            Exit;
-          end;
-          //--------------------------------------------------------------------------
-          // 2.1. API命名: /api/v1/hello
-          if (CompareStr(ARequestInfo.URI,hello_API_Edit.Text)=0) Then begin//API正確時
-            api_return_json_str:='{"status":"success","data":"Hello!","message":null}';
-            Log_Memo.Lines.Add('api_return_json_str:');
-            Log_Memo.Lines.Add(api_return_json_str);
-            AResponseInfo.ContentType:='text/plain';
-            AResponseInfo.CharSet:='utf-8';
-            AResponseInfo.ContentStream:=TStringStream.Create(api_return_json_str, TEncoding.UTF8);
-            Log_Memo.Lines.Add('==============================');
-            Exit;
-          end
-          else begin
-            api_return_json_str:='{"status":"error","data":null,"message":"錯誤!不合法的API!"} ';
-            Log_Memo.Lines.Add('api_return_json_str:');
-            Log_Memo.Lines.Add(api_return_json_str);
-            AResponseInfo.ContentType:='text/plain';
-            AResponseInfo.CharSet:='utf-8';
-            AResponseInfo.ContentStream:=TStringStream.Create(api_return_json_str, TEncoding.UTF8);
-            Log_Memo.Lines.Add('==============================');
-            Exit;
-          end;
-        end; 
-      ```
+```pascal
+procedure TForm1.IdHTTPServer1CommandGet(AContext: TIdContext;
+  ARequestInfo: TIdHTTPRequestInfo; AResponseInfo: TIdHTTPResponseInfo);
+var
+  api_return_json_str: AnsiString;
+begin
+  //--------------------------------------------------------------------------
+  //Log_Memo.Lines.Add('==============================');
+  //Log_Memo.Lines.Add(FormatDateTime('yyyy-mm-dd HH:MM:SS',Now()));
+  //Log_Memo.Lines.Add('IdHTTPServer1CommandGet:');
+  //Log_Memo.Lines.Add('RawHTTPCommand: '+ARequestInfo.RawHTTPCommand);
+  //Log_Memo.Lines.Add('Command: '+ARequestInfo.Command);
+  //Log_Memo.Lines.Add('URI: '+ARequestInfo.URI);
+  //Log_Memo.Lines.Add('RemoteIP: '+ARequestInfo.RemoteIP);
+  //Log_Memo.Lines.Add('--');
+  //--------------------------------------------------------------------------
+  //--------------------------------------------------------------------------
+  // 簡單的API回應設計
+  //--
+  // 只回應以下條件:
+  // 1. GET 方法
+  // 2. API命名
+  //--
+  // 回應方式:
+  //成功時回傳JSON資料:
+  //{
+  //"status": "success",
+  //"data": { ... },
+  //"message": null
+  //}
+  // 錯誤時回傳JSON資料:
+  //{
+  //"status": "error",
+  //"data": null,
+  //"message": "Error xxx has occurred"
+  //}
+  //--
+  // 實際狀況:
+  // 成功時回傳JSON資料:
+  // {"status":"success","data":"Hello!","message":null}
+  // 錯誤時回傳JSON資料:
+  // {"status":"error","data":null,"message":"錯誤!只接受GET方法!"}
+  // {"status":"error","data":null,"message":"錯誤!不合法的API!"}
+  //--------------------------------------------------------------------------
+  // 1. GET 方法
+  if (CompareStr(ARequestInfo.Command,'GET')=0) Then begin//命令是GET方法時
+    //不做任何事
+  end
+  else begin
+    //--
+    // 準備回傳資料內容
+    api_return_json_str:='{"status":"error","data":null,"message":"錯誤!只接受GET方法!"}';
+    Log_Memo.Lines.Add('api_return_json_str:');
+    Log_Memo.Lines.Add(api_return_json_str);
+    //--
+    // 回傳資料給客戶端
+    AResponseInfo.ContentType:='application/json';
+    AResponseInfo.CharSet:='utf-8';
+    AResponseInfo.ContentStream:=TStringStream.Create(api_return_json_str, TEncoding.UTF8);
+    Log_Memo.Lines.Add('==============================');
+    Exit;
+  end;
+  //--------------------------------------------------------------------------
+  // 2.1. API: /api/v1/hello
+  if (CompareStr(ARequestInfo.URI,hello_API_Edit.Text)=0) Then begin//API正確時
+    //--
+    // 準備回傳資料內容
+    api_return_json_str:='{"status":"success","data":"Hello!","message":null}';
+    Log_Memo.Lines.Add('api_return_json_str:');
+    Log_Memo.Lines.Add(api_return_json_str);
+    //--
+    // 回傳資料給客戶端
+    AResponseInfo.ContentType:='application/json';
+    AResponseInfo.CharSet:='utf-8';
+    AResponseInfo.ContentStream:=TStringStream.Create(api_return_json_str, TEncoding.UTF8);
+    Log_Memo.Lines.Add('==============================');
+    Exit;
+  end
+  //--
+  // 2.2. API: /api/v1/SwitchArray
+  else if (CompareStr(ARequestInfo.URI,SwitchArray_API_Edit.Text)=0) Then begin//API正確時
+    //--
+    // 準備回傳資料內容
+    api_return_json_str:='{"status":"success","data":"SwitchArray!","message":null}';
+    //Log_Memo.Lines.Add('api_return_json_str:');
+    //Log_Memo.Lines.Add(api_return_json_str);
+    //--
+    // 呼叫PowerShell進行查詢
+    if RunCommand('cmd.exe', ['/c', 'PowerShell "Get-WMIObject -Class Win32_PnPEntity | Where-Object { $_.PNPClass -Match ''Ports''} | Where-Object { $_.Name -Match ''CH340''} | Select-Object Name | ConvertTo-Json -Compress"'],api_return_json_str,[],swoHIDE) then begin
+      //--
+      // 檢視回傳結果
+      Log_Memo.Lines.Add('api_return_json_str:');
+      Log_Memo.Lines.Add(api_return_json_str);
+      // PowerShell的ConvertTo-Json會把一些字元變成unicode編碼，看了有點討厭，用簡單暴力的方法取代一下。
+      api_return_json_str:=StringReplace(api_return_json_str,'\u0026','&',[rfReplaceAll]);// '\u0026' => '&'
+      api_return_json_str:=StringReplace(api_return_json_str,'\u0027','&',[rfReplaceAll]);// '\u0026' => '''
+      api_return_json_str:=StringReplace(api_return_json_str,'\u003c','&',[rfReplaceAll]);// '\u0026' => '<'
+      api_return_json_str:=StringReplace(api_return_json_str,'\u003e','&',[rfReplaceAll]);// '\u0026' => '>'
+      //--
+      // 換行和空白字元很討厭就去掉...
+      api_return_json_str:=Trim(api_return_json_str);
+      // 檢視替代後結果
+      Log_Memo.Lines.Add(api_return_json_str);
+      //--
+    end;
+    // 限制只能有一個ESP32裝置，進行驗證:
+    // 回傳的JSON，沒資料預期是:空字串
+    // 回傳的JSON，有資料預期是:
+    // {"Name":"USB-SERIAL CH340 (COM3)"}
+    // 用骯髒的方式解讀JSON資料，並不是真的驗證JSON內容
+    // 驗證字串長度、驗證字串是否為「{"」開頭
+    if (api_return_json_str.Length=0) Then begin
+      Log_Memo.Lines.Add('PowerShell回傳的是空字串!');
+      api_return_json_str:='{"SwitchArray_CHECK":"FAIL","message":"PowerShell回傳的是空字串!"}';
+      Log_Memo.Lines.Add(api_return_json_str);
+    end
+    else if (CompareStr(api_return_json_str.Substring(0,2),'{"')=0) Then begin
+      Log_Memo.Lines.Add('PowerShell回傳的是「{"」開頭!');
+      // 骯髒的方式取出COM資訊
+      api_return_json_str:=StringReplace(api_return_json_str,'{"Name":"USB-SERIAL CH340 (','{"SwitchArray_SerialPort":"',[]);// 只取代一次
+      api_return_json_str:=StringReplace(api_return_json_str,')"}','"}',[]);// 只取代一次
+      // 骯髒的方式增加JSON資訊
+      api_return_json_str:=StringReplace(api_return_json_str,'{"','{"SwitchArray_CHECK":"PASS","',[]);// 只取代一次
+      api_return_json_str:=StringReplace(api_return_json_str,'"}','","message":null}',[]);// 只取代一次
+    end
+    else begin
+      Log_Memo.Lines.Add('PowerShell回傳的內容不通過驗證!');
+      api_return_json_str:='{"SwitchArray_CHECK":"FAIL","message":"PowerShell回傳的內容不通過驗證!"}';
+      Log_Memo.Lines.Add(api_return_json_str);
+    end;
+    //--
+    // 返回結果
+    AResponseInfo.ContentType:='application/json';
+    AResponseInfo.CharSet:='utf-8';
+    AResponseInfo.ContentStream:=TStringStream.Create(api_return_json_str, TEncoding.UTF8);
+    Log_Memo.Lines.Add('==============================');
+    Exit;
+  end
+  //--
+  // 2.3. API: /api/v1/DMM
+  else if (CompareStr(ARequestInfo.URI,DMM_API_Edit.Text)=0) Then begin//API正確時
+    //--
+    // 準備回傳資料內容
+    api_return_json_str:='{"status":"success","data":"DMM!","message":null}';
+    //Log_Memo.Lines.Add('api_return_json_str:');
+    //Log_Memo.Lines.Add(api_return_json_str);
+    //--
+    // 呼叫PowerShell進行查詢
+    if RunCommand('cmd.exe', ['/c', 'PowerShell "Get-WMIObject -Class Win32_PnPEntity | Where-Object { $_.PNPClass -Match ''USBTestAndMeasurementDevice''} | Select-Object PNPDeviceID | ConvertTo-Json -Compress"'],api_return_json_str,[],swoHIDE) then begin
+      //--
+      // 檢視回傳結果
+      Log_Memo.Lines.Add('api_return_json_str:');
+      Log_Memo.Lines.Add(api_return_json_str);
+      // PowerShell的ConvertTo-Json會把一些字元變成unicode編碼，看了有點討厭，用簡單暴力的方法取代一下。
+      api_return_json_str:=StringReplace(api_return_json_str,'\u0026','&',[rfReplaceAll]);// '\u0026' => '&'
+      api_return_json_str:=StringReplace(api_return_json_str,'\u0027','&',[rfReplaceAll]);// '\u0026' => '''
+      api_return_json_str:=StringReplace(api_return_json_str,'\u003c','&',[rfReplaceAll]);// '\u0026' => '<'
+      api_return_json_str:=StringReplace(api_return_json_str,'\u003e','&',[rfReplaceAll]);// '\u0026' => '>'
+      //--
+      // 換行和空白字元很討厭就去掉...
+      api_return_json_str:=Trim(api_return_json_str);
+      // 檢視替代後結果
+      Log_Memo.Lines.Add(api_return_json_str);
+      //--
+    end;
+    // 限制只能有一個DMM裝置，進行驗證:
+    // 回傳的JSON，沒資料預期是:空字串
+    // 回傳的JSON，有資料預期是:
+    // {"PNPDeviceID":"USB\\VID_2A8D&PID_0101\\MY60090449"}
+    // 用骯髒的方式解讀JSON資料，並不是真的驗證JSON內容
+    // 驗證字串長度、驗證字串是否為「{"」開頭
+    if (api_return_json_str.Length=0) Then begin
+      Log_Memo.Lines.Add('PowerShell回傳的是空字串!');
+      api_return_json_str:='{"DMM_CHECK":"FAIL"}';
+      Log_Memo.Lines.Add(api_return_json_str);
+    end
+    else if (CompareStr(api_return_json_str.Substring(0,2),'{"')=0) Then begin
+      Log_Memo.Lines.Add('PowerShell回傳的是「{"」開頭!');
+      api_return_json_str:=StringReplace(api_return_json_str,'{"','{"DMM_CHECK":"PASS",',[]);// 只取代一次
+    end;
+    //--
+    // 返回結果
+    AResponseInfo.ContentType:='application/json';
+    AResponseInfo.CharSet:='utf-8';
+    AResponseInfo.ContentStream:=TStringStream.Create(api_return_json_str, TEncoding.UTF8);
+    Log_Memo.Lines.Add('==============================');
+    Exit;
+  end
+  //--
+  // 2.4. API: /api/v1/PSU
+  else if (CompareStr(ARequestInfo.URI,PSU_API_Edit.Text)=0) Then begin//API正確時
+    //--
+    // 準備回傳資料內容
+    api_return_json_str:='{"status":"success","data":"PSU!","message":null}';
+    //Log_Memo.Lines.Add('api_return_json_str:');
+    //Log_Memo.Lines.Add(api_return_json_str);
+    //--
+    // 呼叫PowerShell進行查詢
+    if RunCommand('cmd.exe', ['/c', 'PowerShell "Get-WMIObject -Class Win32_PnPEntity | Where-Object { $_.PNPClass -Match ''Ports''} | Where-Object { $_.Name -Match ''CP210x''} | Select-Object Name | ConvertTo-Json -Compress"'],api_return_json_str,[],swoHIDE) then begin
+      //--
+      // 檢視回傳結果
+      Log_Memo.Lines.Add('api_return_json_str:');
+      Log_Memo.Lines.Add(api_return_json_str);
+      // PowerShell的ConvertTo-Json會把一些字元變成unicode編碼，看了有點討厭，用簡單暴力的方法取代一下。
+      api_return_json_str:=StringReplace(api_return_json_str,'\u0026','&',[rfReplaceAll]);// '\u0026' => '&'
+      api_return_json_str:=StringReplace(api_return_json_str,'\u0027','&',[rfReplaceAll]);// '\u0026' => '''
+      api_return_json_str:=StringReplace(api_return_json_str,'\u003c','&',[rfReplaceAll]);// '\u0026' => '<'
+      api_return_json_str:=StringReplace(api_return_json_str,'\u003e','&',[rfReplaceAll]);// '\u0026' => '>'
+      //--
+      // 換行和空白字元很討厭就去掉...
+      api_return_json_str:=Trim(api_return_json_str);
+      // 檢視替代後結果
+      Log_Memo.Lines.Add(api_return_json_str);
+      //--
+    end;
+    // 限制只能有一個PSU裝置，進行驗證:
+    // 回傳的JSON，沒資料預期是:空字串
+    // 回傳的JSON，有資料預期是:
+    // {"Name":"Silicon Labs CP210x USB to UART Bridge (COM6)"}
+    // 用骯髒的方式解讀JSON資料，並不是真的驗證JSON內容
+    // 驗證字串長度、驗證字串是否為「{"」開頭
+    if (api_return_json_str.Length=0) Then begin
+      Log_Memo.Lines.Add('PowerShell回傳的是空字串!');
+      api_return_json_str:='{"PSU_CHECK":"FAIL","message":"PowerShell回傳的是空字串!"}';
+      Log_Memo.Lines.Add(api_return_json_str);
+    end
+    else if (CompareStr(api_return_json_str.Substring(0,2),'{"')=0) Then begin
+      Log_Memo.Lines.Add('PowerShell回傳的是「{"」開頭!');
+      // 骯髒的方式取出COM資訊
+      api_return_json_str:=StringReplace(api_return_json_str,'{"Name":"Silicon Labs CP210x USB to UART Bridge (','{"SwitchArray_SerialPort":"',[]);// 只取代一次
+      api_return_json_str:=StringReplace(api_return_json_str,')"}','"}',[]);// 只取代一次
+      // 骯髒的方式增加JSON資訊
+      api_return_json_str:=StringReplace(api_return_json_str,'{"','{"PSU_CHECK":"PASS","',[]);// 只取代一次
+      api_return_json_str:=StringReplace(api_return_json_str,'"}','","message":null}',[]);// 只取代一次
+    end
+    else begin
+      Log_Memo.Lines.Add('PowerShell回傳的內容不通過驗證!');
+      api_return_json_str:='{"PSU_CHECK":"FAIL","message":"PowerShell回傳的內容不通過驗證!"}';
+      Log_Memo.Lines.Add(api_return_json_str);
+    end;
+    //--
+    // 返回結果
+    AResponseInfo.ContentType:='application/json';
+    AResponseInfo.CharSet:='utf-8';
+    AResponseInfo.ContentStream:=TStringStream.Create(api_return_json_str, TEncoding.UTF8);
+    Log_Memo.Lines.Add('==============================');
+    Exit;
+  end
+  //--
+  else begin
+    api_return_json_str:='{"status":"error","data":null,"message":"錯誤!不合法的API!"} ';
+    Log_Memo.Lines.Add('api_return_json_str:');
+    Log_Memo.Lines.Add(api_return_json_str);
+    AResponseInfo.ContentType:='text/plain';
+    AResponseInfo.CharSet:='utf-8';
+    AResponseInfo.ContentStream:=TStringStream.Create(api_return_json_str, TEncoding.UTF8);
+    Log_Memo.Lines.Add('==============================');
+    Exit;
+  end;
+end;  
+```
     + **設定「ServerRunStop_Button」的「Event」頁面下「OnClick」為如下程式碼。**
       ```pascal
         procedure TForm1.ServerRunStop_ButtonClick(Sender: TObject);
