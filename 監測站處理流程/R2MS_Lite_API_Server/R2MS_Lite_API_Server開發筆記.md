@@ -394,7 +394,8 @@
       + **6.2.5 設定「ScrollBars」為「ssBoth」。**
       + **6.2.6 設定「WordWrap」為「false」。**
 7. IdHTTPServer1:  
-    + **7.1 拖拉一個「Indy Servers Protocols (am)>IdHTTPServer1」到「Web Server」標籤頁(物件名稱為「Main_TabSheet」)。預設名稱會是「IdHTTPServer1」。**
+    + **7.1 拖拉一個「System>TProcess」到「Web Server」標籤頁(物件名稱為「Main_TabSheet」)。預設名稱會是「Process1」。**
+    + **7.2 拖拉一個「Indy Servers Protocols (am)>IdHTTPServer1」到「Web Server」標籤頁(物件名稱為「Main_TabSheet」)。預設名稱會是「IdHTTPServer1」。**
     + **設定「IdHTTPServer1」的「Event」頁面下「OnCommandGet」為如下程式碼。**
       ```pascal
       procedure TForm1.IdHTTPServer1CommandGet(AContext: TIdContext;
@@ -460,7 +461,7 @@
         end;
         //--------------------------------------------------------------------------
         // 2.1. API: /api/v1/hello
-        if (CompareStr(ARequestInfo.URI,hello_API_Edit.Text)=0) Then begin//API正確時
+        if (CompareStr(ARequestInfo.URI,API_hello_Edit.Text)=0) Then begin//API正確時
           //--
           // 準備回傳資料內容
           api_return_json_str:='{"status":"success","data":"Hello!","message":null}';
@@ -476,7 +477,7 @@
         end
         //--
         // 2.2. API: /api/v1/SwitchArray
-        else if (CompareStr(ARequestInfo.URI,SwitchArray_API_Edit.Text)=0) Then begin//API正確時
+        else if (CompareStr(ARequestInfo.URI,API_SwitchArray_Edit.Text)=0) Then begin//API正確時
           //--
           // 準備回傳資料內容
           api_return_json_str:='{"status":"success","data":"SwitchArray!","message":null}';
@@ -536,7 +537,7 @@
         end
         //--
         // 2.3. API: /api/v1/DMM
-        else if (CompareStr(ARequestInfo.URI,DMM_API_Edit.Text)=0) Then begin//API正確時
+        else if (CompareStr(ARequestInfo.URI,API_DMM_Edit.Text)=0) Then begin//API正確時
           //--
           // 準備回傳資料內容
           api_return_json_str:='{"status":"success","data":"DMM!","message":null}';
@@ -586,7 +587,7 @@
         end
         //--
         // 2.4. API: /api/v1/PSU
-        else if (CompareStr(ARequestInfo.URI,PSU_API_Edit.Text)=0) Then begin//API正確時
+        else if (CompareStr(ARequestInfo.URI,API_PSU_Edit.Text)=0) Then begin//API正確時
           //--
           // 準備回傳資料內容
           api_return_json_str:='{"status":"success","data":"PSU!","message":null}';
@@ -655,7 +656,7 @@
           Log_Memo.Lines.Add('==============================');
           Exit;
         end;
-      end;  
+      end;       
       ```  
     + **設定「ServerRunStop_Button」的「Event」頁面下「OnClick」為如下程式碼。**  
       ```pascal
