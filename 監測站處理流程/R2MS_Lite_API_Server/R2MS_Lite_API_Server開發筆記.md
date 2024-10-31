@@ -656,43 +656,43 @@
           Exit;
         end;
       end;  
-      ```
-    + **設定「ServerRunStop_Button」的「Event」頁面下「OnClick」為如下程式碼。**
+      ```  
+    + **設定「ServerRunStop_Button」的「Event」頁面下「OnClick」為如下程式碼。**  
       ```pascal
-        procedure TForm1.ServerRunStop_ButtonClick(Sender: TObject);
-        begin
-          if (IdHTTPServer1.Active=false) Then begin
-            // 調整UI
-            ServerPort_Edit.Enabled:=false;
-            // 設定Server Port
-            IdHTTPServer1.DefaultPort:=StrToInt(ServerPort_Edit.Text);
-            // 提示訊息
-            Log_Memo.Lines.Add('啟動Server...');
-            // 啟動Server
-            IdHTTPServer1.Active:=true;
-            // 調整按鈕文字
-            ServerRunStop_Button.Caption:='按我停止';
-            // 調整狀態文字
-            ServerStatus_Label.Caption:='伺服器狀態: 運行中';
-            // 調整狀態列資訊
-            StatusBar1.Panels.Items[1].Text:='Server運行中...';
-          end
-          else begin
-            // 停止Server
-            IdHTTPServer1.Active:=false;
-            // 提示訊息
-            Log_Memo.Lines.Add('關閉Server...');
-            // 調整按鈕文字
-            ServerRunStop_Button.Caption:='按我啟動';
-            // 調整狀態文字
-            ServerStatus_Label.Caption:='伺服器狀態: 停止';
-            // 調整狀態列資訊
-            StatusBar1.Panels.Items[1].Text:='Server停止...';
-            // 調整UI
-            ServerPort_Edit.Enabled:=true;
-          end;
-        end;    
-      ```
+      procedure TForm1.ServerRunStop_ButtonClick(Sender: TObject);
+      begin
+        if (IdHTTPServer1.Active=false) Then begin
+          // 調整UI
+          ServerPort_Edit.Enabled:=false;
+          // 設定Server Port
+          IdHTTPServer1.DefaultPort:=StrToInt(ServerPort_Edit.Text);
+          // 提示訊息
+          Log_Memo.Lines.Add('啟動Server...');
+          // 啟動Server
+          IdHTTPServer1.Active:=true;
+          // 調整按鈕文字
+          ServerRunStop_Button.Caption:='按我停止';
+          // 調整狀態文字
+          ServerStatus_Label.Caption:='伺服器狀態: 運行中';
+          // 調整狀態列資訊
+          StatusBar1.Panels.Items[1].Text:='Server運行中...';
+        end
+        else begin
+          // 停止Server
+          IdHTTPServer1.Active:=false;
+          // 提示訊息
+          Log_Memo.Lines.Add('關閉Server...');
+          // 調整按鈕文字
+          ServerRunStop_Button.Caption:='按我啟動';
+          // 調整狀態文字
+          ServerStatus_Label.Caption:='伺服器狀態: 停止';
+          // 調整狀態列資訊
+          StatusBar1.Panels.Items[1].Text:='Server停止...';
+          // 調整UI
+          ServerPort_Edit.Enabled:=true;
+        end;
+      end;     
+      ```  
 
 
 ```
