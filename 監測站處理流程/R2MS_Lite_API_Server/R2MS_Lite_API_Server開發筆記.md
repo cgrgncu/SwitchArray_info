@@ -570,7 +570,7 @@
           // 驗證字串長度、驗證字串是否為「{"」開頭
           if (api_return_json_str.Length=0) Then begin
             Log_Memo.Lines.Add('PowerShell回傳的是空字串!');
-            api_return_json_str:='{"DMM_CHECK":"FAIL"}';
+            api_return_json_str:='{"DMM_CHECK":"FAIL","message":"PowerShell回傳的是空字串!"}';
             Log_Memo.Lines.Add(api_return_json_str);
           end
           else if (CompareStr(api_return_json_str.Substring(0,2),'{"')=0) Then begin
