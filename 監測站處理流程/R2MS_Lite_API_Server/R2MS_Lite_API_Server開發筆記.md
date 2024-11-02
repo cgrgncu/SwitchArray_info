@@ -395,6 +395,7 @@
       + **6.2.6 設定「WordWrap」為「false」。**
 7. IdHTTPServer1:  
     + **7.1 拖拉一個「System>TProcess」到「Web Server」標籤頁(物件名稱為「Main_TabSheet」)。預設名稱會是「Process1」。**
+      + 因為需要使用「RunCommand」，拖拉這個元件可以省去一些「uses」的程式碼。
     + **7.2 拖拉一個「Indy Servers Protocols (am)>IdHTTPServer1」到「Web Server」標籤頁(物件名稱為「Main_TabSheet」)。預設名稱會是「IdHTTPServer1」。**
     + **設定「IdHTTPServer1」的「Event」頁面下「OnCommandGet」為如下程式碼。**
       ```pascal
