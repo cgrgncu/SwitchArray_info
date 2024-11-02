@@ -153,7 +153,7 @@
           Form1: TForm1;
           //--
           //Global Variable add by HsiupoYeh
-          version_str: AnsiString = 'v20241024a';
+          version_str: AnsiString = 'v20241102a';
           //--  
         ```  
         + **7.3.1.2 設定「MainMenu1_1_1」的「Event」頁面下「OnClick」為如下程式碼。**  
@@ -189,7 +189,7 @@
     + **8.5.1.2 設定「Update_Memo」的「Properties」頁面下「ReadOnly」設定為「true」。**
     + **8.5.1.3 設定「Update_Memo」的「Properties」頁面下「Lines」的內容。清空後填入版本紀錄。**
     ```pascal  
-    v20241027a:
+    v20241102a:
     初版。
     ```  
     
