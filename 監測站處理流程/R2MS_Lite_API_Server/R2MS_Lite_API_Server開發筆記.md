@@ -195,11 +195,104 @@
     
     >以上是第2頁。  
 
-    + **8.6.把新增的第3頁「TabPage3」的「Properties」頁面下「Caption」設定為「Web Server」。「Name」設定為「Main_TabSheet」。**  
-    + **8.6.1 設定「Main_TabSheet」的「Properties」頁面下「PageIndex」設定為「0」。**  
-    + **8.6.2 開始進行設計...**  
+    + **8.6.把新增的第3頁「TabPage3」的「Properties」頁面下「Caption」設定為「基本設定」。「Name」設定為「BasicSettings_TabSheet」。**  
+    + **8.6.1拖拉一個「Standard>TPanel」到「BasicSettings_TabSheet」中。預設名稱會是「Panel1」。**
+      + **8.6.1.1 設定「Anchors」。**
+        + **8.6.1.1.1 「Top anchoring>Slbling」選為「BasicSettings_TabSheet:TTabSheet」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選中間的。**  
+        + **8.6.1.1.2 「Left anchoring>Slbling」選為「BasicSettings_TabSheet:TTabSheet」。維持「Left anchoring>Enable」為打勾。選擇「Left anchoring」右側三個鈕選左邊的。**
+        + **8.6.1.1.3 「Right anchoring>Slbling」選為「BasicSettings_TabSheet:TTabSheet」。選擇「Right anchoring>Enable」為打勾。選擇「Right anchoring」右側三個鈕選右邊的。** 
+        + **8.6.1.1.4 設定完後關閉Anchors設定視窗。**  
+      + **8.6.1.2 設定「BevelOuter」為「bvNone」。**  
+      + **8.6.1.3 設定「Caption」為「」。就是空白。**  
+      + **8.6.1.4 設定「Height」為「10」。**  
+      + **8.6.1.5 設定「Name」為「BasicSettings_Panel1」。**  
+    + **8.6.2拖拉一個「Standard>TPanel」到「BasicSettings_TabSheet」中。預設名稱會是「Panel1」。**
+      + **8.6.2.1 設定「Anchors」。**
+        + **8.6.2.1.1 「Top anchoring>Slbling」選為「BasicSettings_TabSheet:TTabSheet」。維持「Top anchoring>Enable」為打勾。選擇「Top anchoring」右側三個鈕選上面的。**  
+        + **8.6.2.1.2 「Left anchoring>Slbling」選為「BasicSettings_TabSheet:TTabSheet」。維持「Left anchoring>Enable」為打勾。選擇「Left anchoring」右側三個鈕選中間的。**
+        + **8.6.2.1.3 「Bottom anchoring>Slbling」選為「BasicSettings_Panel1:TPanel」。選擇「Bottom anchoring>Enable」為打勾。選擇「Bottom anchoring」右側三個鈕選上面的。** 
+        + **8.6.2.1.4 設定完後關閉Anchors設定視窗。**  
+      + **8.6.2.2 設定「BevelOuter」為「bvNone」。**  
+      + **8.6.2.3 設定「Caption」為「」。就是空白。**
+      + **8.6.2.4 設定「Name」為「BasicSettings_Panel2」。**  
+      + **8.6.2.5 設定「Width」為「10」。**  
+    + **8.6.3 拖拉一個「Standard>TGroupBox」到「BasicSettings_TabSheet」中。預設名稱會是「GroupBox1」。**  
+      + **8.6.3.1 設定「Anchors」。**  
+        + **8.6.3.1.1 「Top anchoring>Slbling」選為「BasicSettings_TabSheet:TTabSheet」。維持「Top anchoring>Enable」為打勾。維持「Top anchoring」右側三個鈕選子上面的。**  
+        + **8.6.3.1.2 「Left anchoring>Slbling」選為「BasicSettings_TabSheet:TTabSheet」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**
+        + **8.6.3.1.3 「Right anchoring>Slbling」選為「BasicSettings_Panel2:TPanel」。維持「Left anchoring>Enable」為打勾。維持「Right anchoring」右側三個鈕選左邊的。**
+        + **8.6.3.1.4 「Bottom anchoring>Slbling」選為「BasicSettings_Panel1:TPanel」。維持「Left anchoring>Enable」為打勾。維持「Bottom anchoring」右側三個鈕選上面的。**  
+        + **8.6.3.1.5 「Border space」正中間那格填「0」，上面那格填「10」，左邊那格填「10」，右邊那格填「5」。**  
+        + **8.6.3.1.6 設定完後關閉Anchors設定視窗。**  
+      + **8.6.3.2 設定「Caption」為「預設值:」。**  
+      + **8.6.3.3 設定「Name」為「BasicSettings_Default_GroupBox」。**
+   + **8.6.4 拖拉一個「Standard>TMemo」到「BasicSettings_Default_GroupBox」中。預設名稱會是「Memo1」。**
+      + **8.6.4.1 設定「Anchors」。**  
+        + **8.6.4.1.1 「Top anchoring>Slbling」選為「BasicSettings_Default_GroupBox:TGroupBox」。維持「Top anchoring>Enable」為打勾。維持「Top anchoring」右側三個鈕選子上面的。**  
+        + **8.6.4.1.2 「Left anchoring>Slbling」選為「BasicSettings_Default_GroupBox:TGroupBox」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**
+        + **8.6.4.1.3 「Right anchoring>Slbling」選為「BasicSettings_Default_GroupBox:TGroupBox」。維持「Left anchoring>Enable」為打勾。維持「Right anchoring」右側三個鈕選右邊的。**
+        + **8.6.4.1.4 「Bottom anchoring>Slbling」選為「BasicSettings_Default_GroupBox:TGroupBox」。維持「Left anchoring>Enable」為打勾。維持「Bottom anchoring」右側三個鈕選下面的。**  
+        + **8.6.4.1.5 「Border space」正中間那格填「5」。**  
+        + **8.6.4.1.6 設定完後關閉Anchors設定視窗。**
+      + **8.6.4.2 設定「Lines」的內容清空。**.
+      + **8.6.4.3 設定「Name」為「BasicSettings_Default_Memo」。**      + 
+      + **8.6.4.4 設定「ReadOnly」為「true」。**
+      + **8.6.4.5 設定「ScrollBars」為「ssBoth」。**
+      + **8.6.4.6 設定「WordWrap」為「false」。**
+    + **8.6.5 拖拉一個「Standard>TGroupBox」到「BasicSettings_TabSheet」中。預設名稱會是「GroupBox1」。**  
+      + **8.6.5.1 設定「Anchors」。**  
+        + **8.6.5.1.1 「Top anchoring>Slbling」選為「BasicSettings_TabSheet:TTabSheet」。維持「Top anchoring>Enable」為打勾。維持「Top anchoring」右側三個鈕選子上面的。**  
+        + **8.6.5.1.2 「Left anchoring>Slbling」選為「BasicSettings_Panel2:TPanel」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**
+        + **8.6.5.1.3 「Right anchoring>Slbling」選為「BasicSettings_TabSheet:TTabSheet」。維持「Left anchoring>Enable」為打勾。維持「Right anchoring」右側三個鈕選右邊的。**
+        + **8.6.5.1.4 「Bottom anchoring>Slbling」選為「BasicSettings_Panel1:TPanel」。維持「Left anchoring>Enable」為打勾。維持「Bottom anchoring」右側三個鈕選上面的。**  
+        + **8.6.5.1.5 「Border space」正中間那格填「0」，上面那格填「10」，左邊那格填「5」，右邊那格填「10」。**  
+        + **8.6.5.1.6 設定完後關閉Anchors設定視窗。**  
+      + **8.6.5.2 設定「Caption」為「目前值:」。**  
+      + **8.6.5.3 設定「Name」為「BasicSettings_Current_GroupBox」。**
+    + **8.6.6 拖拉一個「Standard>TMemo」到「BasicSettings_Current_GroupBox」中。預設名稱會是「Memo1」。**
+      + **8.6.6.1 設定「Anchors」。**  
+        + **8.6.6.1.1 「Top anchoring>Slbling」選為「BasicSettings_Current_GroupBox:TGroupBox」。維持「Top anchoring>Enable」為打勾。維持「Top anchoring」右側三個鈕選子上面的。**  
+        + **8.6.6.1.2 「Left anchoring>Slbling」選為「BasicSettings_Current_GroupBox:TGroupBox」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**
+        + **8.6.6.1.3 「Right anchoring>Slbling」選為「BasicSettings_Current_GroupBox:TGroupBox」。維持「Left anchoring>Enable」為打勾。維持「Right anchoring」右側三個鈕選右邊的。**
+        + **8.6.6.1.4 「Bottom anchoring>Slbling」選為「BasicSettings_Current_GroupBox:TGroupBox」。維持「Left anchoring>Enable」為打勾。維持「Bottom anchoring」右側三個鈕選下面的。**  
+        + **8.6.6.1.5 「Border space」正中間那格填「5」。**  
+        + **8.6.6.1.6 設定完後關閉Anchors設定視窗。**
+      + **8.6.6.2 設定「Lines」的內容清空。**.
+      + **8.6.6.3 設定「Name」為「BasicSettings_Current_Memo」。**      + 
+      + **8.6.6.4 設定「ReadOnly」為「true」。**
+      + **8.6.6.5 設定「ScrollBars」為「ssBoth」。**
+      + **8.6.6.6 設定「WordWrap」為「false」。**
+   + **8.6.7 拖拉一個「Standard>TGroupBox」到「BasicSettings_TabSheet」中。預設名稱會是「GroupBox1」。**  
+      + **8.6.7.1 設定「Anchors」。**  
+        + **8.6.7.1.1 「Top anchoring>Slbling」選為「BasicSettings_Panel1:TPanel」。維持「Top anchoring>Enable」為打勾。維持「Top anchoring」右側三個鈕選子下面的。**  
+        + **8.6.7.1.2 「Left anchoring>Slbling」選為「BasicSettings_TabSheet:TTabSheet」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**
+        + **8.6.7.1.3 「Right anchoring>Slbling」選為「BasicSettings_TabSheet:TTabSheet」。維持「Left anchoring>Enable」為打勾。維持「Right anchoring」右側三個鈕選右邊的。**
+        + **8.6.7.1.4 「Bottom anchoring>Slbling」選為「BasicSettings_TabSheet:TTabSheet」。維持「Left anchoring>Enable」為打勾。維持「Bottom anchoring」右側三個鈕選下面的。**  
+        + **8.6.7.1.5 「Border space」正中間那格填「0」，下面那格填「10」，左邊那格填「10」，右邊那格填「10」。**  
+        + **8.6.7.1.6 設定完後關閉Anchors設定視窗。**  
+      + **8.6.7.2 設定「Caption」為「基本設定說明:」。**  
+      + **8.6.7.3 設定「Name」為「BasicSettings_Notes_GroupBox」。**
+    + **8.6.8 拖拉一個「Standard>TMemo」到「BasicSettings_Notes_GroupBox」中。預設名稱會是「Memo1」。**
+      + **8.6.8.1 設定「Anchors」。**  
+        + **8.6.8.1.1 「Top anchoring>Slbling」選為「BasicSettings_Notes_GroupBox:TGroupBox」。維持「Top anchoring>Enable」為打勾。維持「Top anchoring」右側三個鈕選子上面的。**  
+        + **8.6.8.1.2 「Left anchoring>Slbling」選為「BasicSettings_Notes_GroupBox:TGroupBox」。維持「Left anchoring>Enable」為打勾。維持「Left anchoring」右側三個鈕選左邊的。**
+        + **8.6.8.1.3 「Right anchoring>Slbling」選為「BasicSettings_Notes_GroupBox:TGroupBox」。維持「Left anchoring>Enable」為打勾。維持「Right anchoring」右側三個鈕選右邊的。**
+        + **8.6.8.1.4 「Bottom anchoring>Slbling」選為「BasicSettings_Notes_GroupBox:TGroupBox」。維持「Left anchoring>Enable」為打勾。維持「Bottom anchoring」右側三個鈕選下面的。**  
+        + **8.6.8.1.5 「Border space」正中間那格填「5」。**  
+        + **8.6.8.1.6 設定完後關閉Anchors設定視窗。**
+      + **8.6.8.2 設定「Lines」的內容清空。**.
+      + **8.6.8.3 設定「Name」為「BasicSettings_Notes_Memo」。**      + 
+      + **8.6.8.4 設定「ReadOnly」為「true」。**
+      + **8.6.8.5 設定「ScrollBars」為「ssBoth」。**
+      + **8.6.8.6 設定「WordWrap」為「false」。**
 
-    >以上是第3頁。單獨修改一個頁面的PageIndex會影響所有的頁面，可能使其他頁面的PageIndex值改變。
+    >以上是第3頁。  
+    
+    + **8.7.把新增的第4頁「TabPage4」的「Properties」頁面下「Caption」設定為「Web Server」。「Name」設定為「Main_TabSheet」。**  
+    + **8.7.1 設定「Main_TabSheet」的「Properties」頁面下「PageIndex」設定為「0」。**  
+    + **8.7.2 開始進行設計...**  
+
+    >以上是第4頁。單獨修改一個頁面的PageIndex會影響所有的頁面，可能使其他頁面的PageIndex值改變。
     設計時可考慮使用TPanel元件進行響應式設計，不想看到分隔線就把BevelOuter設為bvNone。
 
 ### 開發紀錄(排版常用技巧)
