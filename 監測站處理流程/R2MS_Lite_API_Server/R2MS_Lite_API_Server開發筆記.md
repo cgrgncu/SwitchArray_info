@@ -802,7 +802,16 @@
         end;
       end;     
       ```  
-
+    + **設定「ServerPort_Edit」的「Event」頁面下「OnChange」為如下程式碼。**  
+      ```pascal
+      procedure TForm1.ServerPort_EditChange(Sender: TObject);
+      begin
+        API_hello_URL_Edit.Text:='http://'+ServerIPAddress_Edit.Text+':'+ServerPort_Edit.Text+API_hello_Edit.Text;
+        API_SwitchArray_URL_Edit.Text:='http://'+ServerIPAddress_Edit.Text+':'+ServerPort_Edit.Text+API_SwitchArray_Edit.Text;
+        API_DMM_URL_Edit.Text:='http://'+ServerIPAddress_Edit.Text+':'+ServerPort_Edit.Text+API_DMM_Edit.Text;
+        API_PSU_URL_Edit.Text:='http://'+ServerIPAddress_Edit.Text+':'+ServerPort_Edit.Text+API_PSU_Edit.Text;
+      end;   
+      ```  
 8. 基本設定:
   + **8.1 找到「BasicSettings_TabSheet」中的「BasicSettings_Default_Memo」。**
     + **8.1.1 設定「Lines」為以下內容:**
