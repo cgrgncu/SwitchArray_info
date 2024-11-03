@@ -833,6 +833,35 @@
       1.參數存放的行數不可變更。
       2.鍵值組一律使用英數字並避開跳脫字元。也避免檔案編碼造成的問題(希望UTF-8與ANSI都可用)。值一律用字串處理，並且不論長短都要放在雙引號中。
       3.不允許寫註解。
+      ```
+  + **8.3 找到「Form1」。**
+    + **8.3.1 設定「Form1」的「Event」頁面下「OnCreate」為如下程式碼:**  
+      ```pascal
+      procedure TForm1.FormCreate(Sender: TObject);
+      begin
+        If FileExists(ChangeFileExt(Application.ExeName,'.ini')) Then begin
+          Log_Memo.Lines.Add('INI檔案存在!載入檔案並依內容調整設定...');
+          BasicSettings_Current_Memo.Lines.LoadFromFile(ChangeFileExt(Application.ExeName,'.ini'));
+          If BasicSettings_Current_Memo.Lines.Count=5 Then begin
+            //Log_Memo.Lines.Add(BasicSettings_Current_Memo.Lines.Strings[4]);
+            if (CompareStr(BasicSettings_Current_Memo.Lines.Strings[4],'AutoStart="true"')=0) Then begin
+              Log_Memo.Lines.Add('目前設定:伺服器自動啟動!');
+              ServerRunStop_Button.Click;
+            end;
+            Log_Memo.Lines.Add('INI檔案存在!載入檔案並依內容調整設定...完成!');
+          end
+          else begin
+            Log_Memo.Lines.Add('INI檔案存在!載入檔案並依內容調整設定...失敗!(錯誤的檔案內容嗎?)');
+            BasicSettings_Current_Memo.Enabled:=false;
+            Application.MessageBox('基本設定載入失敗!使用預設值!','提示',64);
+          end;
+        end
+        else begin
+          Log_Memo.Lines.Add('INI檔案不存在!產生預設INI檔案...');
+          BasicSettings_Default_Memo.Lines.SaveToFile(ChangeFileExt(Application.ExeName,'.ini'));
+          Log_Memo.Lines.Add('INI檔案不存在!產生預設INI檔案...完成!');
+        end;
+      end;  
       ```  
 
 
