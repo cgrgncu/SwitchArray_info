@@ -100,24 +100,24 @@
         // 計算剩餘空間
         temp_remain_width:=temp_remain_width-StatusBar1.Panels.Items[4].Width;
         //--
-        // 配置隔壁一格，希望是100
-        StatusBar1.Panels.Items[3].Width:=100;
+        // 配置隔壁一格，希望是150
+        StatusBar1.Panels.Items[3].Width:=150;
         if (temp_remain_width < StatusBar1.Panels.Items[3].Width) Then begin
         StatusBar1.Panels.Items[3].Width:=temp_remain_width;
         end;
         // 計算剩餘空間
         temp_remain_width:=temp_remain_width-StatusBar1.Panels.Items[3].Width;
         //--
-        // 配置隔壁一格，希望是100
-        StatusBar1.Panels.Items[2].Width:=100;
+        // 配置隔壁一格，希望是150
+        StatusBar1.Panels.Items[2].Width:=150;
         if (temp_remain_width < StatusBar1.Panels.Items[2].Width) Then begin
         StatusBar1.Panels.Items[2].Width:=temp_remain_width;
         end;
         // 計算剩餘空間
         temp_remain_width:=temp_remain_width-StatusBar1.Panels.Items[2].Width;
         //--
-        // 配置隔壁一格，希望是100
-        StatusBar1.Panels.Items[1].Width:=100;
+        // 配置隔壁一格，希望是150
+        StatusBar1.Panels.Items[1].Width:=150;
         if (temp_remain_width < StatusBar1.Panels.Items[1].Width) Then begin
         StatusBar1.Panels.Items[1].Width:=temp_remain_width;
         end;
