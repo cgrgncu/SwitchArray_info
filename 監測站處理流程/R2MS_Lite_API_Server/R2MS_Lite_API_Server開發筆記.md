@@ -485,8 +485,16 @@
         + **6.2.1.4 「Bottom anchoring>Slbling」選為「API_Notes_GroupBox:TGroupBox」。維持「Left anchoring>Enable」為打勾。維持「Bottom anchoring」右側三個鈕選下邊的。**  
         + **6.2.1.5 「Border space」正中間那格填「5」。**  
         + **6.2.1.6 設定完後關閉Anchors設定視窗。**
-      + **6.2.2 設定「Lines」的內容清空。**.
-      + **6.2.3 設定「Name」為「API_Notes_Memo」。**      + 
+      + **6.2.2 設定「Lines」的內容清空。並填入以下內容:**
+        ```
+        運行需求:
+        Windosw作業系統。
+        可運行64位元應用程式。
+        允許程式通過防火牆。
+        Server Port預設值為18002。
+        --
+        ```
+      + **6.2.3 設定「Name」為「API_Notes_Memo」。** 
       + **6.2.4 設定「ReadOnly」為「true」。**
       + **6.2.5 設定「ScrollBars」為「ssBoth」。**
       + **6.2.6 設定「WordWrap」為「false」。**
