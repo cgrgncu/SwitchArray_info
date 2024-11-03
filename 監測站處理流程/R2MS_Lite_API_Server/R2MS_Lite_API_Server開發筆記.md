@@ -512,14 +512,14 @@
         api_return_json_str: AnsiString;
       begin
         //--------------------------------------------------------------------------
-        //Log_Memo.Lines.Add('==============================');
-        //Log_Memo.Lines.Add(FormatDateTime('yyyy-mm-dd HH:MM:SS',Now()));
-        //Log_Memo.Lines.Add('IdHTTPServer1CommandGet:');
-        //Log_Memo.Lines.Add('RawHTTPCommand: '+ARequestInfo.RawHTTPCommand);
-        //Log_Memo.Lines.Add('Command: '+ARequestInfo.Command);
-        //Log_Memo.Lines.Add('URI: '+ARequestInfo.URI);
-        //Log_Memo.Lines.Add('RemoteIP: '+ARequestInfo.RemoteIP);
-        //Log_Memo.Lines.Add('--');
+        Log_Memo.Lines.Add('==============================');
+        Log_Memo.Lines.Add(FormatDateTime('yyyy-mm-dd HH:MM:SS',Now()));
+        Log_Memo.Lines.Add('IdHTTPServer1CommandGet:');
+        Log_Memo.Lines.Add('RawHTTPCommand: '+ARequestInfo.RawHTTPCommand);
+        Log_Memo.Lines.Add('Command: '+ARequestInfo.Command);
+        Log_Memo.Lines.Add('URI: '+ARequestInfo.URI);
+        Log_Memo.Lines.Add('RemoteIP: '+ARequestInfo.RemoteIP);
+        Log_Memo.Lines.Add('--');
         //--------------------------------------------------------------------------
         //--------------------------------------------------------------------------
         // 簡單的API回應設計
