@@ -803,14 +803,28 @@
       end;     
       ```  
 
-
-```
-    if RunCommand('cmd.exe', ['/c', 'PowerShell "Get-CimInstance -Class Win32_OperatingSystem | Select-Object Version | ConvertTo-Json -Compress"'],api_return_json_str,[],swoHIDE) then begin
-      Log_Memo.Lines.Add('api_return_json_str:');
-      Log_Memo.Lines.Add(api_return_json_str);
-    end;
-```
-
+8. 基本設定:
+  + **8.1 找到「BasicSettings_TabSheet」中的「BasicSettings_Default_Memo」。**
+    + **8.1.1 設定「Lines」為以下內容:**
+      ```
+      [Program]
+      Version="v20241102a"
+      
+      [API_Server]
+      AutoStart="true"
+      ```  
+  + **8.2 找到「BasicSettings_TabSheet」中的「BasicSettings_Notes_Memo」。**
+    + **8.2.1 設定「Lines」為以下內容:**
+      ```
+      基本設定檔案的檔案命名為:「主程式名稱.ini」，例如:「R2MS_Lite_API_Server.ini」。
+      基本設定檔案的存放路徑為:與主程式同個資料夾中。
+      當基本設定檔案不存在時，將使用預設值製作檔案。請確保該檔案名稱沒有被占用且可寫入。
+      當基本設定檔案存在時，將載入並應用設定至主程式中。
+      基本設定檔案為參考標準INI檔案格式之自訂格式。主要增加以下規則:
+      1.參數存放的行數不可變更。
+      2.鍵值組一律使用英數字並避開跳脫字元。也避免檔案編碼造成的問題(希望UTF-8與ANSI都可用)。值一律用字串處理，並且不論長短都要放在雙引號中。
+      3.不允許寫註解。
+      ```  
 
 
 
