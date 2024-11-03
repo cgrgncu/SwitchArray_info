@@ -448,7 +448,7 @@
         + **5.5.1.5 設定完後關閉Anchors設定視窗。**  
       + **5.5.2 設定「Name」為「API_hello_URL_Edit」。**  
       + **5.3.3 設定「ReadOnly」為「true」。**  
-      + **5.3.4 設定「text」為「 http://127.0.0.1:18002/api/v1/hello 」 。**
+      + **5.3.4 設定「text」為「```http://127.0.0.1:18002/api/v1/hello```」 。**
     + **5.4 複製相同設定到其他頁面，並修改其名稱與文字**  
       + **5.4.1 在左側「components」視窗內找到樹狀圖的「API_hello_TabSheet」元件，框選下方的四個子元件，按右鍵「Copy」。**  
       + **5.4.2 選到「API_SwitchArray_TabSheet」元件，按右鍵「Paste」。**     
@@ -457,15 +457,15 @@
       + **5.4.5 選到「API_SwitchArray_TabSheet」元件下的子元件「API_hello_Label1」，設定「Name」為「API_SwitchArray_Label」。**
       + **5.4.6 選到「API_SwitchArray_TabSheet」元件下的子元件「API_hello_Edit1」，設定「Name」為「API_SwitchArray_Edit」，設定「Text」為「/api/v1/SwitchArray」。**
       + **5.4.7 選到「API_SwitchArray_TabSheet」元件下的子元件「API_hello_URL_Label1」，設定「Name」為「API_SwitchArray_URL_Label」。**
-      + **5.4.8 選到「API_SwitchArray_TabSheet」元件下的子元件「API_hello_URL_Edit1」，設定「Name」為「API_SwitchArray_URL_Edit」，設定「Text」為「 http://127.0.0.1:18002/api/v1/SwitchArray 」。**
+      + **5.4.8 選到「API_SwitchArray_TabSheet」元件下的子元件「API_hello_URL_Edit1」，設定「Name」為「API_SwitchArray_URL_Edit」，設定「Text」為「```http://127.0.0.1:18002/api/v1/SwitchArray```」。**
       + **5.4.9 選到「API_DMM_TabSheet」元件下的子元件「API_hello_Label2」，設定「Name」為「API_DMM_Label」。**
       + **5.4.10 選到「API_DMM_TabSheet」元件下的子元件「API_hello_Edit2」，設定「Name」為「API_DMM_Edit」，設定「Text」為「/api/v1/DMM」。**
       + **5.4.11 選到「API_DMM_TabSheet」元件下的子元件「API_hello_URL_Label2」，設定「Name」為「API_DMM_URL_Label」。**
-      + **5.4.12 選到「API_DMM_TabSheet」元件下的子元件「API_hello_URL_Edit2」，設定「Name」為「API_DMM_URL_Edit」，設定「Text」為「 http://127.0.0.1:18002/api/v1/DMM」。**
+      + **5.4.12 選到「API_DMM_TabSheet」元件下的子元件「API_hello_URL_Edit2」，設定「Name」為「API_DMM_URL_Edit」，設定「Text」為「```http://127.0.0.1:18002/api/v1/DMM```」。**
       + **5.4.13 選到「API_PSU_TabSheet」元件下的子元件「API_hello_Label3」，設定「Name」為「API_PSU_Label」。**
       + **5.4.14 選到「API_PSU_TabSheet」元件下的子元件「API_hello_Edit3」，設定「Name」為「API_PSU_Edit」，設定「Text」為「/api/v1/PSU」。**
       + **5.4.15 選到「API_PSU_TabSheet」元件下的子元件「API_hello_URL_Label3」，設定「Name」為「API_PSU_URL_Label」。**
-      + **5.4.16 選到「API_PSU_TabSheet」元件下的子元件「API_hello_URL_Edit3」，設定「Name」為「API_PSU_URL_Edit」，設定「Text」為「 http://127.0.0.1:18002/api/v1/PSU 」。**
+      + **5.4.16 選到「API_PSU_TabSheet」元件下的子元件「API_hello_URL_Edit3」，設定「Name」為「API_PSU_URL_Edit」，設定「Text」為「```http://127.0.0.1:18002/api/v1/PSU```」。**
 6. API_Notes:  
     + **6.1 拖拉一個「Standard>TGroupBox」到「Web Server」標籤頁(物件名稱為「Main_TabSheet」)。預設名稱會是「GroupBox1」。**  
       + **6.1.1 設定「Anchors」。**  
