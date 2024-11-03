@@ -811,7 +811,7 @@
       Version="v20241102a"
       
       [API_Server]
-      AutoStart="true"
+      AutoStart="false"
       ```  
   + **8.2 找到「BasicSettings_TabSheet」中的「BasicSettings_Notes_Memo」。**
     + **8.2.1 設定「Lines」為以下內容:**
