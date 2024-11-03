@@ -491,9 +491,11 @@
       + **6.2.5 設定「ScrollBars」為「ssBoth」。**
       + **6.2.6 設定「WordWrap」為「false」。**
 7. IdHTTPServer1:  
-    + **7.1 拖拉一個「System>TProcess」到「Web Server」標籤頁(物件名稱為「Main_TabSheet」)。預設名稱會是「Process1」。**
+    + **7.1 拖拉一個「System>TUniqueInstance」到「Web Server」標籤頁(物件名稱為「Main_TabSheet」)。預設名稱會是「UniqueInstance1」。設定「Enabled」為「true」。**
+      + 因為使用「IdHTTPServer1」建立Server，不希望重複啟動Server，所以不允許使用者重複開啟此應用程式。
+    + **7.2 拖拉一個「System>TProcess」到「Web Server」標籤頁(物件名稱為「Main_TabSheet」)。預設名稱會是「Process1」。**
       + 因為需要使用「RunCommand」，拖拉這個元件可以省去一些「uses」的程式碼。
-    + **7.2 拖拉一個「Indy Servers Protocols (am)>IdHTTPServer1」到「Web Server」標籤頁(物件名稱為「Main_TabSheet」)。預設名稱會是「IdHTTPServer1」。**
+    + **7.3 拖拉一個「Indy Servers Protocols (am)>IdHTTPServer1」到「Web Server」標籤頁(物件名稱為「Main_TabSheet」)。預設名稱會是「IdHTTPServer1」。**
     + **設定「IdHTTPServer1」的「Event」頁面下「OnCommandGet」為如下程式碼。**
       ```pascal
       procedure TForm1.IdHTTPServer1CommandGet(AContext: TIdContext;
