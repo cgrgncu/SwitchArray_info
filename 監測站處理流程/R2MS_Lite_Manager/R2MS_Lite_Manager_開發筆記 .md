@@ -21,7 +21,7 @@
 ### 開發紀錄(製作APP Icon)  
 + 使用工具1: https://icon.kitchen/  
   + IOS Icon  
-  + Text: 「API」  
+  + Text: 「Manager」  
   + BackGround>Type=「Gradient」  
   + More>Badge = 「R2MS LITE」  
 + 再使用工具2: https://tfin.ch/iosicon.html  
