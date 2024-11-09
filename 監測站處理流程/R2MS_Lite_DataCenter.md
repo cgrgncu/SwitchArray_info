@@ -5,3 +5,4 @@
 
 ### XAMPP
 + 目前Synology NAS已經可以支援 PHP8.2，選擇使用「xampp-windows-x64-8.2.12-0-VS16-installer.exe」，希望相容性好。
+  + 只安裝最少內容
