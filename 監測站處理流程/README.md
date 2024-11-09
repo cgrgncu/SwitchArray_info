@@ -165,3 +165,7 @@
     + 自行取出後，依需求重新命名。
     + 對應轉檔紀錄為「*.urflog」。
 + 若要再放入另一筆資料，可以繼續建立資料夾(名稱需為整數遞增)，也可以替換「\Recorder\XP1\Part01\4\*.v297E.csv」，並刪除「...\Urf\Level0\XP1\Part01\4\*.urf」「...\Urf\Level1\XP1\Part01\4\*.urf」，再依照前述操作再次運行。
+
+
+### vFramePlayer
+https://github.com/vmllab-js/vFramePlayer?tab=readme-ov-file
