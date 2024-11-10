@@ -1,0 +1,2 @@
+curl.exe -F "v297csv_json_zip_file[]=@..\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\Recorder\XP1\2024\07\01\2001.json" -F "v297csv_json_zip_file[]=@..\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\Recorder\XP1\2024\07\01\2001.zip" http://127.0.0.1/upload_v297csv/upload_v297csv_json_zip.php
+PAUSE
