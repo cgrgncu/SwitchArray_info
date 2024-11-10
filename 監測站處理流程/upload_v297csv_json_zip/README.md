@@ -3,10 +3,10 @@
 ```php
 <?php
 //**************************************************************************
-//* Name: upload_v297csv_json_zip.php v20241109a
+//* Name: upload_v297csv_json_zip.php v2024110a
 //* Copyright:
 //* Author: HsiupoYeh
-//* Version: v20241109a
+//* Version: v2024110a
 //* Description: 上傳*.v297csv.zip檔案與對應的JSON檔案，驗證MD5成功後才儲存在指定資料夾。
 //**************************************************************************
 
@@ -250,7 +250,7 @@ if (file_exists($target_folder.$_FILES["v297csv_json_zip_file"]["name"][0]))
 	if ($old_v297csv_json_array !== null ) 
 	{
 		if ($debug_show)echo 'JSON檔案解析成功!<br>--<br>';
-		if ($old_v297csv_json_array["FileUpload"]!="Uploaded")
+		if ($old_v297csv_json_array["FileUpload"]!="OK")
 		{
 			$need_upload=true;	
 		};
@@ -271,7 +271,7 @@ if ($need_upload)
 {
 	//-------------------------------------------------------------
 	// 寫入新的JSON檔案	
-	$v297csv_json_array["FileUpload"]="Uploaded";
+	$v297csv_json_array["FileUpload"]="OK";//Ready=準備上傳，Fail=上傳失敗，OK=上傳成功
 	file_put_contents($target_folder.$_FILES["v297csv_json_zip_file"]["name"][0],json_encode($v297csv_json_array,JSON_UNESCAPED_UNICODE));
 	//--
 	// 搬運檔案	
