@@ -171,6 +171,8 @@
 ### MonitoringRecorder
 + 1.將原始資料(*.csv)歸檔，符合以下的資料結構:
   ```
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\XP1.geo
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\XP1.trn
   ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\15\2001\Part01\1\S001202404152001.v297.csv
   ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\16\2001\Part01\1\S001202404162001.v297.csv
   ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\17\2001\Part01\1\S001202404172001.v297.csv
@@ -178,10 +180,12 @@
   ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\19\2001\Part01\1\S001202404192001.v297.csv
   ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\20\2001\Part01\1\S001202404202001.v297.csv
   ```  
-  > 每個「DD資料夾」內可能存在多個「HHNN資料夾」。DD表示兩碼的日期，HH表示兩碼的小時，NN表示兩碼的分鐘。  
-  > 以上方6天為例，資料大小約101[MB]。  
+  > + 每個「DD資料夾」內可能存在多個「HHNN資料夾」。DD表示兩碼的日期，HH表示兩碼的小時，NN表示兩碼的分鐘。  
+  > + 以上方6天為例，資料大小約101[MB]。  
 + 2.將(*.csv)壓縮為zip檔案，並將製作紀錄存為json檔案，符合以下的資料結構:
   ```
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\XP1.geo
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\XP1.trn
   ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\15\2001.json
   ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\15\2001.zip
   ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\16\2001.json
@@ -195,10 +199,16 @@
   ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\20\2001.json
   ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\20\2001.zip
   ```  
-  > json原則上是UTF-8編碼，但考量部分軟體支援程度不同，內容僅使用ASCII碼。  
-  > 以上方6天為例，資料大小約22.7[MB]。大幅節省空間。  
+  > + json原則上是UTF-8編碼，但考量部分軟體支援程度不同，內容僅使用ASCII碼。  
+  > + 以上方6天為例，資料大小約22.7[MB]。大幅節省空間。  
   
 ### MonitoringUrf
-
++ 監測站不儲存完整18萬筆資料的Urf檔案，有需要的時候請重新利用CSV檔案分析。
++ 監測站將選用N次穩定資料來擇定有限數量的Urf檔案進行長期分析。一般而言，遵守如下策略:
+  + N至少3次，選擇天氣穩定無風無雨的時段，先當作一次性調查分析，審視原始資料與逆推剖面，確認合理後決定N。
+  + 選擇品質篩選公式，預設使用公式B。
+  + 選擇保留資料量，預設保留50000筆資料。現場環境惡劣、干擾顯著時，可嘗試降低資料筆數，以確保逆推運算能收斂。
+ 
+  + 
 ### vFramePlayer
 https://github.com/vmllab-js/vFramePlayer?tab=readme-ov-file
