@@ -212,7 +212,34 @@
 + 小油坑平台站的操作範例:
   + 在虛擬機中建立如下資料結構:
   ```
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\1\empty_A.v297E.csv
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\1\empty_B.v297E.csv
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\1\empty_C.v297E.csv
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\1\S001202404152001.v297E.csv
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\1\XP1.geo
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\1\XP1.trn  
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\2\empty_A.v297E.csv
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\2\empty_B.v297E.csv
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\2\empty_C.v297E.csv
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\2\S001202404162001.v297E.csv
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\2\XP1.geo
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\2\XP1.trn
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\3\empty_A.v297E.csv
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\3\empty_B.v297E.csv
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\3\empty_C.v297E.csv
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\3\S001202404172001.v297E.csv
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\3\XP1.geo
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\3\XP1.trn  
+  ```  
   
-  ``` 
+  + 本案例取得的Quality_Info: 
+  ```
+  Quality_Info="Quality_Info_B[%]"
+  Remaining_Number="50000"
+  Reduce_Condition_in_percent="0.97282"
+  ```
+  > 採用B方法在排名第50000筆的資料品質指標為0.97%，可簡單理解為此指標越小，排名內的電極重複量測結果差異越小，推測是屬於有效量測。  
+  > 品質較差的場址，此指標可能遠大於5%。  
+  
 ### vFramePlayer
 https://github.com/vmllab-js/vFramePlayer?tab=readme-ov-file
