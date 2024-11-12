@@ -178,8 +178,8 @@
   ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\19\2001\Part01\1\S001202404192001.v297.csv
   ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\20\2001\Part01\1\S001202404202001.v297.csv
   ```  
-  > 每個「DD資料夾」內可能存在多個「HHNN資料夾」。DD表示兩碼的日期，HH表示兩碼的小時，NN表示兩碼的分鐘。
-  > 以上方6天為例，資料大小約101[MB]。
+  > 每個「DD資料夾」內可能存在多個「HHNN資料夾」。DD表示兩碼的日期，HH表示兩碼的小時，NN表示兩碼的分鐘。  
+  > 以上方6天為例，資料大小約101[MB]。  
 + 2.將(*.csv)壓縮為zip檔案，並將製作紀錄存為json檔案，符合以下的資料結構:
   ```
   ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\15\2001.json
@@ -195,8 +195,8 @@
   ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\20\2001.json
   ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\20\2001.zip
   ```  
-  > json原則上是UTF-8編碼，但考量部分軟體支援程度不同，內容僅使用ASCII碼。
-  > 以上方6天為例，資料大小約22.7[MB]。大幅節省空間。
+  > json原則上是UTF-8編碼，但考量部分軟體支援程度不同，內容僅使用ASCII碼。  
+  > 以上方6天為例，資料大小約22.7[MB]。大幅節省空間。  
   
 ### MonitoringUrf
 
