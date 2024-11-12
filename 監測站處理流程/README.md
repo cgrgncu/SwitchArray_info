@@ -166,6 +166,39 @@
     + 對應轉檔紀錄為「*.urflog」。
 + 若要再放入另一筆資料，可以繼續建立資料夾(名稱需為整數遞增)，也可以替換「\Recorder\XP1\Part01\4\*.v297E.csv」，並刪除「...\Urf\Level0\XP1\Part01\4\*.urf」「...\Urf\Level1\XP1\Part01\4\*.urf」，再依照前述操作再次運行。
 
+### 歸檔
++ 利用已經有的工具，就需要先照前述方案把資料依照指定結構擺放後運行工具才能進行需要的分析，但分析完要歸檔，以利未來進一步分析與資料交換。
+### MonitoringRecorder
++ 1.將原始資料(*.csv)歸檔，符合以下的資料結構:
+  ```
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\15\2001\Part01\1\S001202404152001.v297.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\16\2001\Part01\1\S001202404162001.v297.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\17\2001\Part01\1\S001202404172001.v297.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\18\2001\Part01\1\S001202404182001.v297.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\19\2001\Part01\1\S001202404192001.v297.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\20\2001\Part01\1\S001202404202001.v297.csv
+  ```  
+  > 每個「DD資料夾」內可能存在多個「HHNN資料夾」。DD表示兩碼的日期，HH表示兩碼的小時，NN表示兩碼的分鐘。
+  > 以上方6天為例，資料大小約101[MB]。
++ 2.將(*.csv)壓縮為zip檔案，並將製作紀錄存為json檔案，符合以下的資料結構:
+  ```
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\15\2001.json
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\15\2001.zip
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\16\2001.json
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\16\2001.zip
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\17\2001.json
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\17\2001.zip
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\18\2001.json
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\18\2001.zip
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\19\2001.json
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\19\2001.zip
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\20\2001.json
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\20\2001.zip
+  ```  
+  > json原則上是UTF-8編碼，但考量部分軟體支援程度不同，內容僅使用ASCII碼。
+  > 以上方6天為例，資料大小約22.7[MB]。大幅節省空間。
+  
+### MonitoringUrf
 
 ### vFramePlayer
 https://github.com/vmllab-js/vFramePlayer?tab=readme-ov-file
