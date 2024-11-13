@@ -169,18 +169,18 @@
 ### 歸檔
 + 利用已經有的工具，就需要先照前述方案把資料依照指定結構擺放後運行工具才能進行需要的分析，但分析完要歸檔，以利未來進一步分析與資料交換。
 ### MonitoringRecorder
-+ 1.將原始資料(*.v297E.csv)歸檔，符合以下的資料結構:
++ 1.將原始資料(*.v297.csv)歸檔，符合以下的資料結構:
   ```
   ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\XP1.geo
   ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\XP1.trn
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\15\2001\Part01\1\S001202404152001.v297E.csv
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\16\2001\Part01\1\S001202404162001.v297E.csv
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\17\2001\Part01\1\S001202404172001.v297E.csv
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\18\2001\Part01\1\S001202404182001.v297E.csv
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\19\2001\Part01\1\S001202404192001.v297E.csv
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\20\2001\Part01\1\S001202404202001.v297E.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\15\2001\Part01\1\S001202404152001.v297.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\16\2001\Part01\1\S001202404162001.v297.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\17\2001\Part01\1\S001202404172001.v297.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\18\2001\Part01\1\S001202404182001.v297.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\19\2001\Part01\1\S001202404192001.v297.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\20\2001\Part01\1\S001202404202001.v297.csv
   ```  
-  > + (*.v297E.csv)要利用R2MS_Lite_v297csv_to_v297Ecsv_Release_v20240408a轉檔。
+  > + 「*.v297.csv」要利用R2MS_Lite_v297csv_to_v297Ecsv_Release_v20240408a轉檔為「*.v297E.csv」才能給ERT分析精靈使用。
   > + 每個「DD資料夾」內可能存在多個「HHNN資料夾」。DD表示兩碼的日期，HH表示兩碼的小時，NN表示兩碼的分鐘。  
   > + 以上方6天為例，資料大小約101[MB]。  
 + 2.將(*.csv)壓縮為zip檔案，並將製作紀錄存為json檔案，符合以下的資料結構:
