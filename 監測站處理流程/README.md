@@ -179,10 +179,19 @@
   ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\18\2001\Part01\1\S001202404182001.v297.csv
   ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\19\2001\Part01\1\S001202404192001.v297.csv
   ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\20\2001\Part01\1\S001202404202001.v297.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP2\XP2.geo
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP2\XP2.trn
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP2\2024\04\15\2031\Part01\1\S002202404152031.v297.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP2\2024\04\16\2031\Part01\1\S002202404162031.v297.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP2\2024\04\17\2031\Part01\1\S002202404172031.v297.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP2\2024\04\18\2031\Part01\1\S002202404182031.v297.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP2\2024\04\19\2031\Part01\1\S002202404192031.v297.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP2\2024\04\20\2031\Part01\1\S002202404202031.v297.csv
   ```  
   > + 「.v297.csv」要利用R2MS_Lite_v297csv_to_v297Ecsv_Release_v20240408a轉檔為「.v297E.csv」才能給ERT分析精靈使用。
   > + 每個「DD資料夾」內可能存在多個「HHNN資料夾」。DD表示兩碼的日期，HH表示兩碼的小時，NN表示兩碼的分鐘。  
-  > + 以上方6天為例，資料大小約101[MB]。  
+  > + 以上方6天為例，資料大小約200[MB]。
+  > + 可從結構中判別XP1使用S001，並於20:01開始放電；XP2使用S002，並於20:31開始放電
 + 2.將(*.csv)壓縮為zip檔案，並將製作紀錄存為json檔案，符合以下的資料結構:
   ```
   ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\XP1.geo
@@ -199,12 +208,26 @@
   ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\19\2001.zip
   ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\20\2001.json
   ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\20\2001.zip
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP2\XP1.geo
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP2\XP1.trn
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP2\2024\04\15\2031.json
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP2\2024\04\15\2031.zip
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP2\2024\04\16\2031.json
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP2\2024\04\16\2031.zip
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP2\2024\04\17\2031.json
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP2\2024\04\17\2031.zip
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP2\2024\04\18\2031.json
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP2\2024\04\18\2031.zip
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP2\2024\04\19\2031.json
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP2\2024\04\19\2031.zip
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP2\2024\04\20\2031.json
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP2\2024\04\20\2031.zip
   ```  
   > + json原則上是UTF-8編碼，但考量部分軟體支援程度不同，內容僅使用ASCII碼。  
-  > + 以上方6天為例，資料大小約22.7[MB]。大幅節省空間。  
+  > + 以上方6天為例，資料大小約46[MB]。大幅節省空間。  
   
-### MonitoringUrf
-+ 監測站不儲存完整18萬筆資料的Urf檔案，有需要的時候請重新利用CSV檔案分析。
+### MonitoringQualityInfo
++ 監測站不儲存完整18萬筆資料的Urf檔案，有需要的時候請重新利用CSV檔案分析。監測站只儲存分析用的保留資料，例如50000筆。
 + 監測站將選用N次穩定資料來擇定有限數量的Urf檔案進行長期分析。一般而言，遵守如下策略:
   + N至少3次，選擇天氣穩定無風無雨的時段，先當作一次性調查分析，審視原始資料與逆推剖面，確認合理後決定N。
   + 選擇品質篩選公式，預設使用公式B。
@@ -212,24 +235,43 @@
 + 小油坑平台站的操作範例:
   + 在虛擬機中建立如下資料結構:
   ```
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\1\XP1.geo
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\1\XP1.trn  
   C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\1\empty_A.v297E.csv
   C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\1\empty_B.v297E.csv
   C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\1\empty_C.v297E.csv
   C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\1\S001202404152001.v297E.csv
-  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\1\XP1.geo
-  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\1\XP1.trn  
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\2\XP1.geo
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\2\XP1.trn
   C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\2\empty_A.v297E.csv
   C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\2\empty_B.v297E.csv
   C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\2\empty_C.v297E.csv
   C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\2\S001202404162001.v297E.csv
-  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\2\XP1.geo
-  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\2\XP1.trn
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\3\XP1.geo
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\3\XP1.trn 
   C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\3\empty_A.v297E.csv
   C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\3\empty_B.v297E.csv
   C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\3\empty_C.v297E.csv
   C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\3\S001202404172001.v297E.csv
-  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\3\XP1.geo
-  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\3\XP1.trn  
+
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\1\XP2.geo
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\1\XP2.trn  
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\1\empty_A.v297E.csv
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\1\empty_B.v297E.csv
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\1\empty_C.v297E.csv
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\1\S002202404152031.v297E.csv
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\2\XP2.geo
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\2\XP2.trn
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\2\empty_A.v297E.csv
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\2\empty_B.v297E.csv
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\2\empty_C.v297E.csv
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\2\S002202404162031.v297E.csv
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\3\XP2.geo
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\3\XP2.trn 
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\3\empty_A.v297E.csv
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\3\empty_B.v297E.csv
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\3\empty_C.v297E.csv
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\3\S002202404172031.v297E.csv
   ```  
   
   + 本案例取得的Quality_Info: 
@@ -238,31 +280,46 @@
   Remaining_Number="50000"
   Reduce_Condition_in_percent="0.97282"
   ```
-  > 採用B方法在排名第50000筆的資料品質指標為0.97%，可簡單理解為此指標越小，排名內的電極重複量測結果差異越小，推測是屬於有效量測。  
-  > 品質較差的場址，此指標可能遠大於5%。  
+  > + 採用B方法在排名第50000筆的資料品質指標為0.97%，可簡單理解為此指標越小，排名內的電極重複量測結果差異越小，推測是屬於有效量測。  
+  > + 品質較差的場址，此指標可能遠大於5%。  
 
-  + 分析後會得到如下資料夾結構:
-  ```  
+  + 分析後會多得到如下資料夾結構:
+  ```
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP1\XP1_S3_R4_B50000_Level1.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP1\Part01\XP1_Part01.uqi  
   C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP1\Part01\1\XP1_Part01_1_Level0.urf
   C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP1\Part01\1\XP1_Part01_1_Level0.urflog
   C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP1\Part01\2\XP1_Part01_2_Level0.urf
   C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP1\Part01\2\XP1_Part01_2_Level0.urflog
   C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP1\Part01\3\XP1_Part01_3_Level0.urf
   C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP1\Part01\3\XP1_Part01_3_Level0.urflog
-  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP1\Part01\XP1_Part01.uqi  
-  
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP1\Part01\XP1_Part01_Level1.urf  
   C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP1\Part01\1\XP1_Part01_1_Level1.urf
   C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP1\Part01\1\XP1_Part01_1_Level1.urflog
   C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP1\Part01\2\XP1_Part01_2_Level1.urf
   C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP1\Part01\2\XP1_Part01_2_Level1.urflog
   C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP1\Part01\3\XP1_Part01_3_Level1.urf
   C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP1\Part01\3\XP1_Part01_3_Level1.urflog
-  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP1\Part01\XP1_Part01_Level1.urf
-  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP1\XP1_S3_R4_B50000_Level1.urf
+
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP2\XP2_S3_R4_B50000_Level1.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP2\Part01\XP2_Part01.uqi  
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP2\Part01\1\XP2_Part01_1_Level0.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP2\Part01\1\XP2_Part01_1_Level0.urflog
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP2\Part01\2\XP2_Part01_2_Level0.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP2\Part01\2\XP2_Part01_2_Level0.urflog
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP2\Part01\3\XP2_Part01_3_Level0.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP2\Part01\3\XP2_Part01_3_Level0.urflog
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP2\Part01\XP2_Part01_Level1.urf  
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP2\Part01\1\XP2_Part01_1_Level1.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP2\Part01\1\XP2_Part01_1_Level1.urflog
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP2\Part01\2\XP2_Part01_2_Level1.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP2\Part01\2\XP2_Part01_2_Level1.urflog
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP2\Part01\3\XP2_Part01_3_Level1.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP2\Part01\3\XP2_Part01_3_Level1.urflog 
   ```
-  > 會將以上所有資料歸檔至資料夾中，以利後人檢驗。  
-  > 這裡主要利用「XP1_S3_R4_B50000_Level1.urf」進行逆推，若RMS低且主觀認定剖面地表分布合理，則確定參數。若否，則重新調整參數並檢視CSV檔案。  
-  > 後續分析主要利用的檔案則為「XP1_Part01.uqi」。
+  > + 會將以上所有資料歸檔至資料夾中，以利後人檢驗。  
+  > + 這裡主要利用「XP1_S3_R4_B50000_Level1.urf」、「XP2_S3_R4_B50000_Level1.urf」進行逆推，若RMS低且主觀認定剖面地表分布合理，則確定參數。若否，則重新調整參數並檢視CSV檔案。  
+  > + 後續分析主要利用的檔案則為「XP1_Part01.uqi」、「XP2_Part01.uqi」。
   > 
 ### vFramePlayer
 https://github.com/vmllab-js/vFramePlayer?tab=readme-ov-file
