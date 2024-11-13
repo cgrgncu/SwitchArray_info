@@ -320,6 +320,83 @@
   > + 會將以上所有資料歸檔至資料夾中，以利後人檢驗。  
   > + 這裡主要利用「XP1_S3_R4_B50000_Level1.urf」、「XP2_S3_R4_B50000_Level1.urf」進行逆推，若RMS低且主觀認定剖面地表分布合理，則確定參數。若否，則重新調整參數並檢視CSV檔案。  
   > + 後續分析主要利用的檔案則為「XP1_Part01.uqi」、「XP2_Part01.uqi」。
-  > 
+
++ 將「[20240409A]Stable-CSV2URF(XYKP)」壓縮後歸檔，符合以下的資料結構:
+  ```
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP).zip
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\1\empty_A.v297E.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\1\empty_B.v297E.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\1\empty_C.v297E.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\1\S001202404152001.v297E.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\1\XP1.geo
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\1\XP1.trn
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\2\empty_A.v297E.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\2\empty_B.v297E.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\2\empty_C.v297E.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\2\S001202404162001.v297E.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\2\XP1.geo
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\2\XP1.trn
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\3\empty_A.v297E.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\3\empty_B.v297E.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\3\empty_C.v297E.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\3\S001202404172001.v297E.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\3\XP1.geo
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP1\Part01\3\XP1.trn
+
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\1\empty_A.v297E.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\1\empty_B.v297E.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\1\empty_C.v297E.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\1\S001202404152031.v297E.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\1\XP1.geo
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\1\XP1.trn
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\2\empty_A.v297E.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\2\empty_B.v297E.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\2\empty_C.v297E.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\2\S001202404162031.v297E.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\2\XP1.geo
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\2\XP1.trn
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\3\empty_A.v297E.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\3\empty_B.v297E.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\3\empty_C.v297E.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\3\S001202404172031.v297E.csv
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\3\XP2.geo
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Recorder\XP2\Part01\3\XP2.trn
+
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP1\XP1_S3_R4_B50000_Level1.urf
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP1\Part01\XP1_Part01.uqi  
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP1\Part01\1\XP1_Part01_1_Level0.urf
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP1\Part01\1\XP1_Part01_1_Level0.urflog
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP1\Part01\2\XP1_Part01_2_Level0.urf
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP1\Part01\2\XP1_Part01_2_Level0.urflog
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP1\Part01\3\XP1_Part01_3_Level0.urf
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP1\Part01\3\XP1_Part01_3_Level0.urflog
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP1\Part01\XP1_Part01_Level1.urf  
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP1\Part01\1\XP1_Part01_1_Level1.urf
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP1\Part01\1\XP1_Part01_1_Level1.urflog
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP1\Part01\2\XP1_Part01_2_Level1.urf
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP1\Part01\2\XP1_Part01_2_Level1.urflog
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP1\Part01\3\XP1_Part01_3_Level1.urf
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP1\Part01\3\XP1_Part01_3_Level1.urflog
+
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP2\XP2_S3_R4_B50000_Level1.urf
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP2\Part01\XP2_Part01.uqi  
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP2\Part01\1\XP2_Part01_1_Level0.urf
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP2\Part01\1\XP2_Part01_1_Level0.urflog
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP2\Part01\2\XP2_Part01_2_Level0.urf
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP2\Part01\2\XP2_Part01_2_Level0.urflog
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP2\Part01\3\XP2_Part01_3_Level0.urf
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP2\Part01\3\XP2_Part01_3_Level0.urflog
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP2\Part01\XP2_Part01_Level1.urf  
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP2\Part01\1\XP2_Part01_1_Level1.urf
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP2\Part01\1\XP2_Part01_1_Level1.urflog
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP2\Part01\2\XP2_Part01_2_Level1.urf
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP2\Part01\2\XP2_Part01_2_Level1.urflog
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP2\Part01\3\XP2_Part01_3_Level1.urf
+  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringQualityInfo\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP2\Part01\3\XP2_Part01_3_Level1.urflog 
+  ```  
+  > + 「.v297.csv」要利用R2MS_Lite_v297csv_to_v297Ecsv_Release_v20240408a轉檔為「.v297E.csv」才能給ERT分析精靈使用。
+  > + 每個「DD資料夾」內可能存在多個「HHNN資料夾」。DD表示兩碼的日期，HH表示兩碼的小時，NN表示兩碼的分鐘。  
+  > + 以上方6天為例，資料大小約200[MB]。
+  > + 可從結構中判別XP1使用S001，並於20:01開始放電；XP2使用S002，並於20:31開始放電
 ### vFramePlayer
 https://github.com/vmllab-js/vFramePlayer?tab=readme-ov-file
