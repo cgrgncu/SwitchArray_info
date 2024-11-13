@@ -240,6 +240,29 @@
   ```
   > 採用B方法在排名第50000筆的資料品質指標為0.97%，可簡單理解為此指標越小，排名內的電極重複量測結果差異越小，推測是屬於有效量測。  
   > 品質較差的場址，此指標可能遠大於5%。  
+
+  + 分析後會得到如下資料夾結構:
+  ```  
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP1\Part01\1\XP1_Part01_1_Level0.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP1\Part01\1\XP1_Part01_1_Level0.urflog
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP1\Part01\2\XP1_Part01_2_Level0.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP1\Part01\2\XP1_Part01_2_Level0.urflog
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP1\Part01\3\XP1_Part01_3_Level0.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP1\Part01\3\XP1_Part01_3_Level0.urflog
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level0\XP1\Part01\XP1_Part01.uqi  
   
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP1\Part01\1\XP1_Part01_1_Level1.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP1\Part01\1\XP1_Part01_1_Level1.urflog
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP1\Part01\2\XP1_Part01_2_Level1.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP1\Part01\2\XP1_Part01_2_Level1.urflog
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP1\Part01\3\XP1_Part01_3_Level1.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP1\Part01\3\XP1_Part01_3_Level1.urflog
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP1\Part01\XP1_Part01_Level1.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\Urf\Level1\XP1\XP1_S3_R4_B50000_Level1.urf
+  ```
+  > 會將以上所有資料歸檔至資料夾中，以利後人檢驗。  
+  > 這裡主要利用「XP1_S3_R4_B50000_Level1.urf」進行逆推，若RMS低且主觀認定剖面地表分布合理，則確定參數。若否，則重新調整參數並檢視CSV檔案。  
+  > 後續分析主要利用的檔案則為「XP1_Part01.uqi」。
+  > 
 ### vFramePlayer
 https://github.com/vmllab-js/vFramePlayer?tab=readme-ov-file
