@@ -180,7 +180,7 @@
   ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\19\2001\Part01\1\S001202404192001.v297.csv
   ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringRecorder\XP1\2024\04\20\2001\Part01\1\S001202404202001.v297.csv
   ```  
-  > + 「*.v297.csv」要利用R2MS_Lite_v297csv_to_v297Ecsv_Release_v20240408a轉檔為「*.v297E.csv」才能給ERT分析精靈使用。
+  > + 「.v297.csv」要利用R2MS_Lite_v297csv_to_v297Ecsv_Release_v20240408a轉檔為「.v297E.csv」才能給ERT分析精靈使用。
   > + 每個「DD資料夾」內可能存在多個「HHNN資料夾」。DD表示兩碼的日期，HH表示兩碼的小時，NN表示兩碼的分鐘。  
   > + 以上方6天為例，資料大小約101[MB]。  
 + 2.將(*.csv)壓縮為zip檔案，並將製作紀錄存為json檔案，符合以下的資料結構:
