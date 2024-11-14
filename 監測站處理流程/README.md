@@ -1305,58 +1305,58 @@
   > 以上約10.8[MB]
   > 會準備一個範例「Template」在歸檔的「VM_Template」資料夾中。
 + 目前考量相關檔案比較常查看，因此不壓縮為zip就歸檔至「MonitoringInversion」中。
-  + 將「AutoRepeatInversion」改名為「MonitoringInversion」，再歸檔至專案中，使其符合以下結構:
-  ```
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\00\AutoRepeatInversion.ini
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\00\AutoRepeatInversionPlot.ini
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\00\OpenMyFigExample.m
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\00\Readme.txt
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median.msm
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median.nod
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median.out
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median.rms
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median.txt
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_A_pcolor_shading_faceted.png
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_A_pcolor_shading_flat.fig
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_A_pcolor_shading_flat.png
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_A_QCV_pcolor_shading_faceted.png
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_A_QCV_pcolor_shading_flat.fig
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_A_QCV_pcolor_shading_flat.png
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_B_pcolor_shading_faceted.png
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_B_pcolor_shading_flat.png
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_B_QCV_pcolor_shading_faceted.png
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_B_QCV_pcolor_shading_flat.png
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_C_pcolor_shading_faceted.png
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_C_pcolor_shading_flat.png
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_C_QCV_pcolor_shading_faceted.png
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_C_QCV_pcolor_shading_flat.png
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\Inversion_ini\00
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\Inversion_ini\00\XP1.ini
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\Trn\XP1.trn
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\Urf\AutoRepeatInversion.ini
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\Urf\AutoRepeatInversionPlot.ini
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\Urf\S001202404152001_Level1.urf
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\Urf\S001202404152001_Level2_01.urf
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\Urf\S001202404152001_Level2_02.urf
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\Urf\S001202404152001_Level2_03.urf
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\Urf\S001202404152001_Level2_04.urf
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\Urf\S001202404152001_Level2_05.urf
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\Urf\S001202404152001_Level2_06.urf
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\Urf\S001202404152001_Level2_07.urf
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\Urf\S001202404152001_Level2_08.urf
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\Urf\S001202404152001_Level2_09.urf
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\Urf\S001202404152001_Level2_10.urf
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\Urf\S001202404152001_Level2_11.urf
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\Urf\S001202404152001_Level2_12.urf
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\Urf\S001202404152001_Level2_13.urf
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\Urf\S001202404152001_Level2_14.urf
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\Urf\S001202404152001_Level2_15.urf
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\Urf\S001202404152001_Level2_16.urf
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\Urf\S001202404152001_Level2_17.urf
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\Urf\S001202404152001_Level2_18.urf
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\Urf\S001202404152001_Level2_19.urf
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\Urf\S001202404152001_Level2_20.urf
-  ...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\S001202404152001\Urf\Urf_RandomReduce_Groups.ini
-  ```
+  + 將「AutoRepeatInversion」資料夾下的「S001202404152001」資料夾歸檔至專案中，使其符合以下結構:
+```
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\00\AutoRepeatInversion.ini
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\00\AutoRepeatInversionPlot.ini
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\00\OpenMyFigExample.m
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\00\Readme.txt
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median.msm
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median.nod
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median.out
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median.rms
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median.txt
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_A_pcolor_shading_faceted.png
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_A_pcolor_shading_flat.fig
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_A_pcolor_shading_flat.png
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_A_QCV_pcolor_shading_faceted.png
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_A_QCV_pcolor_shading_flat.fig
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_A_QCV_pcolor_shading_flat.png
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_B_pcolor_shading_faceted.png
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_B_pcolor_shading_flat.png
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_B_QCV_pcolor_shading_faceted.png
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_B_QCV_pcolor_shading_flat.png
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_C_pcolor_shading_faceted.png
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_C_pcolor_shading_flat.png
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_C_QCV_pcolor_shading_faceted.png
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_C_QCV_pcolor_shading_flat.png
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\Inversion_ini\00
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\Inversion_ini\00\XP1.ini
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\Trn\XP1.trn
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\Urf\AutoRepeatInversion.ini
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\Urf\AutoRepeatInversionPlot.ini
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\Urf\S001202404152001_Level1.urf
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\Urf\S001202404152001_Level2_01.urf
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\Urf\S001202404152001_Level2_02.urf
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\Urf\S001202404152001_Level2_03.urf
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\Urf\S001202404152001_Level2_04.urf
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\Urf\S001202404152001_Level2_05.urf
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\Urf\S001202404152001_Level2_06.urf
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\Urf\S001202404152001_Level2_07.urf
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\Urf\S001202404152001_Level2_08.urf
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\Urf\S001202404152001_Level2_09.urf
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\Urf\S001202404152001_Level2_10.urf
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\Urf\S001202404152001_Level2_11.urf
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\Urf\S001202404152001_Level2_12.urf
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\Urf\S001202404152001_Level2_13.urf
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\Urf\S001202404152001_Level2_14.urf
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\Urf\S001202404152001_Level2_15.urf
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\Urf\S001202404152001_Level2_16.urf
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\Urf\S001202404152001_Level2_17.urf
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\Urf\S001202404152001_Level2_18.urf
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\Urf\S001202404152001_Level2_19.urf
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\Urf\S001202404152001_Level2_20.urf
+...\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\MonitoringInversion\XP1\2024\04\15\S001202404152001\Urf\Urf_RandomReduce_Groups.ini
+```
 ### vFramePlayer
 https://github.com/vmllab-js/vFramePlayer?tab=readme-ov-file
