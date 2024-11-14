@@ -671,11 +671,20 @@
 + 只有這些改名的URF進行逆推，完成後歸檔儲存。
 + 接續前述步驟，繼續執行小油坑平台案例:
   + 每一個獨立檔名的Urf，例如「S001202404152001_Level1.urf」，就是一次逆推工作。為了完整性，歸檔也會保留「S001202404152001_Level1.urflog」，但此檔案不參與逆推工作。
-  + 1.用ERT逆推大師來做，若不確定環境，請使用全新虛擬機。整理資料使其符合以下檔案結構:
+  + 1.用ERT逆推大師來做，若不確定環境，請使用全新虛擬機。參數檔案內容請自行調整，整理資料使其符合以下檔案結構:
   ```
-  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\AutoRepeatInversion\XP1\Part01\1\XP1.geo
-  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Stable-CSV2URF(XYKP)\AutoRepeatInversion\XP1\Part01\1\XP1.trn  
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Inversion_ini
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Trn
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Inversion_ini\00
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Inversion_ini\00\XP1.ini
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Trn\XP1.trn
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\AutoRepeatInversion.ini
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\AutoRepeatInversionPlot.ini
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\S001202404152001_Level1.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\Urf_RandomReduce_Groups.ini
   ```
+  > 以上約1.43[MB]
   + 2.分析完之後，符合以下檔案結構:
   ```
   C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\00\AutoRepeatInversion.ini
@@ -1239,6 +1248,60 @@
   C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\S001202404152001_Level2_20.urf
   C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\Urf_RandomReduce_Groups.ini
   ```
-
+  > 以上約524[MB]。
+  + 刪掉過程檔案，符合以下結構:
+  ```
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\00\AutoRepeatInversion.ini
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\00\AutoRepeatInversionPlot.ini
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\00\OpenMyFigExample.m
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\00\Readme.txt
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median.msm
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median.nod
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median.out
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median.rms
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median.txt
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_A_pcolor_shading_faceted.png
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_A_pcolor_shading_flat.fig
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_A_pcolor_shading_flat.png
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_A_QCV_pcolor_shading_faceted.png
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_A_QCV_pcolor_shading_flat.fig
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_A_QCV_pcolor_shading_flat.png
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_B_pcolor_shading_faceted.png
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_B_pcolor_shading_flat.png
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_B_QCV_pcolor_shading_faceted.png
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_B_QCV_pcolor_shading_flat.png
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_C_pcolor_shading_faceted.png
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_C_pcolor_shading_flat.png
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_C_QCV_pcolor_shading_faceted.png
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\00\S001202404152001_Level2_20_Repeat04_trial1_InvRes4_median_C_QCV_pcolor_shading_flat.png
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Inversion_ini\00
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Inversion_ini\00\XP1.ini
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Trn\XP1.trn
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\AutoRepeatInversion.ini
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\AutoRepeatInversionPlot.ini
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\S001202404152001_Level1.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\S001202404152001_Level2_01.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\S001202404152001_Level2_02.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\S001202404152001_Level2_03.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\S001202404152001_Level2_04.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\S001202404152001_Level2_05.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\S001202404152001_Level2_06.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\S001202404152001_Level2_07.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\S001202404152001_Level2_08.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\S001202404152001_Level2_09.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\S001202404152001_Level2_10.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\S001202404152001_Level2_11.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\S001202404152001_Level2_12.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\S001202404152001_Level2_13.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\S001202404152001_Level2_14.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\S001202404152001_Level2_15.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\S001202404152001_Level2_16.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\S001202404152001_Level2_17.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\S001202404152001_Level2_18.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\S001202404152001_Level2_19.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\S001202404152001_Level2_20.urf
+  C:\R2MS_ERT_Web_Server\Projects\[20240409A]Template-AutoINV(XYKP)\AutoRepeatInversion\S001202404152001\Urf\Urf_RandomReduce_Groups.ini
+  ```
+  > 以上約10.8[MB]
 ### vFramePlayer
 https://github.com/vmllab-js/vFramePlayer?tab=readme-ov-file
