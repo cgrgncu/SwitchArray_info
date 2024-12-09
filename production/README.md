@@ -8,3 +8,6 @@
 ### PC(NUC i7)
 
 ### SwitchArray
+
+### NAS(DS224+) + UPS
++ 32390 x2 = 64,780
