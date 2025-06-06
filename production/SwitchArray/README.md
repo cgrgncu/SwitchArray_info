@@ -15,7 +15,8 @@
   + PSU連接線(橘、灰)_槍型接頭轉防水接頭 x1
   + DMM連接線(紅、黑)_槍型接頭公對公 x1
 + SwitchArray內部使用的「ESP32」一律改用「CP2102」版本
-  + 使用CP210x修改序號工具將序號修改為: 2025-S003
+  + 使用CP210x修改序號工具將序號修改為: 「2025-S003」
+    + 插上裝置後(避免弄錯一次只插上一個CP210x裝置)，運行「CP210xSetIDs.exe」，找到中間有一個格子有標註「Serial Number」，填入序號「2025-S003」，在把前面的勾選框勾起來，最後按下最下方的「Program Device」，完成後關閉修改工具，並反覆插拔裝置與檢查序號是否正確。
   + 修改成功後，可在裝置管理員>連接埠(COM和LPT)>Silicon Labs CP210x USB to UART Bridge (COM3)>詳細資料> 裝置例項路徑，會看到「USB\VID_10C4&PID_EA60\2025-S003」。其中「2025-S003」就是SwitchArray完整序號。
 + SwitchArray內部裝有「USB3.0 HUB」與「USB2.0 32GB USBDISK」
   + USBDISK:
