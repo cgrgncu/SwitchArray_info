@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <title>ESP32 韌體燒錄器</title>
+</head>
+<body>
+  <h1>ESP32 韌體燒錄工具</h1>
+  <button id="flashButton" disabled>開始燒錄</button>
+  <pre id="log" style="background: #111; color: #0f0; padding: 10px; white-space: pre-wrap;"></pre>
+
+  <script>
+    const flashButton = document.getElementById("flashButton");
+    const log = (msg) => {
+      const el = document.getElementById("log");
+      if (el) el.textContent += msg + "\n";
+    };
+
+    let environmentOK = true;
+
+    window.addEventListener("load", () => {
+      // 1. 檢查 file://
+      if (location.protocol === "file:") {
+        log("⚠️ 本頁是以 file:// 開啟，部分瀏覽器可能禁止載入模組或 bin 檔。建議使用本地 HTTP 伺服器開啟此頁面。");
+        environmentOK = false;
+      }
+
+      // 2. 檢查 HTTPS 或 localhost
+      if (location.protocol !== "https:" && location.hostname !== "localhost") {
+        log("⚠️ 本頁不是在 HTTPS 或 localhost 網址下開啟，Web Serial API 可能會被封鎖。建議使用 Chrome 並透過 HTTPS 或 localhost 開啟。");
+        environmentOK = false;
+      }
+
+      // 3. 檢查 Web Serial 支援
+      if (!("serial" in navigator)) {
+        log("❌ 此瀏覽器不支援 Web Serial API。請使用最新版的 Google Chrome 或 Microsoft Edge。");
+        environmentOK = false;
+      }
+
+      // ✅ 如果環境 OK，啟用按鈕
+      if (environmentOK) {
+        flashButton.disabled = false;
+        log("✅ 環境檢查通過，可以開始燒錄！");
+      } else {
+        log("🚫 無法啟用燒錄，請修正上方環境問題");
+      }
+    });
+  </script>
+
+  <script type="module">
+    // 更新引用的 ESPloader 庫文件的路徑
+    import { ESPLoader } from "/esptool-js@0.5.4/package/bundle.js";  <!-- 更改為本地的 bundle.js 路徑 -->
+
+    flashButton.addEventListener("click", async () => {
+      try {
+        log("🔌 請選擇 ESP32 裝置...");
+        const port = await navigator.serial.requestPort();
+        await port.open({ baudRate: 115200 });
+
+        const loader = new ESPLoader(port, 115200, log);
+        await loader.initialize();
+        const chip = await loader.chipName();
+        log(`✅ 已連接晶片：${chip}`);
+
+        const files = [
+          { name: "Bootloader", url: "R2MS_Lite_RelayBoard_QC_v20250419a.ino.bootloader.bin", address: 0x1000 },
+          { name: "Partitions", url: "R2MS_Lite_RelayBoard_QC_v20250419a.ino.partitions.bin", address: 0x8000 },
+          { name: "Application", url: "R2MS_Lite_RelayBoard_QC_v20250419a.ino.bin", address: 0x10000 },
+        ];
+
+        for (const file of files) {
+          log(`📥 載入 ${file.name} (${file.url})...`);
+          const response = await fetch(file.url);
+          if (!response.ok) {
+            throw new Error(`無法載入檔案：${file.url}（HTTP ${response.status}）`);
+          }
+          const data = new Uint8Array(await response.arrayBuffer());
+
+          log(`⚡ 正在燒錄 ${file.name} 到位址 0x${file.address.toString(16)}...`);
+          await loader.flashData(data, file.address);
+          log(`✅ ${file.name} 燒錄完成`);
+        }
+
+        log("🎉 韌體燒錄完成！");
+        await loader.hardReset();
+        log("🔁 裝置已重新啟動");
+
+      } catch (err) {
+        log("❌ 發生錯誤：" + (err.message || err.toString()));
+
+        if (err.message?.includes("The device is not eligible")) {
+          log("👉 提示：請確認開發板進入 Boot 模式，必要時按住 BOOT 鍵再插入 USB");
+        } else if (err.message?.includes("NetworkError") || err.message?.includes("Failed to fetch")) {
+          log("👉 提示：請確認 bin 檔案有放在和本 HTML 同一資料夾");
+        } else if (err.message?.includes("Access denied")) {
+          log("👉 提示：請重新插拔 USB 並確認瀏覽器允許存取序列埠");
+        }
+
+        console.error(err);
+      }
+    });
+  </script>
+</body>
+</html>
