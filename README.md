@@ -174,3 +174,8 @@ ab30s
 
 ### 機殼考慮:
 +  https://tw.misumi-ec.com/vona2/detail/222000224688/
+
+
+### 收納包:
++ SC-TI06長方型加大防潑水硬殼收納包
+  + https://jin-hua.com.tw/page/product/show.aspx?num=39619&lang=TW
