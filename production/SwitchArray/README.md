@@ -204,6 +204,16 @@
       + 修改成功後，可在裝置管理員>連接埠(COM和LPT)>Silicon Labs CP210x USB to UART Bridge (COM3)>詳細資料> 裝置例項路徑，會看到「USB\VID_10C4&PID_EA60\2026-S007」。其中「2026-S007」就是SwitchArray完整序號。
     + 燒錄韌體「SwitchArray_ver2_9.ino」。
     + 以上工作都完成後，於ESP32上IC的金鐘罩貼上標籤貼紙，上方貼的標籤貼紙「CP2102」有加外框字體6pt。下方貼的是標籤貼紙「S007」有加外框字體10pt。用剪刀稍微修剪再貼上去。
++ 組裝RelayBoard
++ 取出8片RelayBoard，並記錄其序號，及其被設定的板子編號:
+  + 「RelayBoard\n2026-S007-1」: 序號「2025120071」
+  + 「RelayBoard\n2026-S007-2」: 序號「2025120072」
+  + 「RelayBoard\n2026-S007-3」: 序號「2025120073」
+  + 「RelayBoard\n2026-S007-4」: 序號「2025120074」
+  + 「RelayBoard\n2026-S007-5」: 序號「2025120075」
+  + 「RelayBoard\n2026-S007-6」: 序號「2025120076」
+  + 「RelayBoard\n2026-S007-7」: 序號「2025120077」
+  + 「RelayBoard\n2026-S007-8」: 序號「2025120078」
 + SwitchArray內部裝有「USB3.0 HUB」與「USB2.0 32GB USBDISK」
   + USBDISK:
     + 容量: 32[GB]
