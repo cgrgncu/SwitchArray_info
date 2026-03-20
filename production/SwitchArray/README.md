@@ -202,7 +202,8 @@
       + 使用CP210x修改序號工具將序號修改為: 「2026-S007」
         + 插上裝置後(避免弄錯一次只插上一個CP210x裝置)，運行「CP210xSetIDs.exe」，找到中間有一個格子有標註「Serial Number」，填入序號「2026-S007」，在把前面的勾選框勾起來，最後按下最下方的「Program Device」，完成後關閉修改工具，並反覆插拔裝置與檢查序號是否正確。
       + 修改成功後，可在裝置管理員>連接埠(COM和LPT)>Silicon Labs CP210x USB to UART Bridge (COM3)>詳細資料> 裝置例項路徑，會看到「USB\VID_10C4&PID_EA60\2026-S007」。其中「2026-S007」就是SwitchArray完整序號。
-    + 燒錄韌體「SwitchArray_ver2_9.ino」。 
+    + 燒錄韌體「SwitchArray_ver2_9.ino」。
+    + 以上工作都完成後，於ESP32上IC的金鐘罩貼上標籤貼紙，上方貼的標籤貼紙「CP2102」有加外框字體6pt。下方貼的是標籤貼紙「S007」有加外框字體10pt。用剪刀稍微修剪再貼上去。
 + SwitchArray內部裝有「USB3.0 HUB」與「USB2.0 32GB USBDISK」
   + USBDISK:
     + 容量: 32[GB]
