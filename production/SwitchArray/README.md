@@ -215,6 +215,8 @@
     + 「RelayBoard\n2026-S007-7」: 序號「2025120077」
     + 「RelayBoard\n2026-S007-8」: 序號「2025120078」
   + 拆封並移除底部固定螺絲，螺絲另外收好。
+  + ControlBoard為第0片，從排針側依序疊好8片RelayBoard到一起。
+  + 用螺絲鎖到支架上，ControlBoard處有挖空。
 + SwitchArray內部裝有「USB3.0 HUB」與「USB2.0 32GB USBDISK」
   + USBDISK:
     + 容量: 32[GB]
