@@ -33,3 +33,14 @@
   | S005202605041453.v299S.MPR 逆推結果 |
   | :---: |
   | ![逆推結果](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2025-S005/20260504/S005202605041453.v299S.MPR_R01_L01_I07_INV3.png) |
+
+### 逆推分析(S005202605041453.v299S.MGD.ohm)
++ 測線名稱改為「S005202605041453.v299S.MGD」
++ 資料剔除數量改為「1」
++ 色階範圍改為「[50,2000]」
++ 其他維持預設值。  
+  | S005202605041453.v299S.MGD 逆推結果 |
+  | :---: |
+  | ![逆推結果](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2025-S005/20260504/S005202605041453.v299S.MGD_R01_L01_I07_INV3.png) |
+
+  
