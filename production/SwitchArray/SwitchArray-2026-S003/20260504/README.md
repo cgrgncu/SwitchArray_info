@@ -11,6 +11,9 @@
 | :---: |
 | ![室內浮接測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S003/20260504/S003202604301608_Floating.png) |
 
+| 室內標準地層測試時間序列 |
+| :---: |
+| ![室內標準地層測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S003/20260504/S003202604301616_StandardResistor.png) |
 
 + 實際資料處理步驟:
   + 順推:
