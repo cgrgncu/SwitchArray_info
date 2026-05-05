@@ -22,6 +22,9 @@
       + 資料剔除數量改為「1」
       + 色階範圍改為「[50,2000]」
       + 其他維持預設值。
+        | 逆推結果 |
+        | :---: |
+        | ![逆推結果](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S003/20260504/S003202605041313.v299S.MPR_R01_L01_I05_INV3.png) |
     + 「S003202605041313.v299S.MGD.ohm」:
       + 測線名稱改為「S003202605041313.v299S.MGD」
       + 資料剔除數量改為「1」
