@@ -26,7 +26,7 @@
 + 其他維持預設值。  
   | S004202605041404.v299S.WS 逆推結果 |
   | :---: |
-  | ![逆推結果](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S004/20260504/) |
+  | ![逆推結果](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S004/20260504/S004202605041404.v299S.WS_R01_L01_I05_INV3.png) |
 
 ### 逆推分析(S004202605041404.v299S.MPR.ohm)
 + 測線名稱改為「S004202605041404.v299S.MPR」
