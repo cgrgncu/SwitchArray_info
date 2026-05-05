@@ -5,6 +5,13 @@
   + RelayBoard的固態繼電器(AB30S-C)檢測出損壞後更換新品。
   + 重新整理連接線壓接頭，使用歐規端子(CE0.75-10)搭配R型端子(型號R1.25-4)。
   + 更換博士端子頭，並使用螺絲固定劑。
+
+### 時間序列檢視
+| 室內浮接測試時間序列 |
+| :---: |
+| ![室內浮接測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S003/20260504/S003202604301608_Floating.png) |
+
+
 + 實際資料處理步驟:
   + 順推:
     + 用預設值順推，時間序列解算手動選用實際資料「S003202605041313.v299S.csv」。
