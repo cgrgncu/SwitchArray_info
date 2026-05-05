@@ -13,7 +13,7 @@
 
 | 野外測試時間序列 |
 | :---: |
-| ![野外測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S004/20260504/S004202605041357_FieldTest.png) |
+| ![野外測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S004/20260504/S004202605041404_NCUQC.png) |
 
 ### 逆推分析
 + 實際資料處理步驟:
