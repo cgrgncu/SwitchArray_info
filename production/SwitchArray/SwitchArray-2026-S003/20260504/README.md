@@ -15,6 +15,10 @@
 | :---: |
 | ![室內標準地層測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S003/20260504/S003202604301616_StandardResistor.png) |
 
+| 野外測試時間序列 |
+| :---: |
+| ![野外測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S003/20260504/S003202605041307_FieldTest.png) |
+
 + 實際資料處理步驟:
   + 順推:
     + 用預設值順推，時間序列解算手動選用實際資料「S003202605041313.v299S.csv」。
