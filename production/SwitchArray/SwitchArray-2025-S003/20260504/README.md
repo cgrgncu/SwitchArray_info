@@ -61,4 +61,4 @@
 + 其他維持預設值。  
   | S003202605041313.v299S.GD 逆推結果 |
   | :---: |
-  | ![逆推結果](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2025-S003/20260504/) |
+  | ![逆推結果](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2025-S003/20260504/S003202605041313.v299S.GD_R01_L01_I07_INV3.png) |
