@@ -19,7 +19,7 @@
 | NCU草坪時間序列 |
 | :---: |
 | ![NCU草坪時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S007/20260504/S007202605041630_NCUQC.png) |
-
+| *看起來CH17、CH33好像有點跟別台不同。 |
 ### 順推分析
 + 用預設值順推，時間序列解算手動選用實際資料「S007202605041630.v299S.csv」。
 
