@@ -14,4 +14,4 @@
 | ![NCU草坪時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2025-S005/20260504/S005202605041453_NCUQC.png) |
 
 ### 順推分析
-+ 用預設值順推，時間序列解算手動選用實際資料「S005202605041447.v299S.csv」。
++ 用預設值順推，時間序列解算手動選用實際資料「S005202605041453.v299S.csv」。
