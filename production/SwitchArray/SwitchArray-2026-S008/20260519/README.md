@@ -14,7 +14,7 @@
 
 | 野外測試時間序列 |
 | :---: |
-| ![野外測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S008/20260519/S009202605201216_FieldTest.png) |
+| ![野外測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S008/20260519/S008202605191300_FieldTest.png) |
 
 | NCU草坪時間序列 |
 | :---: |
