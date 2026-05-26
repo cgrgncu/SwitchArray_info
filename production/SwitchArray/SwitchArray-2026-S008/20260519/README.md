@@ -10,7 +10,7 @@
 
 | 室內標準地層測試時間序列 |
 | :---: |
-| ![室內標準地層測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S008/20260519/S009202605261001_StandardResistor.png) |
+| ![室內標準地層測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S008/20260519/S008202605261058_StandardResistor.png) |
 
 | 野外測試時間序列 |
 | :---: |
