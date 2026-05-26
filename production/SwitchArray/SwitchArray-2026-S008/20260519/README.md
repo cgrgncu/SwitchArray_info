@@ -18,7 +18,7 @@
 
 | NCU草坪時間序列 |
 | :---: |
-| ![NCU草坪時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S008/20260519/S009202605201254_NCUQC.png) |
+| ![NCU草坪時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S008/20260519/S008202605191313_NCUQC.png) |
 
 ### 順推分析
 + 用預設值順推，時間序列解算手動選用實際資料「S009202605201254.v299S.csv」。
