@@ -50,11 +50,11 @@
   | :---: |
   | ![逆推結果](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S009/20260520/S009202605201254.v299S.MGD_R01_L01_I05_INV3.png) |
 
-### 逆推分析(S006202605041542.v299S.GD.ohm)
-+ 測線名稱改為「S006202605041542.v299S.GD」
+### 逆推分析(S009202605201254.v299S.GD.ohm)
++ 測線名稱改為「S009202605201254.v299S.GD」
 + 資料剔除數量改為「1」
 + 色階範圍改為「[50,2000]」
 + 其他維持預設值。  
-  | S006202605041542.v299S.GD 逆推結果 |
+  | S009202605201254.v299S.GD 逆推結果 |
   | :---: |
-  | ![逆推結果](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2025-S006/20260520/S006202605041542.v299S.GD_R01_L01_I08_INV3.png) |
+  | ![逆推結果](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S009/20260520/S009202605201254.v299S.GD_R01_L01_I08_INV3.png) |
