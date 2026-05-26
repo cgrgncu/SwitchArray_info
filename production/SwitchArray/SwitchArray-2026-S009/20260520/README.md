@@ -1,4 +1,4 @@
-# SwitchArray-2025-S009 檢測完成紀錄
+# SwitchArray-2026-S009 檢測完成紀錄
 + 室外檢測完成日期: 2026-05-20
 + 維修內容:
   + RelayBoard調整，登記序號。
@@ -18,7 +18,7 @@
 
 | NCU草坪時間序列 |
 | :---: |
-| ![NCU草坪時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2025-S006/20260520/S006202605041542_NCUQC.png) |
+| ![NCU草坪時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S009/20260520/S009202605201254_NCUQC.png) |
 
 ### 順推分析
 + 用預設值順推，時間序列解算手動選用實際資料「S006202605041542.v299S.csv」。
