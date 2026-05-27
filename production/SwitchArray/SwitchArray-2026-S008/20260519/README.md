@@ -48,7 +48,7 @@
 + 其他維持預設值。  
   | S008202605191313.v299S.MGD 逆推結果 |
   | :---: |
-  | ![逆推結果](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2025-S008/20260519/S008202605191313.v299S.MGD_R01_L01_I09_INV3.png) |
+  | ![逆推結果](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S008/20260519/S008202605191313.v299S.MGD_R01_L01_I09_INV3.png) |
 
 ### 逆推分析(S006202605041542.v299S.GD.ohm)
 + 測線名稱改為「S006202605041542.v299S.GD」
