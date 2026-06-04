@@ -26,3 +26,4 @@
 + 搞錯就要刪除任務重來。
 + 備份任務>打勾XXX\Local資料夾>備份改成/home/R2MS_Lite_Drive/S000
 + 然後再找FTP下載回來。
+FTP
