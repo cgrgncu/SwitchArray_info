@@ -19,4 +19,5 @@
 + 這台拿去MT長期觀測站使用。
 
 #### 安裝步驟
-+ 
++ 安裝Synology Drive Server
+  + 過程中會安裝 Universal Viewer, Node.js v20, Synology應用程式服務。
