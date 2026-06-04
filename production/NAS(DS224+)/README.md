@@ -21,3 +21,8 @@
 #### 安裝步驟
 + 安裝Synology Drive Server
   + 過程中會安裝 Universal Viewer, Node.js v20, Synology應用程式服務。
++ 建立一個普通的使用者，「CGRG_S000」。密碼:4500。
++ 用PC安裝桌面板，然後填入正確IP用帳號密碼登入。然後選右邊的「備份任務」。
++ 搞錯就要刪除任務重來。
++ 備份任務>打勾XXX\Local資料夾>備份改成/home/R2MS_Lite_Drive/S000
++ 然後再找FTP下載回來。
