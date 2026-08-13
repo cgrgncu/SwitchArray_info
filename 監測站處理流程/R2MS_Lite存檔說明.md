@@ -56,8 +56,8 @@
 ## 歸檔後檔案格式
 + 一個完整的歸檔後檔案格式範例如下：  
   + 「[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\Recorder\XP1\2026\08\03\1402.zip」。
-+ 使用MATLAB zip的方法
-```
++ 使用MATLAB zip的方法:
+```matlab
 %------------------------------------------
 % 運行腳本的位置
 % .\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\Recorder\XP1\2026\08\03\1402.zip
@@ -82,4 +82,14 @@ end
 % 確保關閉檔案串流以釋放硬碟資源
 zipFile.close();
 %------------------------------------------
+```
++ 運行結果
+```
+運行命令: zip('Recorder\XP1\2025\05\01\1402.zip', 'Recorder\XP1\2025\05\01\1402');
+運行命令結束!
+=== ZIP 檔案內部結構：Recorder\XP1\2025\05\01\1402.zip ===
+Recorder/XP1/2025/05/01/1402/Part01/1/S001202505011402.Current Mode.csv
+Recorder/XP1/2025/05/01/1402/Part01/1/S001202505011402.Project1.ini
+Recorder/XP1/2025/05/01/1402/Part01/1/S001202505011402.setting.txt
+Recorder/XP1/2025/05/01/1402/Part01/1/S001202505011402.v299.csv
 ```
