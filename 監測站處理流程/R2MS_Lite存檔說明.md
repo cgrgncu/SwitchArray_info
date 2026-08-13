@@ -98,7 +98,7 @@ Recorder/XP1/2025/05/01/1402/Part01/1/S001202505011402.v299.csv
 + MATLAB歸檔腳本:
 ```matlab
 %**************************************************************************
-%   Name: R2MS_Lite_Data_Archiver_v20260813a.m
+%   Name: R2MS_Lite_v299_Archive_v20260813a.m
 %   Copyright:  
 %   Author: HsiupoYeh 
 %   Version: v20260813a
@@ -110,7 +110,7 @@ Recorder/XP1/2025/05/01/1402/Part01/1/S001202505011402.v299.csv
 %   腳本擺放位置:
 %       請將此腳本放置於專案根目錄（與 Recorder 資料夾同級）：
 %       [20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)/
-%       ├── R2MS_Lite_Data_Archiver_v20260813a.m  <-- 本腳本位置
+%       ├── R2MS_Lite_v299_Archive_v20260813a.m  <-- 本腳本位置
 %       └── Recorder/
 %            └── XP1/
 %                 └── 2025/05/01/1402/Part01/1/
