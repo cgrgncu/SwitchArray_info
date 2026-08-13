@@ -1,7 +1,7 @@
-# R2MS Lite 原始資料存放結構說明 (v2.9.7版本)
+# R2MS Lite 原始資料存放結構說明 (v2.9.9無壓縮版)
 
 ## 基礎目錄結構總覽
-+ 一個完整的觀測路徑範例如下：  
++ 一個完整的原始資料路徑範例如下：  
   + 「[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\Recorder\XP1\2026\08\03\1402\Part01\1\」。
 
 ### 1. 專案/測點根目錄 
@@ -53,8 +53,33 @@
 
 ---
 
-## 自動化處理注意事項 (Developer Notes)
-
-1.  **時間格式補零**：月、日、時分若小於 10，資料夾名稱皆有前導零（例如 `04` 月、`03` 日）。寫腳本遍歷時字串格式需特別注意。
-2.  **壓縮層級深度**：若使用 MATLAB 的 `zip` 函數對「時分資料夾」（如 `1402`）進行封裝，由於 `zip` 具備遞迴特性，壓縮檔內會完整保留 `\Part01\1\` 的子目錄層級與其中的 4 個觀測檔案。
-3.  **資料完整性檢查**：進行自動化搬移或分析前，應優先檢查該時段目錄下的檔案數量是否滿足 4 個，避免讀取到因斷電或異常中斷導致的毀損資料。
+## 歸檔後檔案格式
++ 一個完整的歸檔後檔案格式範例如下：  
+  + 「[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\Recorder\XP1\2026\08\03\1402.zip」。
++ 使用MATLAB zip的方法
+```
+%------------------------------------------
+% 運行腳本的位置
+% .\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\Recorder\XP1\2026\08\03\1402.zip
+% .\[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\Run_Script.m
+% zip(zip_filename, target_folder) 會遞迴封裝 target_folder 底下的所有內容並儲存到指定位置
+zip('Recorder\XP1\2025\05\01\1402.zip', 'Recorder\XP1\2025\05\01\1402');
+%------------------------------------------
+%------------------------------------------
+% 檢視ZIP內部結構
+%--
+% zip檔案名稱
+zip_filename = 'Recorder\XP1\2025\05\01\1402.zip';
+% 透過 Java API 開啟壓縮檔
+zipFile = java.util.zip.ZipFile(zip_filename);
+% 透過 Java API 取得列舉物件
+entries = zipFile.entries();
+fprintf('=== ZIP 檔案內部結構：%s ===\n', zip_filename);
+% 走訪並印出所有項目相對路徑
+while entries.hasMoreElements()
+    fprintf('%s\n', char(entries.nextElement().getName()));
+end
+% 確保關閉檔案串流以釋放硬碟資源
+zipFile.close();
+%------------------------------------------
+```
