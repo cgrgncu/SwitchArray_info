@@ -1,4 +1,44 @@
 # R2MS Lite 原始資料存放結構說明 (v2.9.9無壓縮版)
+## SFTP目錄
++ 若在NAS下，僅開放個人用戶預設的家目錄，其他共用資料夾讀寫權限記得關閉，例如:docker資料夾。
+  + 可以使用PowerShell下的sftp用戶端登入並查看。
+  ```
+  sftp -P 22 R2MS_Lite_S001@140.115.21.20
+  ```
+  + 初次登入警告: 請輸入yes
+  ```
+  The authenticity of host '140.115.21.20 (140.115.21.20)' can't be established.
+  ECDSA key fingerprint is SHA256:Np3Wn6evGf/XVErDoPjL9owk31m9BX2DT9sbzluvVbI.
+  Are you sure you want to continue connecting (yes/no/[fingerprint])?
+  ```
+  + 要求登入密碼: 請輸入密碼
+  ```
+  R2MS_Lite_S001@140.115.21.20's password:
+  ```
+  + 登入成功提示:
+  ```
+  Connected to 140.115.21.20.
+  sftp>
+  ```
+  + 可以輸入命令查詢: pwd，會有回應。
+  ```
+  sftp> pwd
+  Remote working directory: /
+  ```
+  + 可以輸入命令查詢: ls，會有回應
+  ```
+  sftp> ls
+  home
+  ```
+  + 可以輸入命令切換目錄: cd，沒有回應
+  ```
+  sftp> cd home
+  ```
+  + 可以輸入命令查詢: pwd，會有回應。
+  ```
+  sftp> pwd
+  Remote working directory: /home
+  ```
 
 ## 基礎目錄結構總覽
 + 一個完整的原始資料路徑範例如下：  
