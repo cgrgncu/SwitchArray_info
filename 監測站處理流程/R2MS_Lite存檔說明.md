@@ -39,6 +39,32 @@
   sftp> pwd
   Remote working directory: /home
   ```
+  + 可以輸入命令查詢: ls，若沒有內容會無回應
+  ```
+  sftp> ls
+  ```
+  + 可以輸入命令建立資料夾: mkdir Projects，沒有回應
+  ```
+  sftp> mkdir Projects
+  ```
+  + 可以輸入命令查詢: ls會有回應。
+  ```
+  sftp> ls
+  Projects  
+  ```
+  + 可以輸入命令切換目錄: cd，沒有回應
+  ```
+  sftp> cd Projects
+  ```
+  + 可以輸入命令查詢: pwd，會有回應。
+  ```
+  sftp> pwd
+  Remote working directory: /home/Projects
+  ```
+  + 可以輸入命令切換目錄: cd，沒有回應
+  ```
+  sftp> quit
+  ```
 
 ### SFTP用戶端
 + Windows下優先建議使用curl-8.20.0-win-x86-full.2026-05-02.zip。是打包沒有dll檔案版本的curl.exe。
