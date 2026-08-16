@@ -90,6 +90,11 @@ PAUSE
 curl.exe -k -l -u "R2MS_Lite_S001:PASSWORD" sftp://140.115.21.20:22/home/
 PAUSE
 ```
++ 使用Python搭配外部curl.exe來進行操作:
+```python
+
+```
+
 ## 基礎目錄結構總覽
 + 一個完整的原始資料路徑範例如下：  
   + 「[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\Recorder\XP1\2026\08\03\1402\Part01\1\」。
