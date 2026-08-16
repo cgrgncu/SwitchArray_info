@@ -40,6 +40,20 @@
   Remote working directory: /home
   ```
 
+### SFTP用戶端
++ Windows下優先建議使用curl-8.20.0-win-x86-full.2026-05-02.zip。是打包沒有dll檔案版本的curl.exe。
++ 測試用BATCH檔案:
+```
+REM ----------------------------------------------------------------------
+REM 指令說明：
+REM  -k                   : 忽略 SSH Host Key 驗證 (相當於自動回答 yes)
+REM  -u "帳號:密碼"        : 輸入 SFTP 登入憑證
+REM  sftp://IP:Port/      : 指定 SFTP 協定與伺服器位置 (尾端加上 / 代表查詢根目錄)
+REM ----------------------------------------------------------------------
+curl.exe -k -u "R2MS_Lite_S001:PASSWORD" sftp://140.115.21.20:22/
+PAUSE
+```
+
 ## 基礎目錄結構總覽
 + 一個完整的原始資料路徑範例如下：  
   + 「[20240409A]Taiwan-Taipei-XiaoYouKengScenicPlatform(XYKP)\Recorder\XP1\2026\08\03\1402\Part01\1\」。
