@@ -1,3 +1,7 @@
+### 2026-06-30
++ 台灣標達公司帶走使用於TSMC。SwitchArray(2025-S004)，之前已經提供PSU(508F24129)、DMM(MY60078728)、PC(R2MS_Lite_S004)。
+
+
 ### SwitchArray 2025-S004
 + 重新組裝日期: 2026-03-31
   + 更換RelayBoard
