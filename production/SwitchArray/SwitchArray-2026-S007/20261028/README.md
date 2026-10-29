@@ -10,15 +10,18 @@
 
 | 室內標準地層測試時間序列 |
 | :---: |
-| ![室內標準地層測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S999/20260504/S999202604291637_StandardResistor.png) |
+| ![室內標準地層測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S007/20261028/S007202610281153_StandardResistor.png) |
+| ![室內標準地層測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S007/20261028/S007202610281153_StandardResistor2.png) |
 
 | 野外測試時間序列 |
 | :---: |
-| ![野外測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S999/20260504/S999202605041624_FieldTest.png) |
+| ![野外測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S007/20261028/S007202610281229_FieldTest.png) |
+| ![野外測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S007/20261028/S007202610281229_FieldTest2.png) |
 
 | NCU草坪時間序列 |
 | :---: |
-| ![NCU草坪時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S999/20260504/S999202605041630_NCUQC.png) |
+| ![NCU草坪時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S007/20261028/S007202610281236_NCUQC.png) |
+| ![NCU草坪時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S007/20261028/S007202610281236_NCUQC2.png) |
 
 ### 順推分析
 + 用預設值順推，時間序列解算手動選用實際資料「S999202605041630.v299S.csv」。
