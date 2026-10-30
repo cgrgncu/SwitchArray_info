@@ -33,4 +33,4 @@
 + 其他維持預設值。  
   | S007202610281236.v299S.WS 逆推結果 |
   | :---: |
-  | ![逆推結果](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-007/20261028/S007202610281236.v299S.WS_R01_L01_I04_INV3.png) |
+  | ![逆推結果](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S007/20261028/S007202610281236.v299S.WS_R01_L01_I04_INV3.png) |
