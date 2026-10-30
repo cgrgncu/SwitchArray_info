@@ -44,23 +44,23 @@
   | :---: |
   | ![逆推結果](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S007/20261028/S007202610281236.v299S.WS.PSU_R01_L01_I03_INV3.png) |
 
-### 逆推分析(S999202610281236.v299S.WS.ohm)
-+ 測線名稱改為「S999202610281236.v299S.WS」
+### 逆推分析(S007202610281236.v299S.MPR.ohm)
++ 測線名稱改為「S007202610281236.v299S.MPR」
 + 資料剔除次數改為「1」
 + 色階範圍改為「[50,2000]」
 + 其他維持預設值。  
-  | S007202610281236.v299S.WS 逆推結果 |
+  | S007202610281236.v299S.MPR 逆推結果 |
   | :---: |
-  | ![逆推結果](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S007/20261028/S999202610281236.v299S.WS_R01_L01_I04_INV3.png) |
+  | ![逆推結果](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S007/20261028/S007202610281236.v299S.MPR_R01_L01_I04_INV3.png) |
 
-### 逆推分析(S999202610281236.v299S.WS.ohm)
-+ 測線名稱改為「S999202610281236.v299S.WS」
+### 逆推分析(S007202610281236.v299S.MPR.PSU.ohm)
++ 測線名稱改為「S007202610281236.v299S.MPR.PSU」
 + 資料剔除次數改為「1」
 + 色階範圍改為「[50,2000]」
 + 其他維持預設值。  
-  | S007202610281236.v299S.WS 逆推結果 |
+  | S007202610281236.v299S.MPR.PSU 逆推結果 |
   | :---: |
-  | ![逆推結果](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S007/20261028/S999202610281236.v299S.WS_R01_L01_I04_INV3.png) |
+  | ![逆推結果](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S007/20261028/S007202610281236.v299S.MPR.PSU_R01_L01_I04_INV3.png) |
 
 ### 逆推分析(S999202610281236.v299S.WS.ohm)
 + 測線名稱改為「S999202610281236.v299S.WS」
