@@ -3,9 +3,12 @@
 
 
 ### 時間序列檢視
-| 室內浮接測試時間序列 |
+| 室內浮接測試時間序列 PSU:SHOW|
 | :---: |
 | ![室內浮接測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S007/20261028/S007202610281145_Floating.png) |
+
+| 室內浮接測試時間序列 PSU:HIDE|
+| :---: |
 | ![室內浮接測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S007/20261028/S007202610281145_Floating2.png) |
 
 | 室內標準地層測試時間序列 |
