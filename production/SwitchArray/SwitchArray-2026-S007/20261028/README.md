@@ -11,19 +11,28 @@
 | :---: |
 | ![室內浮接測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S007/20261028/S007202610281145_Floating2.png) |
 
-| 室內標準地層測試時間序列 |
+| 室內標準地層測試時間序列 PSU:SHOW|
 | :---: |
 | ![室內標準地層測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S007/20261028/S007202610281153_StandardResistor.png) |
+
+| 室內標準地層測試時間序列 PSU:HIDE|
+| :---: |
 | ![室內標準地層測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S007/20261028/S007202610281153_StandardResistor2.png) |
 
-| 野外測試時間序列 |
+| 野外測試時間序列 PSU:SHOW|
 | :---: |
 | ![野外測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S007/20261028/S007202610281229_FieldTest.png) |
+
+| 野外測試時間序列 PSU:HIDE|
+| :---: |
 | ![野外測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S007/20261028/S007202610281229_FieldTest2.png) |
 
-| NCU草坪時間序列 |
+| NCU草坪時間序列 PSU:SHOW|
 | :---: |
 | ![NCU草坪時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S007/20261028/S007202610281236_NCUQC.png) |
+
+| NCU草坪時間序列 PSU:HIDE|
+| :---: |
 | ![NCU草坪時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S007/20261028/S007202610281236_NCUQC2.png) |
 
 ### 順推分析
