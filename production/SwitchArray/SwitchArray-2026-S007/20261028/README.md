@@ -129,7 +129,7 @@ BOARD,CH,AVG(MEAS)[V],AVG(PSU)[V],AVG(MEAS/PSU)[%],count,BOARD,CH,AVG(MEAS)[V],A
 | :---: |
 | ![NCU草坪時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S007/20261028/S007202610281236_NCUQC2.png) |
 
-# R2MS_Lite_CSV_CurrentQC 分析摘要
+### R2MS_Lite_CSV_CurrentQC 分析摘要
 
 - **來源檔案**：`S007202610281236.v299S.csv`
 - **產生時間**：2026-10-30 14:38:53
