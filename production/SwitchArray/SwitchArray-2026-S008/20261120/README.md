@@ -123,13 +123,13 @@ BOARD,CH,AVG(MEAS)[A],AVG(PSU)[A],AVG(MEAS/PSU)[%],count,BOARD,CH,AVG(MEAS)[A],A
 超標通道：無
 
 
-| NCU草坪時間序列 PSU:SHOW S999202610281236 |
+| NCU草坪時間序列 PSU:SHOW S010202611201311 |
 | :---: |
-| ![NCU草坪時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S999/20261028/S999202610281236_NCUQC.png) |
+| ![NCU草坪時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S008/20261120/S010202611201311_NCUQC.png) |
 
-| NCU草坪時間序列 PSU:HIDE S999202610281236 |
+| NCU草坪時間序列 PSU:HIDE S010202611201311 |
 | :---: |
-| ![NCU草坪時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S999/20261028/S999202610281236_NCUQC2.png) |
+| ![NCU草坪時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S008/20261120/S010202611201311_NCUQC2.png) |
 
 ### R2MS_Lite_CSV_CurrentQC 分析摘要
 
