@@ -11,13 +11,13 @@
 | :---: |
 | ![室內浮接測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S008/20261120/S008202611231233_Floating2.png) |
 
-| 室內標準地層測試時間序列 PSU:SHOW S999202610281153 |
+| 室內標準地層測試時間序列 PSU:SHOW S010202611201247 |
 | :---: |
-| ![室內標準地層測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S999/20261028/S999202610281153_StandardResistor.png) |
+| ![室內標準地層測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S008/20261120/S010202611201247_StandardResistor.png) |
 
-| 室內標準地層測試時間序列 PSU:HIDE S999202610281153 |
+| 室內標準地層測試時間序列 PSU:HIDE S010202611201247 |
 | :---: |
-| ![室內標準地層測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S999/20261028/S999202610281153_StandardResistor2.png) |
+| ![室內標準地層測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S008/20261120/S010202611201247_StandardResistor2.png) |
 
 ### R2MS_Lite_CSV_CurrentQC 分析摘要
 
