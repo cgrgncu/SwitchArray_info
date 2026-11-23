@@ -192,14 +192,14 @@ BOARD,CH,AVG(MEAS)[A],AVG(PSU)[A],AVG(MEAS/PSU)[%],count,BOARD,CH,AVG(MEAS)[A],A
   | :---: |
   | ![逆推結果](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S010/20261120/S010202611201311.v299S.WS_R01_L01_I05_INV3.png) |
 
-### 逆推分析(S999202610281236.v299S.WS.PSU.ohm)
-+ 測線名稱改為「S999202610281236.v299S.WS.PSU」
+### 逆推分析(S010202611201311.v299S.WS.PSU.ohm)
++ 測線名稱改為「S010202611201311.v299S.WS.PSU」
 + 資料剔除次數改為「1」
 + 色階範圍改為「[50,2000]」
 + 其他維持預設值。  
-  | S999202610281236.v299S.WS.PSU 逆推結果 |
+  | S010202611201311.v299S.WS.PSU 逆推結果 |
   | :---: |
-  | ![逆推結果](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S999/20261028/S999202610281236.v299S.WS.PSU_R01_L01_I03_INV3.png) |
+  | ![逆推結果](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S010/20261120/S010202611201311.v299S.WS.PSU_R01_L01_I03_INV3.png) |
 
 ### 逆推分析(S999202610281236.v299S.MPR.ohm)
 + 測線名稱改為「S999202610281236.v299S.MPR」
