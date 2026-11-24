@@ -11,17 +11,17 @@
 | :---: |
 | ![室內浮接測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S008/20261120/S008202611231233_Floating2.png) |
 
-| 室內標準地層測試時間序列 PSU:SHOW S010202611201247 |
+| 室內標準地層測試時間序列 PSU:SHOW S999202611201247 |
 | :---: |
-| ![室內標準地層測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S008/20261120/S010202611201247_StandardResistor.png) |
+| ![室內標準地層測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S008/20261120/S999202611201247_StandardResistor.png) |
 
-| 室內標準地層測試時間序列 PSU:HIDE S010202611201247 |
+| 室內標準地層測試時間序列 PSU:HIDE S999202611201247 |
 | :---: |
-| ![室內標準地層測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S008/20261120/S010202611201247_StandardResistor2.png) |
+| ![室內標準地層測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S008/20261120/S999202611201247_StandardResistor2.png) |
 
 # R2MS_Lite_CSV_CurrentQC 分析摘要
 
-- **來源檔案**：`S010202611201247.v299T.csv`
+- **來源檔案**：`S999202611201247.v299T.csv`
 - **產生時間**：2026-11-23 12:56:57
 - **程式版本**：R2MS_Lite_CSV_CurrentQC v20261030b
 - **資料筆數**：原始 1890 筆 → 篩選後 1134 筆（每 10 筆保留 3~8）
@@ -67,17 +67,17 @@ BOARD,CH,AVG(MEAS)[A],AVG(PSU)[A],AVG(MEAS/PSU)[%],count,BOARD,CH,AVG(MEAS)[A],A
 超標通道：無
 
 
-| 野外測試時間序列 PSU:SHOW S010202611201303 |
+| 野外測試時間序列 PSU:SHOW S999202611201303 |
 | :---: |
-| ![野外測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S008/20261120/S010202611201303_FieldTest.png) |
+| ![野外測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S008/20261120/S999202611201303_FieldTest.png) |
 
-| 野外測試時間序列 PSU:HIDE S010202611201303 |
+| 野外測試時間序列 PSU:HIDE S999202611201303 |
 | :---: |
-| ![野外測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S008/20261120/S010202611201303_FieldTest2.png) |
+| ![野外測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S008/20261120/S999202611201303_FieldTest2.png) |
 
 # R2MS_Lite_CSV_CurrentQC 分析摘要
 
-- **來源檔案**：`S010202611201303.v299T.csv`
+- **來源檔案**：`S999202611201303.v299T.csv`
 - **產生時間**：2026-11-23 13:08:00
 - **程式版本**：R2MS_Lite_CSV_CurrentQC v20261030b
 - **資料筆數**：原始 1890 筆 → 篩選後 1134 筆（每 10 筆保留 3~8）
@@ -123,13 +123,13 @@ BOARD,CH,AVG(MEAS)[A],AVG(PSU)[A],AVG(MEAS/PSU)[%],count,BOARD,CH,AVG(MEAS)[A],A
 超標通道：無
 
 
-| NCU草坪時間序列 PSU:SHOW S010202611201311 |
+| NCU草坪時間序列 PSU:SHOW S999202611201311 |
 | :---: |
-| ![NCU草坪時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S008/20261120/S010202611201311_NCUQC.png) |
+| ![NCU草坪時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S008/20261120/S999202611201311_NCUQC.png) |
 
-| NCU草坪時間序列 PSU:HIDE S010202611201311 |
+| NCU草坪時間序列 PSU:HIDE S999202611201311 |
 | :---: |
-| ![NCU草坪時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S008/20261120/S010202611201311_NCUQC2.png) |
+| ![NCU草坪時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S008/20261120/S999202611201311_NCUQC2.png) |
 
 ### R2MS_Lite_CSV_CurrentQC 分析摘要
 
