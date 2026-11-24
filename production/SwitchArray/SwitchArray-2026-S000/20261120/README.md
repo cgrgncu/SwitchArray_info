@@ -3,13 +3,13 @@
 
 
 ### 時間序列檢視
-| 室內浮接測試時間序列 PSU:SHOW S999202611231233 |
+| 室內浮接測試時間序列 PSU:SHOW S000202611241219 |
 | :---: |
-| ![室內浮接測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S999/20261120/S999202611231233_Floating.png) |
+| ![室內浮接測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S000/20261120/S000202611241219_Floating.png) |
 
-| 室內浮接測試時間序列 PSU:HIDE S999202611231233 |
+| 室內浮接測試時間序列 PSU:HIDE S000202611241219 |
 | :---: |
-| ![室內浮接測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S999/20261120/S999202611231233_Floating2.png) |
+| ![室內浮接測試時間序列](https://github.com/cgrgncu/SwitchArray_info/raw/main/production/SwitchArray/SwitchArray-2026-S000/20261120/S000202611241219_Floating2.png) |
 
 | 室內標準地層測試時間序列 PSU:SHOW S999202611201354 |
 | :---: |
